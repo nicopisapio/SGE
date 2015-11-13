@@ -119,6 +119,14 @@ namespace Gestor_de_Eventos
                                 if (GestorBD.ObtenerInstancia().ActualizarDVV("RESERVA"))
                                 {
                                     MessageBox.Show("Se ha generado la reserva número " + idReservaNueva + " correctamente.", "Alta de Reserva", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                    DialogResult dialogo = MessageBox.Show("¿Desea cotizar la reserva + " + idReservaNueva + "?", "Alta de Reserva", MessageBoxButtons.YesNo);
+
+                                    if (dialogo == System.Windows.Forms.DialogResult.Yes)
+                                    {
+                                        FormHelper.ObtenerInstancia().MostrarFormulario(this.MdiParent, new FCotizacionEvento(idReservaNueva));
+                                    }
+
                                     this.gbNuevaReserva.Enabled = false;
                                     this.gbCalendario.Enabled = true;
                                     fechaSeleccionada = calFecha.SelectionRange.Start;

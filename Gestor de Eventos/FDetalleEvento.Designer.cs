@@ -35,7 +35,6 @@
             this.lblFechaDesde = new System.Windows.Forms.Label();
             this.dtpFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.gbDetalles = new System.Windows.Forms.GroupBox();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.gbCotizacion = new System.Windows.Forms.GroupBox();
             this.lblMontoTotal2 = new System.Windows.Forms.Label();
             this.lblMontoPagado2 = new System.Windows.Forms.Label();
@@ -138,7 +137,6 @@
             // 
             // gbDetalles
             // 
-            this.gbDetalles.Controls.Add(this.btnModificar);
             this.gbDetalles.Controls.Add(this.gbCotizacion);
             this.gbDetalles.Controls.Add(this.gbCliente);
             this.gbDetalles.Controls.Add(this.gbEvento);
@@ -151,17 +149,6 @@
             this.gbDetalles.TabStop = false;
             this.gbDetalles.Text = "Detalles";
             // 
-            // btnModificar
-            // 
-            this.btnModificar.ForeColor = System.Drawing.Color.Navy;
-            this.btnModificar.Location = new System.Drawing.Point(641, 193);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(105, 74);
-            this.btnModificar.TabIndex = 3;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            // 
             // gbCotizacion
             // 
             this.gbCotizacion.Controls.Add(this.lblMontoTotal2);
@@ -172,7 +159,7 @@
             this.gbCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbCotizacion.Name = "gbCotizacion";
             this.gbCotizacion.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbCotizacion.Size = new System.Drawing.Size(259, 82);
+            this.gbCotizacion.Size = new System.Drawing.Size(371, 82);
             this.gbCotizacion.TabIndex = 2;
             this.gbCotizacion.TabStop = false;
             this.gbCotizacion.Text = "Cotización";
@@ -542,7 +529,6 @@
         private System.Windows.Forms.GroupBox gbCotizacion;
         private System.Windows.Forms.Label lblMontoTotal1;
         private System.Windows.Forms.Label lblMontoPagado1;
-        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label lblMontoTotal2;
         private System.Windows.Forms.Label lblMontoPagado2;
         private System.Windows.Forms.Label lblDireccion2;

@@ -23,6 +23,12 @@ namespace Gestor_de_Eventos
             InitializeComponent();
         }
 
+        public FCotizacionEvento(Int64 idReserva)
+        {
+            InitializeComponent();
+            this.txtIdReserva.Text = idReserva.ToString();
+        }
+
         private void btnBuscarReserva_Click(object sender, EventArgs e)
         {
             try

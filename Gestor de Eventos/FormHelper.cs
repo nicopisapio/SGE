@@ -132,5 +132,13 @@ namespace Gestor_de_Eventos
             hijo.MdiParent = parent;
             hijo.Show();
         }
+
+        public void MostrarFormulario(Form parent, Form hijo, string parametro)
+        {
+            if (parent.ActiveMdiChild != null) parent.ActiveMdiChild.Close();
+            hijo.MdiParent = parent;
+            hijo.Tag = parametro;
+            hijo.Show();
+        }
     }
 }

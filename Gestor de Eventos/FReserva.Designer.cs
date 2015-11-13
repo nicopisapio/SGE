@@ -34,7 +34,6 @@
             this.btnNuevaReserva = new System.Windows.Forms.Button();
             this.gbHorarios = new System.Windows.Forms.GroupBox();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.btnCotizar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblHoraInicio = new System.Windows.Forms.Label();
             this.gbNuevaReserva = new System.Windows.Forms.GroupBox();
@@ -72,7 +71,7 @@
             this.gridHorarios.ReadOnly = true;
             this.gridHorarios.RowHeadersVisible = false;
             this.gridHorarios.RowTemplate.Height = 24;
-            this.gridHorarios.Size = new System.Drawing.Size(360, 527);
+            this.gridHorarios.Size = new System.Drawing.Size(360, 491);
             this.gridHorarios.TabIndex = 1;
             // 
             // gbCalendario
@@ -108,9 +107,10 @@
             this.gbHorarios.Controls.Add(this.gridHorarios);
             this.gbHorarios.Location = new System.Drawing.Point(385, 11);
             this.gbHorarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbHorarios.MinimumSize = new System.Drawing.Size(376, 533);
             this.gbHorarios.Name = "gbHorarios";
             this.gbHorarios.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbHorarios.Size = new System.Drawing.Size(376, 562);
+            this.gbHorarios.Size = new System.Drawing.Size(376, 533);
             this.gbHorarios.TabIndex = 2;
             this.gbHorarios.TabStop = false;
             this.gbHorarios.Text = "Reservas Agendadas";
@@ -118,7 +118,7 @@
             // btnAceptar
             // 
             this.btnAceptar.ForeColor = System.Drawing.Color.Green;
-            this.btnAceptar.Location = new System.Drawing.Point(32, 165);
+            this.btnAceptar.Location = new System.Drawing.Point(76, 167);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(95, 50);
@@ -127,21 +127,10 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // btnCotizar
-            // 
-            this.btnCotizar.ForeColor = System.Drawing.Color.Navy;
-            this.btnCotizar.Location = new System.Drawing.Point(132, 165);
-            this.btnCotizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCotizar.Name = "btnCotizar";
-            this.btnCotizar.Size = new System.Drawing.Size(95, 50);
-            this.btnCotizar.TabIndex = 5;
-            this.btnCotizar.Text = "Cotizar";
-            this.btnCotizar.UseVisualStyleBackColor = true;
-            // 
             // btnCancelar
             // 
             this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCancelar.Location = new System.Drawing.Point(232, 165);
+            this.btnCancelar.Location = new System.Drawing.Point(177, 167);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(95, 50);
@@ -169,7 +158,6 @@
             this.gbNuevaReserva.Controls.Add(this.dtpHoraFin);
             this.gbNuevaReserva.Controls.Add(this.btnCancelar);
             this.gbNuevaReserva.Controls.Add(this.dtpHoraInicio);
-            this.gbNuevaReserva.Controls.Add(this.btnCotizar);
             this.gbNuevaReserva.Controls.Add(this.lblHoraFin);
             this.gbNuevaReserva.Controls.Add(this.btnAceptar);
             this.gbNuevaReserva.Controls.Add(this.lblHoraInicio);
@@ -178,7 +166,7 @@
             this.gbNuevaReserva.Margin = new System.Windows.Forms.Padding(4);
             this.gbNuevaReserva.Name = "gbNuevaReserva";
             this.gbNuevaReserva.Padding = new System.Windows.Forms.Padding(4);
-            this.gbNuevaReserva.Size = new System.Drawing.Size(363, 251);
+            this.gbNuevaReserva.Size = new System.Drawing.Size(363, 228);
             this.gbNuevaReserva.TabIndex = 1;
             this.gbNuevaReserva.TabStop = false;
             this.gbNuevaReserva.Text = "Nueva Reserva";
@@ -253,7 +241,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 586);
+            this.ClientSize = new System.Drawing.Size(776, 555);
             this.Controls.Add(this.gbNuevaReserva);
             this.Controls.Add(this.gbHorarios);
             this.Controls.Add(this.gbCalendario);
@@ -280,7 +268,6 @@
         private System.Windows.Forms.GroupBox gbCalendario;
         private System.Windows.Forms.GroupBox gbHorarios;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.Button btnCotizar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblHoraInicio;
         private System.Windows.Forms.GroupBox gbNuevaReserva;

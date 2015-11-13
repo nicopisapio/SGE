@@ -97,5 +97,6 @@ namespace Gestor_de_Eventos
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }
