@@ -29,7 +29,7 @@ namespace Gestor_de_Eventos
 
                 if (fechaHasta > fechaDesde)
                 {
-                    List<Reserva> reservas = GestorReserva.ObtenerInstancia().ConsultarReservas("R", fechaDesde, fechaHasta);
+                    List<Reserva> reservas = GestorReserva.ObtenerInstancia().ConsultarReservas(fechaDesde, fechaHasta);
 
                     if (reservas != null)
                     {
