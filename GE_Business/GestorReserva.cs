@@ -50,12 +50,12 @@ namespace GE_Business
             }
         }
 
-        public List<Reserva> ConsultarReservas(string estado, DateTime fechaDesde, DateTime fechaHasta)
+        public List<Reserva> ConsultarReservas(DateTime fechaDesde, DateTime fechaHasta)
         {
 
             try
             {
-                return reservaDAO.TraerReservas(estado, fechaDesde, fechaHasta);
+                return reservaDAO.TraerReservas(fechaDesde, fechaHasta);
             }
             catch (Exception)
             {

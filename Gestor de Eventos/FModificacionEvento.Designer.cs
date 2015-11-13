@@ -79,6 +79,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.gridReserva = new System.Windows.Forms.DataGridView();
+            this.chkCancelar = new System.Windows.Forms.CheckBox();
             this.gbBusqueda.SuspendLayout();
             this.gbCotizacion.SuspendLayout();
             this.gbPago.SuspendLayout();
@@ -666,11 +667,22 @@
             this.gridReserva.TabIndex = 1;
             this.gridReserva.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridReserva_CellDoubleClick);
             // 
+            // chkCancelar
+            // 
+            this.chkCancelar.AutoSize = true;
+            this.chkCancelar.Location = new System.Drawing.Point(19, 692);
+            this.chkCancelar.Name = "chkCancelar";
+            this.chkCancelar.Size = new System.Drawing.Size(86, 21);
+            this.chkCancelar.TabIndex = 5;
+            this.chkCancelar.Text = "Cancelar";
+            this.chkCancelar.UseVisualStyleBackColor = true;
+            // 
             // FModificacionEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 754);
+            this.Controls.Add(this.chkCancelar);
             this.Controls.Add(this.gridReserva);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
@@ -697,6 +709,7 @@
             this.gbPersonas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridReserva)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -753,5 +766,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.DataGridView gridReserva;
+        private System.Windows.Forms.CheckBox chkCancelar;
     }
 }

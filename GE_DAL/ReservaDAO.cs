@@ -89,7 +89,7 @@ namespace GE_DAL
 
         }
 
-        public List<Reserva> TraerReservas(string estado, DateTime fechaDesde, DateTime fechaHasta)
+        public List<Reserva> TraerReservas(DateTime fechaDesde, DateTime fechaHasta)
         {
 
             try
@@ -104,8 +104,7 @@ namespace GE_DAL
                     using (SqlCommand comando = conexion.CreateCommand())
                     {
                         comando.CommandType = CommandType.StoredProcedure;
-                        comando.CommandText = "SPS_Reserva_por_Estado_y_Fechas";
-                        comando.Parameters.Add(new SqlParameter("@Estado", estado));
+                        comando.CommandText = "SPS_Reserva_entre_Fechas";
                         comando.Parameters.Add(new SqlParameter("@FechaDesde", fechaDesde));
                         comando.Parameters.Add(new SqlParameter("@FechaHasta", fechaHasta));
 

@@ -103,10 +103,12 @@ namespace Gestor_de_Eventos
 
             if (reserva.Estado == "R")
             {
+                this.lblEstado2.Text = "RESERVADO";
                 this.gbDetalleEvento.Enabled = true;
             }
             else
             {
+                this.lblEstado2.Text = reserva.Estado == "P" ? "PAGADO" : "TERMINADO";
                 gbDetalleEvento.Enabled = false;
             }
         }
@@ -148,6 +150,7 @@ namespace Gestor_de_Eventos
 
             CargaComboServicios();
             HabilitarControles(false);
+            this.gbDetalleEvento.Enabled = false;
         }
 
         private void btnAgregarPersonas_Click(object sender, EventArgs e)
@@ -252,6 +255,8 @@ namespace Gestor_de_Eventos
             this.txtClienteDU.Clear();
             this.txtPago.Clear();
 
+            this.gridReserva.DataSource = null;
+
             this.listServicios.Items.Clear();
 
             this.gbDetalleEvento.Enabled = false;
@@ -267,6 +272,8 @@ namespace Gestor_de_Eventos
             this.lblMontoPagado2.Text = 0.ToString("C2");
             this.lblMontoTotalAnt2.Text = 0.ToString("C2");
             this.lblMontoTotalNvo2.Text = 0.ToString("C2");
+
+            this.chkCancelar.Checked = false;
         }
 
         private void btnAgregarServicio_Click(object sender, EventArgs e)
@@ -382,26 +389,33 @@ namespace Gestor_de_Eventos
         {
             try
             {
-                double montoPagado = 0;
-
-                if (Double.TryParse(this.txtPago.Text, out montoPagado))
+                if (chkCancelar.Checked)
                 {
-                    reserva.MontoPagado = montoPagado;
-
-                    if (reserva.MontoTotal == montoPagado)
-                    {
-                        reserva.Estado = "P"; //Pagado
-                    }
-                    else if (reserva.MontoTotal < montoPagado)
-                    {
-                        MessageBox.Show("Ha ingresado un monto de pago mayor al total.", "Modificación de Reserva", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
-
+                    reserva.Estado = "T"; //Terminado
                 }
                 else
                 {
-                    reserva.Estado = "R"; //Reservado
+                    double montoPagado = 0;
+
+                    if (Double.TryParse(this.txtPago.Text, out montoPagado))
+                    {
+                        reserva.MontoPagado = montoPagado;
+
+                        if (reserva.MontoTotal == montoPagado)
+                        {
+                            reserva.Estado = "P"; //Pagado
+                        }
+                        else if (reserva.MontoTotal < montoPagado)
+                        {
+                            MessageBox.Show("Ha ingresado un monto de pago mayor al total.", "Modificación de Reserva", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                    }
+                    else
+                    {
+                        reserva.Estado = "R"; //Reservado
+                    }
                 }
 
                 if (GestorReserva.ObtenerInstancia().ActualizarReserva(reserva))
@@ -411,6 +425,7 @@ namespace Gestor_de_Eventos
                     {
                         MessageBox.Show("La cotización se ha guardado con éxito.", "Modificación de Reserva", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         HabilitarControles(false);
+                        LimpiarControles();
                     }
 
                 }

@@ -65,6 +65,21 @@ namespace Gestor_de_Eventos
             this.lblDireccion2.Text = reserva.Cliente.Direccion == null ? " - " : reserva.Cliente.Direccion.ToString();
             this.lblMontoPagado2.Text = reserva.MontoPagado.ToString("C2");
             this.lblMontoTotal2.Text = reserva.MontoTotal.ToString("C2");
+
+            switch (reserva.Estado)
+            {
+                case "R":
+                    this.lblEstado.Text = "RESERVADO";
+                    break;
+                case "P":
+                    this.lblEstado.Text = "PAGADO";
+                    break;
+                case "T":
+                    this.lblEstado.Text = "TERMINADO";
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void FDetalleEvento_Load(object sender, EventArgs e)

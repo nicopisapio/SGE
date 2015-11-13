@@ -65,6 +65,7 @@
             this.lblCantidadAdultos1 = new System.Windows.Forms.Label();
             this.lblTipoEvento1 = new System.Windows.Forms.Label();
             this.gridReserva = new System.Windows.Forms.DataGridView();
+            this.lblEstado = new System.Windows.Forms.Label();
             this.gbBusqueda.SuspendLayout();
             this.gbDetalles.SuspendLayout();
             this.gbCotizacion.SuspendLayout();
@@ -320,6 +321,7 @@
             // 
             // gbEvento
             // 
+            this.gbEvento.Controls.Add(this.lblEstado);
             this.gbEvento.Controls.Add(this.lblExcedente2);
             this.gbEvento.Controls.Add(this.lblExcedente1);
             this.gbEvento.Controls.Add(this.lblEmpleadosNecesarios2);
@@ -475,6 +477,16 @@
             this.gridReserva.TabIndex = 1;
             this.gridReserva.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridReserva_CellClick);
             // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(225, 195);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(13, 17);
+            this.lblEstado.TabIndex = 12;
+            this.lblEstado.Text = "-";
+            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // FDetalleEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -543,5 +555,6 @@
         private System.Windows.Forms.Label lblExcedente2;
         private System.Windows.Forms.Label lblExcedente1;
         private System.Windows.Forms.DataGridView gridReserva;
+        private System.Windows.Forms.Label lblEstado;
     }
 }
