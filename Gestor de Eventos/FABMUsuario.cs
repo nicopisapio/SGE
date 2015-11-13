@@ -201,11 +201,10 @@ namespace Gestor_de_Eventos
         {
             try
             {
-                HabilitarControles(false);
-
                 if (gridUsuarios.SelectedRows.Count != 0)
                 {
                     this.Operacion = FABMUsuario.Accion.Modificacion;
+                    this.gbDatosUsuario.Enabled = true;
                     HabilitarControles(true);
                     this.txtUsuario.Enabled = false;
 
