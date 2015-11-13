@@ -1020,10 +1020,8 @@ namespace Security.DAL
 
                         comando.Connection.Open();
 
-                        filasAfectadas = comando.ExecuteNonQuery();
+                        comando.ExecuteNonQuery();
 
-                        filasAfectadas = 0;
-                        comando.CommandType = CommandType.StoredProcedure;
                         comando.CommandText = "SPI_Permiso_Permiso";
 
                         foreach (PermisoBase per in permiso.Permisos)

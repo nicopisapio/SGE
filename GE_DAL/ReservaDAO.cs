@@ -1331,7 +1331,7 @@ namespace GE_DAL
                                 comando.Parameters.Add(new SqlParameter("@IdReserva", reserva.ID));
                                 comando.Parameters.Add(new SqlParameter("@IdServicio", ser.ID));
 
-                                filasAfectadas += comando.ExecuteNonQuery();
+                                comando.ExecuteNonQuery();
                             }
                         }
 
@@ -1345,7 +1345,7 @@ namespace GE_DAL
                                 comando.Parameters.Add(new SqlParameter("@IdReserva", reserva.ID));
                                 comando.Parameters.Add(new SqlParameter("@IdEmpleado", emp.DU));
 
-                                filasAfectadas += comando.ExecuteNonQuery();
+                                comando.ExecuteNonQuery();
                             }
                         }
 
@@ -1361,7 +1361,7 @@ namespace GE_DAL
                                     comando.Parameters.Add(new SqlParameter("@IdReserva", reserva.ID));
                                     comando.Parameters.Add(new SqlParameter("@Monto", exc.Monto));
 
-                                    filasAfectadas += comando.ExecuteNonQuery();
+                                    comando.ExecuteNonQuery();
                                 }
                             }
                         }
@@ -2088,7 +2088,7 @@ namespace GE_DAL
                             comando.Parameters.Add(new SqlParameter("@Piso", cliente.Direccion.Piso));
                             comando.Parameters.Add(new SqlParameter("@Departamento", cliente.Direccion.Departamento));
 
-                            filasAfectadas += comando.ExecuteNonQuery();
+                            comando.ExecuteNonQuery();
                         }
 
                     }
@@ -2211,7 +2211,7 @@ namespace GE_DAL
                             comando.Parameters.Add(new SqlParameter("@Piso", empleado.Direccion.Piso));
                             comando.Parameters.Add(new SqlParameter("@Departamento", empleado.Direccion.Departamento));
 
-                            filasAfectadas += comando.ExecuteNonQuery();
+                            comando.ExecuteNonQuery();
                         }
 
                     }
@@ -2277,7 +2277,7 @@ namespace GE_DAL
                             comando.Parameters.Add(new SqlParameter("@Piso", empleado.Direccion.Piso));
                             comando.Parameters.Add(new SqlParameter("@Departamento", empleado.Direccion.Departamento));
 
-                            filasAfectadas += comando.ExecuteNonQuery();
+                            comando.ExecuteNonQuery();
                         }
 
                     }
@@ -2327,7 +2327,7 @@ namespace GE_DAL
                             comando.Parameters.Add(new SqlParameter("@DUEmpleado", empleado.DU));
                             comando.Parameters.Add(new SqlParameter("@DUCliente", DBNull.Value));
 
-                            filasAfectadas += comando.ExecuteNonQuery();
+                            comando.ExecuteNonQuery();
                         }
 
                         comando.CommandText = "SPD_Empleado";
