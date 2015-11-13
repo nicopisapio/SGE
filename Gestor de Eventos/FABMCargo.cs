@@ -135,8 +135,9 @@ namespace Gestor_de_Eventos
                 double precio = 0;
                 if (!Double.TryParse(this.txtPrecio.Text, out precio))
                 {
-                    MessageBox.Show("Ingrese un valor numérico.", "Gestión de Cargos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Ingrese un valor numérico.", "Gestión de Cargos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.txtPrecio.Focus();
+                    return;
                 }
 
                 Cargo cargo = new Cargo();

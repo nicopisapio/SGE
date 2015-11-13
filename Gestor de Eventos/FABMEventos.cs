@@ -80,22 +80,25 @@ namespace Gestor_de_Eventos
                 double precio = 0;
                 if (!Double.TryParse(this.txtPrecio.Text, out precio))
                 {
-                    MessageBox.Show("Ingrese un valor numérico.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Ingrese un valor numérico.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.txtPrecio.Focus();
+                    return;
                 }
 
                 double precioBloque = 0;
                 if (!Double.TryParse(this.txtPrecioBloque.Text, out precioBloque))
                 {
-                    MessageBox.Show("Ingrese un valor numérico.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Ingrese un valor numérico.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.txtPrecioBloque.Focus();
+                    return;
                 }
 
                 double precioDecena = 0;
                 if (!Double.TryParse(this.txtPrecioDecena.Text, out precioDecena))
                 {
-                    MessageBox.Show("Ingrese un valor numérico.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Ingrese un valor numérico.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.txtPrecioDecena.Focus();
+                    return;
                 }
                 
                 Evento evento = new Evento();

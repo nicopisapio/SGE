@@ -128,7 +128,27 @@ namespace Gestor_de_Eventos
             try
             {
                 HabilitarControles(true);
-                this.lblMontoTotalNvo2.Text = GestorReserva.ObtenerInstancia().CalcularCostoTotalReserva(reserva).ToString("C2");
+
+                double precioExcedente = 0;
+                if (!double.TryParse(this.txtExcedente.Text, out precioExcedente))
+                {
+                    MessageBox.Show("Ingrese un valor numérico.", "Gestión de Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    this.txtPrecio.Focus();
+                    return;
+                }
+
+                if (precioExcedente > 0)
+                {
+                    Excedente excedente = new Excedente();
+                    excedente.Monto = precioExcedente;
+                    reserva.AgregarExcedente(excedente);
+                    this.lblMontoTotalNvo2.Text = GestorReserva.ObtenerInstancia().CalcularCostoTotalReserva(reserva).ToString("C2");
+                }
+                else
+                {
+                    MessageBox.Show("Se ha agregado el excedente correctamente.", "Gestión de Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
             }
             catch (Exception ex)
             {

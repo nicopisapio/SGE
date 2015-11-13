@@ -78,8 +78,9 @@ namespace Gestor_de_Eventos
                 double precio = 0;
                 if (!Double.TryParse(this.txtPrecio.Text, out precio))
                 {
-                    MessageBox.Show("Ingrese un valor numérico.", "Gestión de Servicios.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Ingrese un valor numérico.", "Gestión de Servicios.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.txtPrecio.Focus();
+                    return;
                 }
 
                 Servicio servicio = new Servicio();
