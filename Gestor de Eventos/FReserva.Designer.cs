@@ -30,14 +30,14 @@
         {
             this.calFecha = new System.Windows.Forms.MonthCalendar();
             this.gridHorarios = new System.Windows.Forms.DataGridView();
-            this.grCalendario = new System.Windows.Forms.GroupBox();
+            this.gbCalendario = new System.Windows.Forms.GroupBox();
             this.btnNuevaReserva = new System.Windows.Forms.Button();
-            this.grHorarios = new System.Windows.Forms.GroupBox();
+            this.gbHorarios = new System.Windows.Forms.GroupBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCotizar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblHoraInicio = new System.Windows.Forms.Label();
-            this.grNuevaReserva = new System.Windows.Forms.GroupBox();
+            this.gbNuevaReserva = new System.Windows.Forms.GroupBox();
             this.btnNuevoCliente = new System.Windows.Forms.Button();
             this.cboCliente = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,9 +45,9 @@
             this.dtpHoraInicio = new System.Windows.Forms.DateTimePicker();
             this.lblHoraFin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridHorarios)).BeginInit();
-            this.grCalendario.SuspendLayout();
-            this.grHorarios.SuspendLayout();
-            this.grNuevaReserva.SuspendLayout();
+            this.gbCalendario.SuspendLayout();
+            this.gbHorarios.SuspendLayout();
+            this.gbNuevaReserva.SuspendLayout();
             this.SuspendLayout();
             // 
             // calFecha
@@ -75,18 +75,18 @@
             this.gridHorarios.Size = new System.Drawing.Size(360, 527);
             this.gridHorarios.TabIndex = 1;
             // 
-            // grCalendario
+            // gbCalendario
             // 
-            this.grCalendario.Controls.Add(this.btnNuevaReserva);
-            this.grCalendario.Controls.Add(this.calFecha);
-            this.grCalendario.Location = new System.Drawing.Point(12, 12);
-            this.grCalendario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grCalendario.Name = "grCalendario";
-            this.grCalendario.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grCalendario.Size = new System.Drawing.Size(367, 299);
-            this.grCalendario.TabIndex = 2;
-            this.grCalendario.TabStop = false;
-            this.grCalendario.Text = "Seleccione el día";
+            this.gbCalendario.Controls.Add(this.btnNuevaReserva);
+            this.gbCalendario.Controls.Add(this.calFecha);
+            this.gbCalendario.Location = new System.Drawing.Point(12, 12);
+            this.gbCalendario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCalendario.Name = "gbCalendario";
+            this.gbCalendario.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCalendario.Size = new System.Drawing.Size(367, 299);
+            this.gbCalendario.TabIndex = 0;
+            this.gbCalendario.TabStop = false;
+            this.gbCalendario.Text = "Seleccione el día";
             // 
             // btnNuevaReserva
             // 
@@ -100,20 +100,20 @@
             this.btnNuevaReserva.UseVisualStyleBackColor = true;
             this.btnNuevaReserva.Click += new System.EventHandler(this.btnNuevaReserva_Click);
             // 
-            // grHorarios
+            // gbHorarios
             // 
-            this.grHorarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.gbHorarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grHorarios.Controls.Add(this.gridHorarios);
-            this.grHorarios.Location = new System.Drawing.Point(385, 11);
-            this.grHorarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grHorarios.Name = "grHorarios";
-            this.grHorarios.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grHorarios.Size = new System.Drawing.Size(376, 562);
-            this.grHorarios.TabIndex = 3;
-            this.grHorarios.TabStop = false;
-            this.grHorarios.Text = "Reservas Agendadas";
+            this.gbHorarios.Controls.Add(this.gridHorarios);
+            this.gbHorarios.Location = new System.Drawing.Point(385, 11);
+            this.gbHorarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbHorarios.Name = "gbHorarios";
+            this.gbHorarios.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbHorarios.Size = new System.Drawing.Size(376, 562);
+            this.gbHorarios.TabIndex = 2;
+            this.gbHorarios.TabStop = false;
+            this.gbHorarios.Text = "Reservas Agendadas";
             // 
             // btnAceptar
             // 
@@ -122,7 +122,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(95, 50);
-            this.btnAceptar.TabIndex = 6;
+            this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -134,7 +134,7 @@
             this.btnCotizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCotizar.Name = "btnCotizar";
             this.btnCotizar.Size = new System.Drawing.Size(95, 50);
-            this.btnCotizar.TabIndex = 7;
+            this.btnCotizar.TabIndex = 5;
             this.btnCotizar.Text = "Cotizar";
             this.btnCotizar.UseVisualStyleBackColor = true;
             // 
@@ -145,7 +145,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(95, 50);
-            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -161,36 +161,36 @@
             this.lblHoraInicio.Text = "Hora Inicio:";
             this.lblHoraInicio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // grNuevaReserva
+            // gbNuevaReserva
             // 
-            this.grNuevaReserva.Controls.Add(this.btnNuevoCliente);
-            this.grNuevaReserva.Controls.Add(this.cboCliente);
-            this.grNuevaReserva.Controls.Add(this.label1);
-            this.grNuevaReserva.Controls.Add(this.dtpHoraFin);
-            this.grNuevaReserva.Controls.Add(this.btnCancelar);
-            this.grNuevaReserva.Controls.Add(this.dtpHoraInicio);
-            this.grNuevaReserva.Controls.Add(this.btnCotizar);
-            this.grNuevaReserva.Controls.Add(this.lblHoraFin);
-            this.grNuevaReserva.Controls.Add(this.btnAceptar);
-            this.grNuevaReserva.Controls.Add(this.lblHoraInicio);
-            this.grNuevaReserva.Enabled = false;
-            this.grNuevaReserva.Location = new System.Drawing.Point(17, 318);
-            this.grNuevaReserva.Margin = new System.Windows.Forms.Padding(4);
-            this.grNuevaReserva.Name = "grNuevaReserva";
-            this.grNuevaReserva.Padding = new System.Windows.Forms.Padding(4);
-            this.grNuevaReserva.Size = new System.Drawing.Size(363, 251);
-            this.grNuevaReserva.TabIndex = 8;
-            this.grNuevaReserva.TabStop = false;
-            this.grNuevaReserva.Text = "Nueva Reserva";
+            this.gbNuevaReserva.Controls.Add(this.btnNuevoCliente);
+            this.gbNuevaReserva.Controls.Add(this.cboCliente);
+            this.gbNuevaReserva.Controls.Add(this.label1);
+            this.gbNuevaReserva.Controls.Add(this.dtpHoraFin);
+            this.gbNuevaReserva.Controls.Add(this.btnCancelar);
+            this.gbNuevaReserva.Controls.Add(this.dtpHoraInicio);
+            this.gbNuevaReserva.Controls.Add(this.btnCotizar);
+            this.gbNuevaReserva.Controls.Add(this.lblHoraFin);
+            this.gbNuevaReserva.Controls.Add(this.btnAceptar);
+            this.gbNuevaReserva.Controls.Add(this.lblHoraInicio);
+            this.gbNuevaReserva.Enabled = false;
+            this.gbNuevaReserva.Location = new System.Drawing.Point(17, 318);
+            this.gbNuevaReserva.Margin = new System.Windows.Forms.Padding(4);
+            this.gbNuevaReserva.Name = "gbNuevaReserva";
+            this.gbNuevaReserva.Padding = new System.Windows.Forms.Padding(4);
+            this.gbNuevaReserva.Size = new System.Drawing.Size(363, 251);
+            this.gbNuevaReserva.TabIndex = 1;
+            this.gbNuevaReserva.TabStop = false;
+            this.gbNuevaReserva.Text = "Nueva Reserva";
             // 
             // btnNuevoCliente
             // 
             this.btnNuevoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoCliente.Location = new System.Drawing.Point(290, 115);
+            this.btnNuevoCliente.Location = new System.Drawing.Point(290, 116);
             this.btnNuevoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
             this.btnNuevoCliente.Size = new System.Drawing.Size(65, 28);
-            this.btnNuevoCliente.TabIndex = 5;
+            this.btnNuevoCliente.TabIndex = 3;
             this.btnNuevoCliente.Text = "Nuevo";
             this.btnNuevoCliente.UseVisualStyleBackColor = true;
             this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Click);
@@ -203,7 +203,7 @@
             this.cboCliente.Margin = new System.Windows.Forms.Padding(4);
             this.cboCliente.Name = "cboCliente";
             this.cboCliente.Size = new System.Drawing.Size(184, 24);
-            this.cboCliente.TabIndex = 4;
+            this.cboCliente.TabIndex = 2;
             // 
             // label1
             // 
@@ -225,7 +225,7 @@
             this.dtpHoraFin.Name = "dtpHoraFin";
             this.dtpHoraFin.ShowUpDown = true;
             this.dtpHoraFin.Size = new System.Drawing.Size(89, 22);
-            this.dtpHoraFin.TabIndex = 3;
+            this.dtpHoraFin.TabIndex = 1;
             // 
             // dtpHoraInicio
             // 
@@ -236,7 +236,7 @@
             this.dtpHoraInicio.Name = "dtpHoraInicio";
             this.dtpHoraInicio.ShowUpDown = true;
             this.dtpHoraInicio.Size = new System.Drawing.Size(89, 22);
-            this.dtpHoraInicio.TabIndex = 2;
+            this.dtpHoraInicio.TabIndex = 0;
             // 
             // lblHoraFin
             // 
@@ -254,9 +254,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 586);
-            this.Controls.Add(this.grNuevaReserva);
-            this.Controls.Add(this.grHorarios);
-            this.Controls.Add(this.grCalendario);
+            this.Controls.Add(this.gbNuevaReserva);
+            this.Controls.Add(this.gbHorarios);
+            this.Controls.Add(this.gbCalendario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(794, 566);
@@ -265,10 +265,10 @@
             this.Text = "Búsqueda y Reserva de Fechas Disponibles";
             this.Load += new System.EventHandler(this.FReserva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridHorarios)).EndInit();
-            this.grCalendario.ResumeLayout(false);
-            this.grHorarios.ResumeLayout(false);
-            this.grNuevaReserva.ResumeLayout(false);
-            this.grNuevaReserva.PerformLayout();
+            this.gbCalendario.ResumeLayout(false);
+            this.gbHorarios.ResumeLayout(false);
+            this.gbNuevaReserva.ResumeLayout(false);
+            this.gbNuevaReserva.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -277,13 +277,13 @@
 
         private System.Windows.Forms.MonthCalendar calFecha;
         private System.Windows.Forms.DataGridView gridHorarios;
-        private System.Windows.Forms.GroupBox grCalendario;
-        private System.Windows.Forms.GroupBox grHorarios;
+        private System.Windows.Forms.GroupBox gbCalendario;
+        private System.Windows.Forms.GroupBox gbHorarios;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCotizar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblHoraInicio;
-        private System.Windows.Forms.GroupBox grNuevaReserva;
+        private System.Windows.Forms.GroupBox gbNuevaReserva;
         private System.Windows.Forms.DateTimePicker dtpHoraFin;
         private System.Windows.Forms.DateTimePicker dtpHoraInicio;
         private System.Windows.Forms.Label lblHoraFin;

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gpPermiso = new System.Windows.Forms.GroupBox();
+            this.gbPermiso = new System.Windows.Forms.GroupBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -40,21 +40,21 @@
             this.btnEliminarPermiso = new System.Windows.Forms.Button();
             this.btnAgregarPermiso = new System.Windows.Forms.Button();
             this.btnQuitarPermiso = new System.Windows.Forms.Button();
-            this.gpPermiso.SuspendLayout();
+            this.gbPermiso.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gpPermiso
+            // gbPermiso
             // 
-            this.gpPermiso.Controls.Add(this.txtDescripcion);
-            this.gpPermiso.Controls.Add(this.lblDescripcion);
-            this.gpPermiso.Location = new System.Drawing.Point(16, 15);
-            this.gpPermiso.Margin = new System.Windows.Forms.Padding(4);
-            this.gpPermiso.Name = "gpPermiso";
-            this.gpPermiso.Padding = new System.Windows.Forms.Padding(4);
-            this.gpPermiso.Size = new System.Drawing.Size(421, 105);
-            this.gpPermiso.TabIndex = 0;
-            this.gpPermiso.TabStop = false;
-            this.gpPermiso.Text = "Nuevo Grupo";
+            this.gbPermiso.Controls.Add(this.txtDescripcion);
+            this.gbPermiso.Controls.Add(this.lblDescripcion);
+            this.gbPermiso.Location = new System.Drawing.Point(16, 15);
+            this.gbPermiso.Margin = new System.Windows.Forms.Padding(4);
+            this.gbPermiso.Name = "gbPermiso";
+            this.gbPermiso.Padding = new System.Windows.Forms.Padding(4);
+            this.gbPermiso.Size = new System.Drawing.Size(421, 105);
+            this.gbPermiso.TabIndex = 0;
+            this.gbPermiso.TabStop = false;
+            this.gbPermiso.Text = "Nuevo Grupo";
             // 
             // txtDescripcion
             // 
@@ -181,7 +181,7 @@
             this.Controls.Add(this.lblPermisos);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.gpPermiso);
+            this.Controls.Add(this.gbPermiso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(658, 645);
@@ -189,8 +189,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Permiso";
             this.Load += new System.EventHandler(this.FPermiso_Load);
-            this.gpPermiso.ResumeLayout(false);
-            this.gpPermiso.PerformLayout();
+            this.gbPermiso.ResumeLayout(false);
+            this.gbPermiso.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,7 +198,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gpPermiso;
+        private System.Windows.Forms.GroupBox gbPermiso;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Button btnCancelar;

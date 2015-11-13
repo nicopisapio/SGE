@@ -85,8 +85,8 @@ namespace Gestor_de_Eventos
 
         private void btnNuevaReserva_Click(object sender, EventArgs e)
         {
-            this.grCalendario.Enabled = false;
-            this.grNuevaReserva.Enabled = true;
+            this.gbCalendario.Enabled = false;
+            this.gbNuevaReserva.Enabled = true;
             this.dtpHoraInicio.MinDate = this.calFecha.SelectionRange.Start.AddHours(10);
             this.dtpHoraInicio.MaxDate = this.calFecha.SelectionRange.Start.AddHours(21);
             this.dtpHoraFin.MinDate = this.calFecha.SelectionRange.Start.AddHours(12.5);
@@ -119,8 +119,8 @@ namespace Gestor_de_Eventos
                                 if (GestorBD.ObtenerInstancia().ActualizarDVV("RESERVA"))
                                 {
                                     MessageBox.Show("Se ha generado la reserva número " + idReservaNueva + " correctamente.", "Alta de Reserva", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    this.grNuevaReserva.Enabled = false;
-                                    this.grCalendario.Enabled = true;
+                                    this.gbNuevaReserva.Enabled = false;
+                                    this.gbCalendario.Enabled = true;
                                     fechaSeleccionada = calFecha.SelectionRange.Start;
                                     CargarGrilla(fechaSeleccionada);
                                 }
@@ -159,8 +159,8 @@ namespace Gestor_de_Eventos
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.grNuevaReserva.Enabled = false;
-            this.grCalendario.Enabled = true;
+            this.gbNuevaReserva.Enabled = false;
+            this.gbCalendario.Enabled = true;
         }
 
         private void CargarComboClientes()

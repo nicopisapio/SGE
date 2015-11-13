@@ -77,7 +77,6 @@ namespace Gestor_de_Eventos
                     if (reserva != null)
                     {
                         CargarDatos(reserva);
-                        HabilitarControles(true);
                     }
                 }
             }
@@ -241,8 +240,8 @@ namespace Gestor_de_Eventos
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            LimpiarControles();
             HabilitarControles(false);
+            LimpiarControles();
         }
 
         private void LimpiarControles()
@@ -364,6 +363,8 @@ namespace Gestor_de_Eventos
         {
             try
             {
+                HabilitarControles(true);
+
                 this.lblMontoTotalNvo2.Text = GestorReserva.ObtenerInstancia().CalcularCostoTotalReserva(reserva).ToString("C2");
 
                 GestorReserva.ObtenerInstancia().CalcularCantidadBebidas(reserva).ToString();

@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbBusqueda = new System.Windows.Forms.GroupBox();
             this.txtClienteDU = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblDUCliente = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblFechaHasta = new System.Windows.Forms.Label();
             this.dtpFechaHasta = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFechaDesde = new System.Windows.Forms.Label();
             this.dtpFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.gridReserva = new System.Windows.Forms.DataGridView();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -45,34 +45,34 @@
             this.txtExcedente = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.lblMontoTotalNvo2 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblMontoTotalNuevo = new System.Windows.Forms.Label();
             this.lblMontoTotalAnt2 = new System.Windows.Forms.Label();
             this.lblMontoPagado2 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.lblMontoTotalAnterior = new System.Windows.Forms.Label();
+            this.lblMontoPagado = new System.Windows.Forms.Label();
+            this.gbBusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridReserva)).BeginInit();
             this.gbCotizacion.SuspendLayout();
             this.gbExcedente.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbBusqueda
             // 
-            this.groupBox1.Controls.Add(this.txtClienteDU);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.btnBuscar);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dtpFechaHasta);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.dtpFechaDesde);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(451, 124);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Búsqueda";
+            this.gbBusqueda.Controls.Add(this.txtClienteDU);
+            this.gbBusqueda.Controls.Add(this.lblDUCliente);
+            this.gbBusqueda.Controls.Add(this.btnBuscar);
+            this.gbBusqueda.Controls.Add(this.lblFechaHasta);
+            this.gbBusqueda.Controls.Add(this.dtpFechaHasta);
+            this.gbBusqueda.Controls.Add(this.lblFechaDesde);
+            this.gbBusqueda.Controls.Add(this.dtpFechaDesde);
+            this.gbBusqueda.Location = new System.Drawing.Point(12, 12);
+            this.gbBusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbBusqueda.Name = "gbBusqueda";
+            this.gbBusqueda.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbBusqueda.Size = new System.Drawing.Size(451, 124);
+            this.gbBusqueda.TabIndex = 0;
+            this.gbBusqueda.TabStop = false;
+            this.gbBusqueda.Text = "Búsqueda";
             // 
             // txtClienteDU
             // 
@@ -82,14 +82,14 @@
             this.txtClienteDU.Size = new System.Drawing.Size(200, 22);
             this.txtClienteDU.TabIndex = 0;
             // 
-            // label3
+            // lblDUCliente
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "DU Cliente:";
+            this.lblDUCliente.AutoSize = true;
+            this.lblDUCliente.Location = new System.Drawing.Point(29, 36);
+            this.lblDUCliente.Name = "lblDUCliente";
+            this.lblDUCliente.Size = new System.Drawing.Size(79, 17);
+            this.lblDUCliente.TabIndex = 5;
+            this.lblDUCliente.Text = "DU Cliente:";
             // 
             // btnBuscar
             // 
@@ -103,14 +103,14 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // label2
+            // lblFechaHasta
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Fecha Hasta:";
+            this.lblFechaHasta.AutoSize = true;
+            this.lblFechaHasta.Location = new System.Drawing.Point(16, 94);
+            this.lblFechaHasta.Name = "lblFechaHasta";
+            this.lblFechaHasta.Size = new System.Drawing.Size(92, 17);
+            this.lblFechaHasta.TabIndex = 3;
+            this.lblFechaHasta.Text = "Fecha Hasta:";
             // 
             // dtpFechaHasta
             // 
@@ -120,14 +120,14 @@
             this.dtpFechaHasta.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaHasta.TabIndex = 2;
             // 
-            // label1
+            // lblFechaDesde
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Fecha Desde:";
+            this.lblFechaDesde.AutoSize = true;
+            this.lblFechaDesde.Location = new System.Drawing.Point(12, 66);
+            this.lblFechaDesde.Name = "lblFechaDesde";
+            this.lblFechaDesde.Size = new System.Drawing.Size(96, 17);
+            this.lblFechaDesde.TabIndex = 1;
+            this.lblFechaDesde.Text = "Fecha Desde:";
             // 
             // dtpFechaDesde
             // 
@@ -153,7 +153,7 @@
             this.gridReserva.RowTemplate.Height = 24;
             this.gridReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridReserva.Size = new System.Drawing.Size(449, 160);
-            this.gridReserva.TabIndex = 4;
+            this.gridReserva.TabIndex = 1;
             this.gridReserva.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridReserva_CellDoubleClick);
             // 
             // btnCancelar
@@ -163,7 +163,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(105, 50);
-            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -175,7 +175,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(105, 50);
-            this.btnAceptar.TabIndex = 7;
+            this.btnAceptar.TabIndex = 3;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -185,17 +185,17 @@
             this.gbCotizacion.Controls.Add(this.btnRecotizar);
             this.gbCotizacion.Controls.Add(this.gbExcedente);
             this.gbCotizacion.Controls.Add(this.lblMontoTotalNvo2);
-            this.gbCotizacion.Controls.Add(this.label18);
+            this.gbCotizacion.Controls.Add(this.lblMontoTotalNuevo);
             this.gbCotizacion.Controls.Add(this.lblMontoTotalAnt2);
             this.gbCotizacion.Controls.Add(this.lblMontoPagado2);
-            this.gbCotizacion.Controls.Add(this.label14);
-            this.gbCotizacion.Controls.Add(this.label13);
+            this.gbCotizacion.Controls.Add(this.lblMontoTotalAnterior);
+            this.gbCotizacion.Controls.Add(this.lblMontoPagado);
             this.gbCotizacion.Location = new System.Drawing.Point(13, 306);
             this.gbCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbCotizacion.Name = "gbCotizacion";
             this.gbCotizacion.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbCotizacion.Size = new System.Drawing.Size(449, 150);
-            this.gbCotizacion.TabIndex = 27;
+            this.gbCotizacion.TabIndex = 2;
             this.gbCotizacion.TabStop = false;
             this.gbCotizacion.Text = "Cotización";
             // 
@@ -206,7 +206,7 @@
             this.btnRecotizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRecotizar.Name = "btnRecotizar";
             this.btnRecotizar.Size = new System.Drawing.Size(99, 46);
-            this.btnRecotizar.TabIndex = 6;
+            this.btnRecotizar.TabIndex = 1;
             this.btnRecotizar.Text = "Recotizar";
             this.btnRecotizar.UseVisualStyleBackColor = true;
             this.btnRecotizar.Click += new System.EventHandler(this.btnRecotizar_Click);
@@ -220,7 +220,7 @@
             this.gbExcedente.Name = "gbExcedente";
             this.gbExcedente.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbExcedente.Size = new System.Drawing.Size(155, 64);
-            this.gbExcedente.TabIndex = 20;
+            this.gbExcedente.TabIndex = 0;
             this.gbExcedente.TabStop = false;
             this.gbExcedente.Text = "Ingresar Excedente";
             // 
@@ -230,7 +230,7 @@
             this.txtExcedente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtExcedente.Name = "txtExcedente";
             this.txtExcedente.Size = new System.Drawing.Size(101, 22);
-            this.txtExcedente.TabIndex = 5;
+            this.txtExcedente.TabIndex = 0;
             // 
             // label22
             // 
@@ -250,15 +250,15 @@
             this.lblMontoTotalNvo2.TabIndex = 19;
             this.lblMontoTotalNvo2.Text = "$0,00";
             // 
-            // label18
+            // lblMontoTotalNuevo
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(16, 105);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(132, 17);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "Monto Total Nuevo:";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblMontoTotalNuevo.AutoSize = true;
+            this.lblMontoTotalNuevo.Location = new System.Drawing.Point(16, 105);
+            this.lblMontoTotalNuevo.Name = "lblMontoTotalNuevo";
+            this.lblMontoTotalNuevo.Size = new System.Drawing.Size(132, 17);
+            this.lblMontoTotalNuevo.TabIndex = 18;
+            this.lblMontoTotalNuevo.Text = "Monto Total Nuevo:";
+            this.lblMontoTotalNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblMontoTotalAnt2
             // 
@@ -278,25 +278,25 @@
             this.lblMontoPagado2.TabIndex = 16;
             this.lblMontoPagado2.Text = "$0,00";
             // 
-            // label14
+            // lblMontoTotalAnterior
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 75);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(141, 17);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Monto Total Anterior:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblMontoTotalAnterior.AutoSize = true;
+            this.lblMontoTotalAnterior.Location = new System.Drawing.Point(7, 75);
+            this.lblMontoTotalAnterior.Name = "lblMontoTotalAnterior";
+            this.lblMontoTotalAnterior.Size = new System.Drawing.Size(141, 17);
+            this.lblMontoTotalAnterior.TabIndex = 1;
+            this.lblMontoTotalAnterior.Text = "Monto Total Anterior:";
+            this.lblMontoTotalAnterior.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label13
+            // lblMontoPagado
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(44, 46);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(104, 17);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Monto Pagado:";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblMontoPagado.AutoSize = true;
+            this.lblMontoPagado.Location = new System.Drawing.Point(44, 46);
+            this.lblMontoPagado.Name = "lblMontoPagado";
+            this.lblMontoPagado.Size = new System.Drawing.Size(104, 17);
+            this.lblMontoPagado.TabIndex = 0;
+            this.lblMontoPagado.Text = "Monto Pagado:";
+            this.lblMontoPagado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FAgregarExcedente
             // 
@@ -307,7 +307,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.gridReserva);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbBusqueda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(490, 567);
@@ -315,8 +315,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar Excedentes";
             this.Load += new System.EventHandler(this.FAgregarExcedente_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbBusqueda.ResumeLayout(false);
+            this.gbBusqueda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridReserva)).EndInit();
             this.gbCotizacion.ResumeLayout(false);
             this.gbCotizacion.PerformLayout();
@@ -328,14 +328,14 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbBusqueda;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblFechaHasta;
         private System.Windows.Forms.DateTimePicker dtpFechaHasta;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFechaDesde;
         private System.Windows.Forms.DateTimePicker dtpFechaDesde;
         private System.Windows.Forms.TextBox txtClienteDU;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDUCliente;
         private System.Windows.Forms.DataGridView gridReserva;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
@@ -345,10 +345,10 @@
         private System.Windows.Forms.TextBox txtExcedente;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label lblMontoTotalNvo2;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblMontoTotalNuevo;
         private System.Windows.Forms.Label lblMontoTotalAnt2;
         private System.Windows.Forms.Label lblMontoPagado2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblMontoTotalAnterior;
+        private System.Windows.Forms.Label lblMontoPagado;
     }
 }

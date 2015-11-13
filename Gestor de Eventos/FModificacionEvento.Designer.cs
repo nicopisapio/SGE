@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbBusqueda = new System.Windows.Forms.GroupBox();
             this.txtClienteDU = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -36,76 +36,76 @@
             this.dtpFechaHasta = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpFechaDesde = new System.Windows.Forms.DateTimePicker();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.gbCotizacion = new System.Windows.Forms.GroupBox();
             this.btnRecotizar = new System.Windows.Forms.Button();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.gbPago = new System.Windows.Forms.GroupBox();
             this.txtPago = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.lblMontoTotalNvo2 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblMontoTotalNuevo1 = new System.Windows.Forms.Label();
             this.lblMontoTotalAnt2 = new System.Windows.Forms.Label();
             this.lblMontoPagado2 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblMontoTotalAnterior1 = new System.Windows.Forms.Label();
+            this.lblMontoPagado1 = new System.Windows.Forms.Label();
             this.gbDetalleEvento = new System.Windows.Forms.GroupBox();
             this.lblEstado2 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.gbDuracion = new System.Windows.Forms.GroupBox();
             this.lblCantidadHoras2 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblCantidadHoras1 = new System.Windows.Forms.Label();
             this.btnQuitarDuracion = new System.Windows.Forms.Button();
             this.btnAgregarDuracion = new System.Windows.Forms.Button();
             this.lblHoraFin2 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblHoraFin1 = new System.Windows.Forms.Label();
             this.lblHoraInicio2 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblFecha1 = new System.Windows.Forms.Label();
             this.lblFecha2 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lblHoraInicio1 = new System.Windows.Forms.Label();
+            this.gbServicios = new System.Windows.Forms.GroupBox();
             this.btnQuitarServicio = new System.Windows.Forms.Button();
             this.listServicios = new System.Windows.Forms.ListBox();
             this.cboServicios = new System.Windows.Forms.ComboBox();
             this.btnAgregarServicio = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbPersonas = new System.Windows.Forms.GroupBox();
             this.btnQuitarPersonas = new System.Windows.Forms.Button();
             this.btnAgregarPersonas = new System.Windows.Forms.Button();
             this.cboPersonas = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblAdultos1 = new System.Windows.Forms.Label();
             this.lblNiños2 = new System.Windows.Forms.Label();
             this.lblAdultos2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblNiños1 = new System.Windows.Forms.Label();
             this.lblTipoEvento2 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.gridReserva = new System.Windows.Forms.DataGridView();
-            this.groupBox1.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox8.SuspendLayout();
+            this.gbBusqueda.SuspendLayout();
+            this.gbCotizacion.SuspendLayout();
+            this.gbPago.SuspendLayout();
             this.gbDetalleEvento.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbDuracion.SuspendLayout();
+            this.gbServicios.SuspendLayout();
+            this.gbPersonas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridReserva)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbBusqueda
             // 
-            this.groupBox1.Controls.Add(this.txtClienteDU);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.btnBuscar);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dtpFechaHasta);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.dtpFechaDesde);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(451, 124);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Búsqueda";
+            this.gbBusqueda.Controls.Add(this.txtClienteDU);
+            this.gbBusqueda.Controls.Add(this.label3);
+            this.gbBusqueda.Controls.Add(this.btnBuscar);
+            this.gbBusqueda.Controls.Add(this.label2);
+            this.gbBusqueda.Controls.Add(this.dtpFechaHasta);
+            this.gbBusqueda.Controls.Add(this.label1);
+            this.gbBusqueda.Controls.Add(this.dtpFechaDesde);
+            this.gbBusqueda.Location = new System.Drawing.Point(12, 12);
+            this.gbBusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbBusqueda.Name = "gbBusqueda";
+            this.gbBusqueda.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbBusqueda.Size = new System.Drawing.Size(451, 124);
+            this.gbBusqueda.TabIndex = 0;
+            this.gbBusqueda.TabStop = false;
+            this.gbBusqueda.Text = "Búsqueda";
             // 
             // txtClienteDU
             // 
@@ -170,24 +170,24 @@
             this.dtpFechaDesde.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaDesde.TabIndex = 1;
             // 
-            // groupBox6
+            // gbCotizacion
             // 
-            this.groupBox6.Controls.Add(this.btnRecotizar);
-            this.groupBox6.Controls.Add(this.groupBox8);
-            this.groupBox6.Controls.Add(this.lblMontoTotalNvo2);
-            this.groupBox6.Controls.Add(this.label18);
-            this.groupBox6.Controls.Add(this.lblMontoTotalAnt2);
-            this.groupBox6.Controls.Add(this.lblMontoPagado2);
-            this.groupBox6.Controls.Add(this.label14);
-            this.groupBox6.Controls.Add(this.label13);
-            this.groupBox6.Location = new System.Drawing.Point(339, 214);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Size = new System.Drawing.Size(436, 150);
-            this.groupBox6.TabIndex = 5;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Cotización";
+            this.gbCotizacion.Controls.Add(this.btnRecotizar);
+            this.gbCotizacion.Controls.Add(this.gbPago);
+            this.gbCotizacion.Controls.Add(this.lblMontoTotalNvo2);
+            this.gbCotizacion.Controls.Add(this.lblMontoTotalNuevo1);
+            this.gbCotizacion.Controls.Add(this.lblMontoTotalAnt2);
+            this.gbCotizacion.Controls.Add(this.lblMontoPagado2);
+            this.gbCotizacion.Controls.Add(this.lblMontoTotalAnterior1);
+            this.gbCotizacion.Controls.Add(this.lblMontoPagado1);
+            this.gbCotizacion.Location = new System.Drawing.Point(339, 214);
+            this.gbCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCotizacion.Name = "gbCotizacion";
+            this.gbCotizacion.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCotizacion.Size = new System.Drawing.Size(436, 150);
+            this.gbCotizacion.TabIndex = 3;
+            this.gbCotizacion.TabStop = false;
+            this.gbCotizacion.Text = "Cotización";
             // 
             // btnRecotizar
             // 
@@ -196,23 +196,23 @@
             this.btnRecotizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRecotizar.Name = "btnRecotizar";
             this.btnRecotizar.Size = new System.Drawing.Size(99, 46);
-            this.btnRecotizar.TabIndex = 15;
+            this.btnRecotizar.TabIndex = 1;
             this.btnRecotizar.Text = "Recotizar";
             this.btnRecotizar.UseVisualStyleBackColor = true;
             this.btnRecotizar.Click += new System.EventHandler(this.btnRecotizar_Click);
             // 
-            // groupBox8
+            // gbPago
             // 
-            this.groupBox8.Controls.Add(this.txtPago);
-            this.groupBox8.Controls.Add(this.label22);
-            this.groupBox8.Location = new System.Drawing.Point(253, 28);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox8.Size = new System.Drawing.Size(155, 64);
-            this.groupBox8.TabIndex = 20;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Ingresar Pago";
+            this.gbPago.Controls.Add(this.txtPago);
+            this.gbPago.Controls.Add(this.label22);
+            this.gbPago.Location = new System.Drawing.Point(253, 28);
+            this.gbPago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbPago.Name = "gbPago";
+            this.gbPago.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbPago.Size = new System.Drawing.Size(155, 64);
+            this.gbPago.TabIndex = 0;
+            this.gbPago.TabStop = false;
+            this.gbPago.Text = "Ingresar Pago";
             // 
             // txtPago
             // 
@@ -220,7 +220,7 @@
             this.txtPago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPago.Name = "txtPago";
             this.txtPago.Size = new System.Drawing.Size(101, 22);
-            this.txtPago.TabIndex = 14;
+            this.txtPago.TabIndex = 0;
             // 
             // label22
             // 
@@ -240,15 +240,15 @@
             this.lblMontoTotalNvo2.TabIndex = 19;
             this.lblMontoTotalNvo2.Text = "$0,00";
             // 
-            // label18
+            // lblMontoTotalNuevo1
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(16, 105);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(132, 17);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "Monto Total Nuevo:";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblMontoTotalNuevo1.AutoSize = true;
+            this.lblMontoTotalNuevo1.Location = new System.Drawing.Point(16, 105);
+            this.lblMontoTotalNuevo1.Name = "lblMontoTotalNuevo1";
+            this.lblMontoTotalNuevo1.Size = new System.Drawing.Size(132, 17);
+            this.lblMontoTotalNuevo1.TabIndex = 18;
+            this.lblMontoTotalNuevo1.Text = "Monto Total Nuevo:";
+            this.lblMontoTotalNuevo1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblMontoTotalAnt2
             // 
@@ -268,34 +268,34 @@
             this.lblMontoPagado2.TabIndex = 16;
             this.lblMontoPagado2.Text = "$0,00";
             // 
-            // label14
+            // lblMontoTotalAnterior1
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 75);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(141, 17);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Monto Total Anterior:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblMontoTotalAnterior1.AutoSize = true;
+            this.lblMontoTotalAnterior1.Location = new System.Drawing.Point(7, 75);
+            this.lblMontoTotalAnterior1.Name = "lblMontoTotalAnterior1";
+            this.lblMontoTotalAnterior1.Size = new System.Drawing.Size(141, 17);
+            this.lblMontoTotalAnterior1.TabIndex = 1;
+            this.lblMontoTotalAnterior1.Text = "Monto Total Anterior:";
+            this.lblMontoTotalAnterior1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label13
+            // lblMontoPagado1
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(44, 46);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(104, 17);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Monto Pagado:";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblMontoPagado1.AutoSize = true;
+            this.lblMontoPagado1.Location = new System.Drawing.Point(44, 46);
+            this.lblMontoPagado1.Name = "lblMontoPagado1";
+            this.lblMontoPagado1.Size = new System.Drawing.Size(104, 17);
+            this.lblMontoPagado1.TabIndex = 0;
+            this.lblMontoPagado1.Text = "Monto Pagado:";
+            this.lblMontoPagado1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // gbDetalleEvento
             // 
             this.gbDetalleEvento.Controls.Add(this.lblEstado2);
             this.gbDetalleEvento.Controls.Add(this.label21);
-            this.gbDetalleEvento.Controls.Add(this.groupBox6);
-            this.gbDetalleEvento.Controls.Add(this.groupBox7);
-            this.gbDetalleEvento.Controls.Add(this.groupBox5);
-            this.gbDetalleEvento.Controls.Add(this.groupBox3);
+            this.gbDetalleEvento.Controls.Add(this.gbCotizacion);
+            this.gbDetalleEvento.Controls.Add(this.gbDuracion);
+            this.gbDetalleEvento.Controls.Add(this.gbServicios);
+            this.gbDetalleEvento.Controls.Add(this.gbPersonas);
             this.gbDetalleEvento.Controls.Add(this.lblTipoEvento2);
             this.gbDetalleEvento.Controls.Add(this.label19);
             this.gbDetalleEvento.Enabled = false;
@@ -304,7 +304,7 @@
             this.gbDetalleEvento.Name = "gbDetalleEvento";
             this.gbDetalleEvento.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbDetalleEvento.Size = new System.Drawing.Size(781, 370);
-            this.gbDetalleEvento.TabIndex = 3;
+            this.gbDetalleEvento.TabIndex = 2;
             this.gbDetalleEvento.TabStop = false;
             this.gbDetalleEvento.Text = "Detalle de Evento";
             // 
@@ -328,26 +328,26 @@
             this.label21.Text = "Estado:";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // groupBox7
+            // gbDuracion
             // 
-            this.groupBox7.Controls.Add(this.lblCantidadHoras2);
-            this.groupBox7.Controls.Add(this.label16);
-            this.groupBox7.Controls.Add(this.btnQuitarDuracion);
-            this.groupBox7.Controls.Add(this.btnAgregarDuracion);
-            this.groupBox7.Controls.Add(this.lblHoraFin2);
-            this.groupBox7.Controls.Add(this.label10);
-            this.groupBox7.Controls.Add(this.lblHoraInicio2);
-            this.groupBox7.Controls.Add(this.label12);
-            this.groupBox7.Controls.Add(this.lblFecha2);
-            this.groupBox7.Controls.Add(this.label11);
-            this.groupBox7.Location = new System.Drawing.Point(7, 214);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox7.Size = new System.Drawing.Size(324, 150);
-            this.groupBox7.TabIndex = 17;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Duración";
+            this.gbDuracion.Controls.Add(this.lblCantidadHoras2);
+            this.gbDuracion.Controls.Add(this.lblCantidadHoras1);
+            this.gbDuracion.Controls.Add(this.btnQuitarDuracion);
+            this.gbDuracion.Controls.Add(this.btnAgregarDuracion);
+            this.gbDuracion.Controls.Add(this.lblHoraFin2);
+            this.gbDuracion.Controls.Add(this.lblHoraFin1);
+            this.gbDuracion.Controls.Add(this.lblHoraInicio2);
+            this.gbDuracion.Controls.Add(this.lblFecha1);
+            this.gbDuracion.Controls.Add(this.lblFecha2);
+            this.gbDuracion.Controls.Add(this.lblHoraInicio1);
+            this.gbDuracion.Location = new System.Drawing.Point(7, 214);
+            this.gbDuracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbDuracion.Name = "gbDuracion";
+            this.gbDuracion.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbDuracion.Size = new System.Drawing.Size(324, 150);
+            this.gbDuracion.TabIndex = 2;
+            this.gbDuracion.TabStop = false;
+            this.gbDuracion.Text = "Duración";
             // 
             // lblCantidadHoras2
             // 
@@ -358,15 +358,15 @@
             this.lblCantidadHoras2.TabIndex = 17;
             this.lblCantidadHoras2.Text = "-";
             // 
-            // label16
+            // lblCantidadHoras1
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(20, 119);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(89, 17);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "Cantidad Hs:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblCantidadHoras1.AutoSize = true;
+            this.lblCantidadHoras1.Location = new System.Drawing.Point(20, 119);
+            this.lblCantidadHoras1.Name = "lblCantidadHoras1";
+            this.lblCantidadHoras1.Size = new System.Drawing.Size(89, 17);
+            this.lblCantidadHoras1.TabIndex = 16;
+            this.lblCantidadHoras1.Text = "Cantidad Hs:";
+            this.lblCantidadHoras1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnQuitarDuracion
             // 
@@ -375,7 +375,7 @@
             this.btnQuitarDuracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarDuracion.Name = "btnQuitarDuracion";
             this.btnQuitarDuracion.Size = new System.Drawing.Size(105, 50);
-            this.btnQuitarDuracion.TabIndex = 13;
+            this.btnQuitarDuracion.TabIndex = 1;
             this.btnQuitarDuracion.Text = "Quitar";
             this.btnQuitarDuracion.UseVisualStyleBackColor = true;
             this.btnQuitarDuracion.Click += new System.EventHandler(this.btnQuitarDuracion_Click);
@@ -387,7 +387,7 @@
             this.btnAgregarDuracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarDuracion.Name = "btnAgregarDuracion";
             this.btnAgregarDuracion.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarDuracion.TabIndex = 12;
+            this.btnAgregarDuracion.TabIndex = 0;
             this.btnAgregarDuracion.Text = "Agregar";
             this.btnAgregarDuracion.UseVisualStyleBackColor = true;
             this.btnAgregarDuracion.Click += new System.EventHandler(this.btnAgregarDuracion_Click);
@@ -401,15 +401,15 @@
             this.lblHoraFin2.TabIndex = 15;
             this.lblHoraFin2.Text = "-";
             // 
-            // label10
+            // lblHoraFin1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(43, 92);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 17);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Hora Fin:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblHoraFin1.AutoSize = true;
+            this.lblHoraFin1.Location = new System.Drawing.Point(43, 92);
+            this.lblHoraFin1.Name = "lblHoraFin1";
+            this.lblHoraFin1.Size = new System.Drawing.Size(66, 17);
+            this.lblHoraFin1.TabIndex = 12;
+            this.lblHoraFin1.Text = "Hora Fin:";
+            this.lblHoraFin1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblHoraInicio2
             // 
@@ -420,16 +420,16 @@
             this.lblHoraInicio2.TabIndex = 14;
             this.lblHoraInicio2.Text = "-";
             // 
-            // label12
+            // lblFecha1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(59, 38);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 17);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "Fecha:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblFecha1.AutoSize = true;
+            this.lblFecha1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha1.Location = new System.Drawing.Point(59, 38);
+            this.lblFecha1.Name = "lblFecha1";
+            this.lblFecha1.Size = new System.Drawing.Size(51, 17);
+            this.lblFecha1.TabIndex = 10;
+            this.lblFecha1.Text = "Fecha:";
+            this.lblFecha1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblFecha2
             // 
@@ -440,31 +440,31 @@
             this.lblFecha2.TabIndex = 13;
             this.lblFecha2.Text = "-";
             // 
-            // label11
+            // lblHoraInicio1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(29, 65);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 17);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Hora Inicio:";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblHoraInicio1.AutoSize = true;
+            this.lblHoraInicio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHoraInicio1.Location = new System.Drawing.Point(29, 65);
+            this.lblHoraInicio1.Name = "lblHoraInicio1";
+            this.lblHoraInicio1.Size = new System.Drawing.Size(79, 17);
+            this.lblHoraInicio1.TabIndex = 11;
+            this.lblHoraInicio1.Text = "Hora Inicio:";
+            this.lblHoraInicio1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // groupBox5
+            // gbServicios
             // 
-            this.groupBox5.Controls.Add(this.btnQuitarServicio);
-            this.groupBox5.Controls.Add(this.listServicios);
-            this.groupBox5.Controls.Add(this.cboServicios);
-            this.groupBox5.Controls.Add(this.btnAgregarServicio);
-            this.groupBox5.Location = new System.Drawing.Point(337, 66);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Size = new System.Drawing.Size(436, 142);
-            this.groupBox5.TabIndex = 16;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Servicios Contratados";
+            this.gbServicios.Controls.Add(this.btnQuitarServicio);
+            this.gbServicios.Controls.Add(this.listServicios);
+            this.gbServicios.Controls.Add(this.cboServicios);
+            this.gbServicios.Controls.Add(this.btnAgregarServicio);
+            this.gbServicios.Location = new System.Drawing.Point(337, 66);
+            this.gbServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbServicios.Name = "gbServicios";
+            this.gbServicios.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbServicios.Size = new System.Drawing.Size(436, 142);
+            this.gbServicios.TabIndex = 1;
+            this.gbServicios.TabStop = false;
+            this.gbServicios.Text = "Servicios Contratados";
             // 
             // btnQuitarServicio
             // 
@@ -473,7 +473,7 @@
             this.btnQuitarServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarServicio.Name = "btnQuitarServicio";
             this.btnQuitarServicio.Size = new System.Drawing.Size(105, 50);
-            this.btnQuitarServicio.TabIndex = 11;
+            this.btnQuitarServicio.TabIndex = 2;
             this.btnQuitarServicio.Text = "Quitar";
             this.btnQuitarServicio.UseVisualStyleBackColor = true;
             this.btnQuitarServicio.Click += new System.EventHandler(this.btnQuitarServicio_Click);
@@ -486,7 +486,7 @@
             this.listServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listServicios.Name = "listServicios";
             this.listServicios.Size = new System.Drawing.Size(199, 100);
-            this.listServicios.TabIndex = 9;
+            this.listServicios.TabIndex = 3;
             // 
             // cboServicios
             // 
@@ -496,7 +496,7 @@
             this.cboServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboServicios.Name = "cboServicios";
             this.cboServicios.Size = new System.Drawing.Size(215, 24);
-            this.cboServicios.TabIndex = 8;
+            this.cboServicios.TabIndex = 0;
             // 
             // btnAgregarServicio
             // 
@@ -505,28 +505,28 @@
             this.btnAgregarServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarServicio.Name = "btnAgregarServicio";
             this.btnAgregarServicio.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarServicio.TabIndex = 10;
+            this.btnAgregarServicio.TabIndex = 1;
             this.btnAgregarServicio.Text = "Agregar";
             this.btnAgregarServicio.UseVisualStyleBackColor = true;
             this.btnAgregarServicio.Click += new System.EventHandler(this.btnAgregarServicio_Click);
             // 
-            // groupBox3
+            // gbPersonas
             // 
-            this.groupBox3.Controls.Add(this.btnQuitarPersonas);
-            this.groupBox3.Controls.Add(this.btnAgregarPersonas);
-            this.groupBox3.Controls.Add(this.cboPersonas);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.lblNiños2);
-            this.groupBox3.Controls.Add(this.lblAdultos2);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(7, 64);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(324, 144);
-            this.groupBox3.TabIndex = 9;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Personas";
+            this.gbPersonas.Controls.Add(this.btnQuitarPersonas);
+            this.gbPersonas.Controls.Add(this.btnAgregarPersonas);
+            this.gbPersonas.Controls.Add(this.cboPersonas);
+            this.gbPersonas.Controls.Add(this.lblAdultos1);
+            this.gbPersonas.Controls.Add(this.lblNiños2);
+            this.gbPersonas.Controls.Add(this.lblAdultos2);
+            this.gbPersonas.Controls.Add(this.lblNiños1);
+            this.gbPersonas.Location = new System.Drawing.Point(7, 64);
+            this.gbPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbPersonas.Name = "gbPersonas";
+            this.gbPersonas.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbPersonas.Size = new System.Drawing.Size(324, 144);
+            this.gbPersonas.TabIndex = 0;
+            this.gbPersonas.TabStop = false;
+            this.gbPersonas.Text = "Personas";
             // 
             // btnQuitarPersonas
             // 
@@ -535,7 +535,7 @@
             this.btnQuitarPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarPersonas.Name = "btnQuitarPersonas";
             this.btnQuitarPersonas.Size = new System.Drawing.Size(105, 50);
-            this.btnQuitarPersonas.TabIndex = 7;
+            this.btnQuitarPersonas.TabIndex = 2;
             this.btnQuitarPersonas.Text = "Quitar";
             this.btnQuitarPersonas.UseVisualStyleBackColor = true;
             this.btnQuitarPersonas.Click += new System.EventHandler(this.btnQuitarPersonas_Click);
@@ -547,7 +547,7 @@
             this.btnAgregarPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarPersonas.Name = "btnAgregarPersonas";
             this.btnAgregarPersonas.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarPersonas.TabIndex = 6;
+            this.btnAgregarPersonas.TabIndex = 1;
             this.btnAgregarPersonas.Text = "Agregar";
             this.btnAgregarPersonas.UseVisualStyleBackColor = true;
             this.btnAgregarPersonas.Click += new System.EventHandler(this.btnAgregarPersonas_Click);
@@ -563,17 +563,17 @@
             this.cboPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPersonas.Name = "cboPersonas";
             this.cboPersonas.Size = new System.Drawing.Size(159, 24);
-            this.cboPersonas.TabIndex = 5;
+            this.cboPersonas.TabIndex = 0;
             // 
-            // label4
+            // lblAdultos1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 36);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Cantidad Adultos:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblAdultos1.AutoSize = true;
+            this.lblAdultos1.Location = new System.Drawing.Point(29, 36);
+            this.lblAdultos1.Name = "lblAdultos1";
+            this.lblAdultos1.Size = new System.Drawing.Size(119, 17);
+            this.lblAdultos1.TabIndex = 1;
+            this.lblAdultos1.Text = "Cantidad Adultos:";
+            this.lblAdultos1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblNiños2
             // 
@@ -593,15 +593,15 @@
             this.lblAdultos2.TabIndex = 7;
             this.lblAdultos2.Text = "0";
             // 
-            // label5
+            // lblNiños1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 17);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Cantidad de Niños:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblNiños1.AutoSize = true;
+            this.lblNiños1.Location = new System.Drawing.Point(20, 66);
+            this.lblNiños1.Name = "lblNiños1";
+            this.lblNiños1.Size = new System.Drawing.Size(128, 17);
+            this.lblNiños1.TabIndex = 2;
+            this.lblNiños1.Text = "Cantidad de Niños:";
+            this.lblNiños1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblTipoEvento2
             // 
@@ -630,7 +630,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(105, 50);
-            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -642,7 +642,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(105, 50);
-            this.btnAceptar.TabIndex = 16;
+            this.btnAceptar.TabIndex = 3;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -663,7 +663,7 @@
             this.gridReserva.RowTemplate.Height = 24;
             this.gridReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridReserva.Size = new System.Drawing.Size(780, 165);
-            this.gridReserva.TabIndex = 4;
+            this.gridReserva.TabIndex = 1;
             this.gridReserva.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridReserva_CellDoubleClick);
             // 
             // FModificacionEvento
@@ -675,7 +675,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.gbDetalleEvento);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbBusqueda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(821, 801);
@@ -683,18 +683,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Modificación de Eventos";
             this.Load += new System.EventHandler(this.FModificacionEvento_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
+            this.gbBusqueda.ResumeLayout(false);
+            this.gbBusqueda.PerformLayout();
+            this.gbCotizacion.ResumeLayout(false);
+            this.gbCotizacion.PerformLayout();
+            this.gbPago.ResumeLayout(false);
+            this.gbPago.PerformLayout();
             this.gbDetalleEvento.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbDuracion.ResumeLayout(false);
+            this.gbDuracion.PerformLayout();
+            this.gbServicios.ResumeLayout(false);
+            this.gbPersonas.ResumeLayout(false);
+            this.gbPersonas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridReserva)).EndInit();
             this.ResumeLayout(false);
 
@@ -702,7 +702,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbBusqueda;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpFechaHasta;
@@ -710,45 +710,45 @@
         private System.Windows.Forms.DateTimePicker dtpFechaDesde;
         private System.Windows.Forms.TextBox txtClienteDU;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox gbCotizacion;
         private System.Windows.Forms.Label lblMontoTotalAnt2;
         private System.Windows.Forms.Label lblMontoPagado2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblMontoTotalAnterior1;
+        private System.Windows.Forms.Label lblMontoPagado1;
         private System.Windows.Forms.GroupBox gbDetalleEvento;
         private System.Windows.Forms.Label lblNiños2;
         private System.Windows.Forms.Label lblAdultos2;
         private System.Windows.Forms.Label lblTipoEvento2;
         private System.Windows.Forms.ListBox listServicios;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblNiños1;
+        private System.Windows.Forms.Label lblAdultos1;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbPersonas;
         private System.Windows.Forms.Button btnQuitarPersonas;
         private System.Windows.Forms.Button btnAgregarPersonas;
         private System.Windows.Forms.ComboBox cboPersonas;
         private System.Windows.Forms.Label lblHoraFin2;
         private System.Windows.Forms.Label lblHoraInicio2;
         private System.Windows.Forms.Label lblFecha2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label lblHoraFin1;
+        private System.Windows.Forms.Label lblHoraInicio1;
+        private System.Windows.Forms.Label lblFecha1;
+        private System.Windows.Forms.GroupBox gbServicios;
         private System.Windows.Forms.Button btnQuitarServicio;
         private System.Windows.Forms.Button btnAgregarServicio;
         private System.Windows.Forms.ComboBox cboServicios;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox gbDuracion;
         private System.Windows.Forms.Button btnQuitarDuracion;
         private System.Windows.Forms.Button btnAgregarDuracion;
         private System.Windows.Forms.Label lblMontoTotalNvo2;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblMontoTotalNuevo1;
         private System.Windows.Forms.Label lblEstado2;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox gbPago;
         private System.Windows.Forms.TextBox txtPago;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label lblCantidadHoras2;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblCantidadHoras1;
         private System.Windows.Forms.Button btnRecotizar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;

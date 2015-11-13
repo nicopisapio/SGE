@@ -64,7 +64,7 @@
             this.gbDatosUsuario.Name = "gbDatosUsuario";
             this.gbDatosUsuario.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbDatosUsuario.Size = new System.Drawing.Size(364, 234);
-            this.gbDatosUsuario.TabIndex = 0;
+            this.gbDatosUsuario.TabIndex = 3;
             this.gbDatosUsuario.TabStop = false;
             this.gbDatosUsuario.Text = "Datos del Usuario";
             // 
@@ -74,7 +74,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 39);
-            this.btnCancelar.TabIndex = 10;
+            this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -85,7 +85,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(85, 39);
-            this.btnAceptar.TabIndex = 9;
+            this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -98,7 +98,7 @@
             this.cboIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboIdioma.Name = "cboIdioma";
             this.cboIdioma.Size = new System.Drawing.Size(245, 24);
-            this.cboIdioma.TabIndex = 8;
+            this.cboIdioma.TabIndex = 3;
             // 
             // cboPerfil
             // 
@@ -108,7 +108,7 @@
             this.cboPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPerfil.Name = "cboPerfil";
             this.cboPerfil.Size = new System.Drawing.Size(245, 24);
-            this.cboPerfil.TabIndex = 7;
+            this.cboPerfil.TabIndex = 2;
             // 
             // txtClave
             // 
@@ -116,7 +116,7 @@
             this.txtClave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(245, 22);
-            this.txtClave.TabIndex = 6;
+            this.txtClave.TabIndex = 1;
             // 
             // txtUsuario
             // 
@@ -124,7 +124,7 @@
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(245, 22);
-            this.txtUsuario.TabIndex = 5;
+            this.txtUsuario.TabIndex = 0;
             // 
             // lblIdioma
             // 
@@ -168,7 +168,7 @@
             this.btnAlta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAlta.Name = "btnAlta";
             this.btnAlta.Size = new System.Drawing.Size(102, 58);
-            this.btnAlta.TabIndex = 1;
+            this.btnAlta.TabIndex = 0;
             this.btnAlta.Text = "Alta";
             this.btnAlta.UseVisualStyleBackColor = true;
             this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
@@ -179,7 +179,7 @@
             this.btnModificacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificacion.Name = "btnModificacion";
             this.btnModificacion.Size = new System.Drawing.Size(102, 58);
-            this.btnModificacion.TabIndex = 2;
+            this.btnModificacion.TabIndex = 1;
             this.btnModificacion.Text = "Modificación";
             this.btnModificacion.UseVisualStyleBackColor = true;
             this.btnModificacion.Click += new System.EventHandler(this.btnModificacion_Click);
@@ -190,7 +190,7 @@
             this.btnBaja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(102, 58);
-            this.btnBaja.TabIndex = 3;
+            this.btnBaja.TabIndex = 2;
             this.btnBaja.Text = "Baja";
             this.btnBaja.UseVisualStyleBackColor = true;
             this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);

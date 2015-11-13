@@ -68,6 +68,7 @@ namespace Gestor_de_Eventos
         {
             this.Operacion = Accion.Alta;
             this.gbDatosServicio.Enabled = true;
+            HabilitarControles(false);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -97,6 +98,7 @@ namespace Gestor_de_Eventos
                 if (resultado)
                 {
                     MessageBox.Show("Se ha creado/modificado el Servicio correctamente.", "Gestión de Servicios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    HabilitarControles(true);
                     this.gbDatosServicio.Enabled = false;
                     LimpiarControles();
                     CargarServicios();
@@ -131,6 +133,7 @@ namespace Gestor_de_Eventos
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            HabilitarControles(true);
             this.gbDatosServicio.Enabled = false;
             LimpiarControles();
         }
@@ -139,6 +142,8 @@ namespace Gestor_de_Eventos
         {
             try
             {
+                HabilitarControles(false);
+
                 if (this.gridServicios.CurrentRow != null)
                 {
                     this.Operacion = Accion.Modificacion;
@@ -187,6 +192,13 @@ namespace Gestor_de_Eventos
                 string mensajeError = ErrorManager.ObtenerInstancia().LoguearGenerarMensajeError(ex, MensajeError.BajaServicioFallida, FormHelper.ObtenerInstancia().TraerUltimoIdioma());
                 MessageBox.Show(mensajeError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void HabilitarControles(bool habilita)
+        {
+            this.btnAceptar.Enabled = habilita;
+            this.btnModificacion.Enabled = habilita;
+            this.btnBaja.Enabled = habilita;
         }
     }
 }

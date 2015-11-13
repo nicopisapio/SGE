@@ -32,6 +32,7 @@ namespace Gestor_de_Eventos
         {
             this.Operacion = Accion.Alta;
             this.gbDatosEmpleado.Enabled = true;
+            HabilitarControles(false);
         }
 
         private void FABMEmpleado_Load(object sender, EventArgs e)
@@ -92,6 +93,8 @@ namespace Gestor_de_Eventos
         {
             try
             {
+                HabilitarControles(false);
+
                 if (this.gridEmpleados.CurrentRow != null)
                 {
                     this.Operacion = Accion.Modificacion;
@@ -222,6 +225,7 @@ namespace Gestor_de_Eventos
                             if (resultado)
                             {
                                 MessageBox.Show("Se ha creado/modificado un nuevo Empleado.", "Gestión de Empleados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                HabilitarControles(true);
                                 this.gbDatosEmpleado.Enabled = false;
                                 this.txtDU.Enabled = true;
                                 LimpiarControles();
@@ -298,6 +302,7 @@ namespace Gestor_de_Eventos
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            HabilitarControles(true);
             this.gbDatosEmpleado.Enabled = false;
             this.txtDU.Enabled = true;
             LimpiarControles();
@@ -317,6 +322,13 @@ namespace Gestor_de_Eventos
             this.txtLocalidad.Clear();
             this.txtPiso.Clear();
             this.txtDepto.Clear();
+        }
+
+        private void HabilitarControles(bool habilita)
+        {
+            this.btnAceptar.Enabled = habilita;
+            this.btnModificacion.Enabled = habilita;
+            this.btnBaja.Enabled = habilita;
         }
     }
 }

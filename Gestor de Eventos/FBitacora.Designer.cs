@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gpFiltro = new System.Windows.Forms.GroupBox();
+            this.gbFiltro = new System.Windows.Forms.GroupBox();
             this.chkUsuario = new System.Windows.Forms.CheckBox();
             this.cboUsuario = new System.Windows.Forms.ComboBox();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -38,29 +38,29 @@
             this.lblTipo = new System.Windows.Forms.Label();
             this.gridBitacora = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.gpFiltro.SuspendLayout();
+            this.gbFiltro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBitacora)).BeginInit();
             this.SuspendLayout();
             // 
-            // gpFiltro
+            // gbFiltro
             // 
-            this.gpFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.gbFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gpFiltro.AutoSize = true;
-            this.gpFiltro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.gpFiltro.Controls.Add(this.chkUsuario);
-            this.gpFiltro.Controls.Add(this.cboUsuario);
-            this.gpFiltro.Controls.Add(this.lblUsuario);
-            this.gpFiltro.Controls.Add(this.cboTipo);
-            this.gpFiltro.Controls.Add(this.dtpFechaDesde);
-            this.gpFiltro.Controls.Add(this.lblFechaDesde);
-            this.gpFiltro.Controls.Add(this.lblTipo);
-            this.gpFiltro.Location = new System.Drawing.Point(12, 12);
-            this.gpFiltro.Name = "gpFiltro";
-            this.gpFiltro.Size = new System.Drawing.Size(611, 121);
-            this.gpFiltro.TabIndex = 0;
-            this.gpFiltro.TabStop = false;
-            this.gpFiltro.Text = "Filtros";
+            this.gbFiltro.AutoSize = true;
+            this.gbFiltro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.gbFiltro.Controls.Add(this.chkUsuario);
+            this.gbFiltro.Controls.Add(this.cboUsuario);
+            this.gbFiltro.Controls.Add(this.lblUsuario);
+            this.gbFiltro.Controls.Add(this.cboTipo);
+            this.gbFiltro.Controls.Add(this.dtpFechaDesde);
+            this.gbFiltro.Controls.Add(this.lblFechaDesde);
+            this.gbFiltro.Controls.Add(this.lblTipo);
+            this.gbFiltro.Location = new System.Drawing.Point(12, 12);
+            this.gbFiltro.Name = "gbFiltro";
+            this.gbFiltro.Size = new System.Drawing.Size(611, 121);
+            this.gbFiltro.TabIndex = 0;
+            this.gbFiltro.TabStop = false;
+            this.gbFiltro.Text = "Filtros";
             // 
             // chkUsuario
             // 
@@ -68,7 +68,7 @@
             this.chkUsuario.Location = new System.Drawing.Point(405, 40);
             this.chkUsuario.Name = "chkUsuario";
             this.chkUsuario.Size = new System.Drawing.Size(152, 21);
-            this.chkUsuario.TabIndex = 3;
+            this.chkUsuario.TabIndex = 2;
             this.chkUsuario.Text = "Buscar por Usuario";
             this.chkUsuario.UseVisualStyleBackColor = true;
             this.chkUsuario.CheckedChanged += new System.EventHandler(this.chkUsuario_CheckedChanged);
@@ -80,7 +80,7 @@
             this.cboUsuario.Location = new System.Drawing.Point(405, 76);
             this.cboUsuario.Name = "cboUsuario";
             this.cboUsuario.Size = new System.Drawing.Size(200, 24);
-            this.cboUsuario.TabIndex = 4;
+            this.cboUsuario.TabIndex = 3;
             // 
             // lblUsuario
             // 
@@ -99,14 +99,14 @@
             this.cboTipo.Location = new System.Drawing.Point(121, 38);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(200, 24);
-            this.cboTipo.TabIndex = 1;
+            this.cboTipo.TabIndex = 0;
             // 
             // dtpFechaDesde
             // 
             this.dtpFechaDesde.Location = new System.Drawing.Point(121, 78);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
             this.dtpFechaDesde.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechaDesde.TabIndex = 2;
+            this.dtpFechaDesde.TabIndex = 1;
             // 
             // lblFechaDesde
             // 
@@ -139,14 +139,14 @@
             this.gridBitacora.RowHeadersVisible = false;
             this.gridBitacora.RowTemplate.Height = 24;
             this.gridBitacora.Size = new System.Drawing.Size(729, 384);
-            this.gridBitacora.TabIndex = 6;
+            this.gridBitacora.TabIndex = 2;
             // 
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(643, 50);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(97, 58);
-            this.btnBuscar.TabIndex = 5;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -158,14 +158,14 @@
             this.ClientSize = new System.Drawing.Size(751, 545);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.gridBitacora);
-            this.Controls.Add(this.gpFiltro);
+            this.Controls.Add(this.gbFiltro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(769, 592);
             this.Name = "FBitacora";
             this.Text = "Bitácora";
             this.Load += new System.EventHandler(this.FBitacora_Load);
-            this.gpFiltro.ResumeLayout(false);
-            this.gpFiltro.PerformLayout();
+            this.gbFiltro.ResumeLayout(false);
+            this.gbFiltro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBitacora)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -174,7 +174,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gpFiltro;
+        private System.Windows.Forms.GroupBox gbFiltro;
         private System.Windows.Forms.DateTimePicker dtpFechaDesde;
         private System.Windows.Forms.Label lblFechaDesde;
         private System.Windows.Forms.Label lblTipo;

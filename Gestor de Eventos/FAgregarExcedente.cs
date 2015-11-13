@@ -104,6 +104,7 @@ namespace Gestor_de_Eventos
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            HabilitarControles(false);
             LimpiarControles();
         }
 
@@ -123,6 +124,7 @@ namespace Gestor_de_Eventos
         {
             try
             {
+                HabilitarControles(true);
                 this.lblMontoTotalNvo2.Text = GestorReserva.ObtenerInstancia().CalcularCostoTotalReserva(reserva).ToString("C2");
             }
             catch (Exception ex)
@@ -153,6 +155,7 @@ namespace Gestor_de_Eventos
                             if (GestorBD.ObtenerInstancia().ActualizarDVV("RESERVA"))
                             {
                                 MessageBox.Show("El excedente se ha guardado con éxito.", "Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                HabilitarControles(false);
                             }
                         }
                     }
@@ -184,6 +187,14 @@ namespace Gestor_de_Eventos
                 string mensajeError = ErrorManager.ObtenerInstancia().LoguearGenerarMensajeError(ex, MensajeError.TraduccionFallida, FormHelper.ObtenerInstancia().TraerUltimoIdioma());
                 MessageBox.Show(mensajeError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            HabilitarControles(false);
+        }
+
+        private void HabilitarControles(bool habilita)
+        {
+            this.btnAceptar.Enabled = habilita;
+            this.btnCancelar.Enabled = habilita;
         }
     }
 }

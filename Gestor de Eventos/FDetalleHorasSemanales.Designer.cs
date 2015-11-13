@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gpFecha = new System.Windows.Forms.GroupBox();
+            this.gbFecha = new System.Windows.Forms.GroupBox();
             this.Semana = new System.Windows.Forms.Label();
             this.lblMes = new System.Windows.Forms.Label();
             this.lblAño = new System.Windows.Forms.Label();
@@ -37,53 +37,53 @@
             this.cboAño = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.gridDetalleHoras = new System.Windows.Forms.DataGridView();
-            this.gpFecha.SuspendLayout();
+            this.gbFecha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridDetalleHoras)).BeginInit();
             this.SuspendLayout();
             // 
-            // gpFecha
+            // gbFecha
             // 
-            this.gpFecha.Controls.Add(this.Semana);
-            this.gpFecha.Controls.Add(this.lblMes);
-            this.gpFecha.Controls.Add(this.lblAño);
-            this.gpFecha.Controls.Add(this.cboSemana);
-            this.gpFecha.Controls.Add(this.cboMes);
-            this.gpFecha.Controls.Add(this.cboAño);
-            this.gpFecha.Location = new System.Drawing.Point(12, 12);
-            this.gpFecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gpFecha.Name = "gpFecha";
-            this.gpFecha.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gpFecha.Size = new System.Drawing.Size(245, 161);
-            this.gpFecha.TabIndex = 0;
-            this.gpFecha.TabStop = false;
-            this.gpFecha.Text = "Fecha";
+            this.gbFecha.Controls.Add(this.Semana);
+            this.gbFecha.Controls.Add(this.lblMes);
+            this.gbFecha.Controls.Add(this.lblAño);
+            this.gbFecha.Controls.Add(this.cboSemana);
+            this.gbFecha.Controls.Add(this.cboMes);
+            this.gbFecha.Controls.Add(this.cboAño);
+            this.gbFecha.Location = new System.Drawing.Point(12, 12);
+            this.gbFecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbFecha.Name = "gbFecha";
+            this.gbFecha.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbFecha.Size = new System.Drawing.Size(245, 161);
+            this.gbFecha.TabIndex = 0;
+            this.gbFecha.TabStop = false;
+            this.gbFecha.Text = "Fecha";
             // 
             // Semana
             // 
             this.Semana.AutoSize = true;
             this.Semana.Location = new System.Drawing.Point(20, 118);
             this.Semana.Name = "Semana";
-            this.Semana.Size = new System.Drawing.Size(60, 17);
+            this.Semana.Size = new System.Drawing.Size(64, 17);
             this.Semana.TabIndex = 5;
-            this.Semana.Text = "Semana";
+            this.Semana.Text = "Semana:";
             // 
             // lblMes
             // 
             this.lblMes.AutoSize = true;
             this.lblMes.Location = new System.Drawing.Point(45, 78);
             this.lblMes.Name = "lblMes";
-            this.lblMes.Size = new System.Drawing.Size(34, 17);
+            this.lblMes.Size = new System.Drawing.Size(38, 17);
             this.lblMes.TabIndex = 4;
-            this.lblMes.Text = "Mes";
+            this.lblMes.Text = "Mes:";
             // 
             // lblAño
             // 
             this.lblAño.AutoSize = true;
             this.lblAño.Location = new System.Drawing.Point(45, 39);
             this.lblAño.Name = "lblAño";
-            this.lblAño.Size = new System.Drawing.Size(33, 17);
+            this.lblAño.Size = new System.Drawing.Size(37, 17);
             this.lblAño.TabIndex = 1;
-            this.lblAño.Text = "Año";
+            this.lblAño.Text = "Año:";
             // 
             // cboSemana
             // 
@@ -123,7 +123,7 @@
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 68);
-            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -143,7 +143,7 @@
             this.gridDetalleHoras.RowHeadersVisible = false;
             this.gridDetalleHoras.RowTemplate.Height = 24;
             this.gridDetalleHoras.Size = new System.Drawing.Size(616, 305);
-            this.gridDetalleHoras.TabIndex = 4;
+            this.gridDetalleHoras.TabIndex = 2;
             // 
             // FDetalleHorasSemanales
             // 
@@ -152,15 +152,15 @@
             this.ClientSize = new System.Drawing.Size(640, 510);
             this.Controls.Add(this.gridDetalleHoras);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.gpFecha);
+            this.Controls.Add(this.gbFecha);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(658, 557);
             this.Name = "FDetalleHorasSemanales";
             this.Text = "Detalle de Horas Semanales";
             this.Load += new System.EventHandler(this.FDetalleHorasSemanales_Load);
-            this.gpFecha.ResumeLayout(false);
-            this.gpFecha.PerformLayout();
+            this.gbFecha.ResumeLayout(false);
+            this.gbFecha.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridDetalleHoras)).EndInit();
             this.ResumeLayout(false);
 
@@ -168,7 +168,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gpFecha;
+        private System.Windows.Forms.GroupBox gbFecha;
         private System.Windows.Forms.Label Semana;
         private System.Windows.Forms.Label lblMes;
         private System.Windows.Forms.Label lblAño;

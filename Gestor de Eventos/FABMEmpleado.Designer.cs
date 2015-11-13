@@ -80,7 +80,7 @@
             this.gridEmpleados.RowTemplate.Height = 24;
             this.gridEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridEmpleados.Size = new System.Drawing.Size(678, 344);
-            this.gridEmpleados.TabIndex = 16;
+            this.gridEmpleados.TabIndex = 4;
             // 
             // btnBaja
             // 
@@ -136,7 +136,7 @@
             this.gbDatosEmpleado.Name = "gbDatosEmpleado";
             this.gbDatosEmpleado.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbDatosEmpleado.Size = new System.Drawing.Size(563, 266);
-            this.gbDatosEmpleado.TabIndex = 12;
+            this.gbDatosEmpleado.TabIndex = 3;
             this.gbDatosEmpleado.TabStop = false;
             this.gbDatosEmpleado.Text = "Datos del Empleado";
             // 
@@ -148,7 +148,7 @@
             this.cboCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCargo.Name = "cboCargo";
             this.cboCargo.Size = new System.Drawing.Size(151, 24);
-            this.cboCargo.TabIndex = 7;
+            this.cboCargo.TabIndex = 8;
             // 
             // lblCargo
             // 
@@ -166,7 +166,7 @@
             this.chkActivo.Location = new System.Drawing.Point(169, 217);
             this.chkActivo.Name = "chkActivo";
             this.chkActivo.Size = new System.Drawing.Size(68, 21);
-            this.chkActivo.TabIndex = 8;
+            this.chkActivo.TabIndex = 9;
             this.chkActivo.Text = "Activo";
             this.chkActivo.UseVisualStyleBackColor = true;
             // 
@@ -185,7 +185,7 @@
             this.gbDireccion.Location = new System.Drawing.Point(276, 24);
             this.gbDireccion.Name = "gbDireccion";
             this.gbDireccion.Size = new System.Drawing.Size(275, 180);
-            this.gbDireccion.TabIndex = 12;
+            this.gbDireccion.TabIndex = 10;
             this.gbDireccion.TabStop = false;
             this.gbDireccion.Text = "Dirección";
             // 
@@ -195,7 +195,7 @@
             this.txtDepto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDepto.Name = "txtDepto";
             this.txtDepto.Size = new System.Drawing.Size(40, 22);
-            this.txtDepto.TabIndex = 13;
+            this.txtDepto.TabIndex = 4;
             // 
             // lblDpto
             // 
@@ -212,7 +212,7 @@
             this.txtPiso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPiso.Name = "txtPiso";
             this.txtPiso.Size = new System.Drawing.Size(40, 22);
-            this.txtPiso.TabIndex = 12;
+            this.txtPiso.TabIndex = 3;
             // 
             // lblPiso
             // 
@@ -229,7 +229,7 @@
             this.txtLocalidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(151, 22);
-            this.txtLocalidad.TabIndex = 11;
+            this.txtLocalidad.TabIndex = 2;
             // 
             // lblLocalidad
             // 
@@ -246,7 +246,7 @@
             this.txtAltura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(151, 22);
-            this.txtAltura.TabIndex = 10;
+            this.txtAltura.TabIndex = 1;
             // 
             // txtCalle
             // 
@@ -254,7 +254,7 @@
             this.txtCalle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(151, 22);
-            this.txtCalle.TabIndex = 9;
+            this.txtCalle.TabIndex = 0;
             // 
             // lblAltura
             // 
@@ -280,7 +280,7 @@
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(151, 22);
-            this.txtTelefono.TabIndex = 6;
+            this.txtTelefono.TabIndex = 7;
             // 
             // lblTelefono
             // 
@@ -297,7 +297,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(151, 22);
-            this.txtNombre.TabIndex = 5;
+            this.txtNombre.TabIndex = 6;
             // 
             // lblNombre
             // 
@@ -314,7 +314,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 39);
-            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -325,7 +325,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(85, 39);
-            this.btnAceptar.TabIndex = 14;
+            this.btnAceptar.TabIndex = 11;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -336,7 +336,7 @@
             this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(151, 22);
-            this.txtApellido.TabIndex = 4;
+            this.txtApellido.TabIndex = 5;
             // 
             // txtDU
             // 
@@ -344,7 +344,7 @@
             this.txtDU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDU.Name = "txtDU";
             this.txtDU.Size = new System.Drawing.Size(151, 22);
-            this.txtDU.TabIndex = 3;
+            this.txtDU.TabIndex = 4;
             // 
             // lblApellido
             // 

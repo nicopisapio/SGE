@@ -28,22 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbBusqueda = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblFechaHasta = new System.Windows.Forms.Label();
             this.dtpFechaHasta = new System.Windows.Forms.DateTimePicker();
             this.lblFechaDesde = new System.Windows.Forms.Label();
             this.dtpFechaDesde = new System.Windows.Forms.DateTimePicker();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.gridReserva = new System.Windows.Forms.DataGridView();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbDetalles = new System.Windows.Forms.GroupBox();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.gbCotizacion = new System.Windows.Forms.GroupBox();
             this.lblMontoTotal2 = new System.Windows.Forms.Label();
             this.lblMontoPagado2 = new System.Windows.Forms.Label();
             this.lblMontoTotal1 = new System.Windows.Forms.Label();
             this.lblMontoPagado1 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.gbCliente = new System.Windows.Forms.GroupBox();
             this.lblDireccion2 = new System.Windows.Forms.Label();
             this.lblTel2 = new System.Windows.Forms.Label();
             this.lblNombre2 = new System.Windows.Forms.Label();
@@ -54,7 +52,7 @@
             this.lblNombre1 = new System.Windows.Forms.Label();
             this.lblApellido1 = new System.Windows.Forms.Label();
             this.lblDUCliente1 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gbEvento = new System.Windows.Forms.GroupBox();
             this.lblExcedente2 = new System.Windows.Forms.Label();
             this.lblExcedente1 = new System.Windows.Forms.Label();
             this.lblEmpleadosNecesarios2 = new System.Windows.Forms.Label();
@@ -67,30 +65,30 @@
             this.lblCantidadNiños1 = new System.Windows.Forms.Label();
             this.lblCantidadAdultos1 = new System.Windows.Forms.Label();
             this.lblTipoEvento1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gridReserva = new System.Windows.Forms.DataGridView();
+            this.gbBusqueda.SuspendLayout();
+            this.gbDetalles.SuspendLayout();
+            this.gbCotizacion.SuspendLayout();
+            this.gbCliente.SuspendLayout();
+            this.gbEvento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridReserva)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbBusqueda
             // 
-            this.groupBox1.Controls.Add(this.btnBuscar);
-            this.groupBox1.Controls.Add(this.lblFechaHasta);
-            this.groupBox1.Controls.Add(this.dtpFechaHasta);
-            this.groupBox1.Controls.Add(this.lblFechaDesde);
-            this.groupBox1.Controls.Add(this.dtpFechaDesde);
-            this.groupBox1.Location = new System.Drawing.Point(13, 14);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(452, 100);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Búsqueda";
+            this.gbBusqueda.Controls.Add(this.btnBuscar);
+            this.gbBusqueda.Controls.Add(this.lblFechaHasta);
+            this.gbBusqueda.Controls.Add(this.dtpFechaHasta);
+            this.gbBusqueda.Controls.Add(this.lblFechaDesde);
+            this.gbBusqueda.Controls.Add(this.dtpFechaDesde);
+            this.gbBusqueda.Location = new System.Drawing.Point(13, 14);
+            this.gbBusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbBusqueda.Name = "gbBusqueda";
+            this.gbBusqueda.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbBusqueda.Size = new System.Drawing.Size(452, 100);
+            this.gbBusqueda.TabIndex = 0;
+            this.gbBusqueda.TabStop = false;
+            this.gbBusqueda.Text = "Búsqueda";
             // 
             // btnBuscar
             // 
@@ -138,78 +136,46 @@
             this.dtpFechaDesde.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaDesde.TabIndex = 0;
             // 
-            // groupBox2
+            // gbDetalles
             // 
-            this.groupBox2.Controls.Add(this.gridReserva);
-            this.groupBox2.Location = new System.Drawing.Point(13, 121);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(661, 167);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Eventos";
-            // 
-            // gridReserva
-            // 
-            this.gridReserva.AllowUserToAddRows = false;
-            this.gridReserva.AllowUserToDeleteRows = false;
-            this.gridReserva.AllowUserToResizeRows = false;
-            this.gridReserva.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridReserva.Location = new System.Drawing.Point(7, 22);
-            this.gridReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridReserva.MultiSelect = false;
-            this.gridReserva.Name = "gridReserva";
-            this.gridReserva.ReadOnly = true;
-            this.gridReserva.RowHeadersVisible = false;
-            this.gridReserva.RowTemplate.Height = 24;
-            this.gridReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridReserva.Size = new System.Drawing.Size(647, 140);
-            this.gridReserva.TabIndex = 3;
-            this.gridReserva.SelectionChanged += new System.EventHandler(this.gridReserva_SelectionChanged);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btnModificar);
-            this.groupBox3.Controls.Add(this.groupBox6);
-            this.groupBox3.Controls.Add(this.groupBox5);
-            this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Location = new System.Drawing.Point(13, 295);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(661, 273);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Detalles";
+            this.gbDetalles.Controls.Add(this.btnModificar);
+            this.gbDetalles.Controls.Add(this.gbCotizacion);
+            this.gbDetalles.Controls.Add(this.gbCliente);
+            this.gbDetalles.Controls.Add(this.gbEvento);
+            this.gbDetalles.Location = new System.Drawing.Point(13, 295);
+            this.gbDetalles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbDetalles.Name = "gbDetalles";
+            this.gbDetalles.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbDetalles.Size = new System.Drawing.Size(661, 273);
+            this.gbDetalles.TabIndex = 2;
+            this.gbDetalles.TabStop = false;
+            this.gbDetalles.Text = "Detalles";
             // 
             // btnModificar
             // 
             this.btnModificar.ForeColor = System.Drawing.Color.Navy;
-            this.btnModificar.Location = new System.Drawing.Point(549, 185);
+            this.btnModificar.Location = new System.Drawing.Point(549, 193);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(105, 82);
-            this.btnModificar.TabIndex = 4;
+            this.btnModificar.Size = new System.Drawing.Size(105, 74);
+            this.btnModificar.TabIndex = 3;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // groupBox6
+            // gbCotizacion
             // 
-            this.groupBox6.Controls.Add(this.lblMontoTotal2);
-            this.groupBox6.Controls.Add(this.lblMontoPagado2);
-            this.groupBox6.Controls.Add(this.lblMontoTotal1);
-            this.groupBox6.Controls.Add(this.lblMontoPagado1);
-            this.groupBox6.Location = new System.Drawing.Point(284, 185);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Size = new System.Drawing.Size(259, 82);
-            this.groupBox6.TabIndex = 2;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Cotización";
+            this.gbCotizacion.Controls.Add(this.lblMontoTotal2);
+            this.gbCotizacion.Controls.Add(this.lblMontoPagado2);
+            this.gbCotizacion.Controls.Add(this.lblMontoTotal1);
+            this.gbCotizacion.Controls.Add(this.lblMontoPagado1);
+            this.gbCotizacion.Location = new System.Drawing.Point(284, 185);
+            this.gbCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCotizacion.Name = "gbCotizacion";
+            this.gbCotizacion.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCotizacion.Size = new System.Drawing.Size(259, 82);
+            this.gbCotizacion.TabIndex = 2;
+            this.gbCotizacion.TabStop = false;
+            this.gbCotizacion.Text = "Cotización";
             // 
             // lblMontoTotal2
             // 
@@ -249,26 +215,26 @@
             this.lblMontoPagado1.Text = "Monto Pagado:";
             this.lblMontoPagado1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // groupBox5
+            // gbCliente
             // 
-            this.groupBox5.Controls.Add(this.lblDireccion2);
-            this.groupBox5.Controls.Add(this.lblTel2);
-            this.groupBox5.Controls.Add(this.lblNombre2);
-            this.groupBox5.Controls.Add(this.lblApellido2);
-            this.groupBox5.Controls.Add(this.lblDUCliente2);
-            this.groupBox5.Controls.Add(this.lblDireccion1);
-            this.groupBox5.Controls.Add(this.lblTel1);
-            this.groupBox5.Controls.Add(this.lblNombre1);
-            this.groupBox5.Controls.Add(this.lblApellido1);
-            this.groupBox5.Controls.Add(this.lblDUCliente1);
-            this.groupBox5.Location = new System.Drawing.Point(284, 22);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Size = new System.Drawing.Size(371, 156);
-            this.groupBox5.TabIndex = 1;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Cliente";
+            this.gbCliente.Controls.Add(this.lblDireccion2);
+            this.gbCliente.Controls.Add(this.lblTel2);
+            this.gbCliente.Controls.Add(this.lblNombre2);
+            this.gbCliente.Controls.Add(this.lblApellido2);
+            this.gbCliente.Controls.Add(this.lblDUCliente2);
+            this.gbCliente.Controls.Add(this.lblDireccion1);
+            this.gbCliente.Controls.Add(this.lblTel1);
+            this.gbCliente.Controls.Add(this.lblNombre1);
+            this.gbCliente.Controls.Add(this.lblApellido1);
+            this.gbCliente.Controls.Add(this.lblDUCliente1);
+            this.gbCliente.Location = new System.Drawing.Point(284, 22);
+            this.gbCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCliente.Name = "gbCliente";
+            this.gbCliente.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCliente.Size = new System.Drawing.Size(371, 156);
+            this.gbCliente.TabIndex = 1;
+            this.gbCliente.TabStop = false;
+            this.gbCliente.Text = "Cliente";
             // 
             // lblDireccion2
             // 
@@ -365,28 +331,28 @@
             this.lblDUCliente1.Text = "DU:";
             this.lblDUCliente1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // groupBox4
+            // gbEvento
             // 
-            this.groupBox4.Controls.Add(this.lblExcedente2);
-            this.groupBox4.Controls.Add(this.lblExcedente1);
-            this.groupBox4.Controls.Add(this.lblEmpleadosNecesarios2);
-            this.groupBox4.Controls.Add(this.lblCantidadNiños2);
-            this.groupBox4.Controls.Add(this.lblCantidadAdultos2);
-            this.groupBox4.Controls.Add(this.lblTipoEvento2);
-            this.groupBox4.Controls.Add(this.listServicios);
-            this.groupBox4.Controls.Add(this.lblServicios);
-            this.groupBox4.Controls.Add(this.lblEmpleadosNecesarios1);
-            this.groupBox4.Controls.Add(this.lblCantidadNiños1);
-            this.groupBox4.Controls.Add(this.lblCantidadAdultos1);
-            this.groupBox4.Controls.Add(this.lblTipoEvento1);
-            this.groupBox4.Location = new System.Drawing.Point(9, 22);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(269, 245);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Evento";
+            this.gbEvento.Controls.Add(this.lblExcedente2);
+            this.gbEvento.Controls.Add(this.lblExcedente1);
+            this.gbEvento.Controls.Add(this.lblEmpleadosNecesarios2);
+            this.gbEvento.Controls.Add(this.lblCantidadNiños2);
+            this.gbEvento.Controls.Add(this.lblCantidadAdultos2);
+            this.gbEvento.Controls.Add(this.lblTipoEvento2);
+            this.gbEvento.Controls.Add(this.listServicios);
+            this.gbEvento.Controls.Add(this.lblServicios);
+            this.gbEvento.Controls.Add(this.lblEmpleadosNecesarios1);
+            this.gbEvento.Controls.Add(this.lblCantidadNiños1);
+            this.gbEvento.Controls.Add(this.lblCantidadAdultos1);
+            this.gbEvento.Controls.Add(this.lblTipoEvento1);
+            this.gbEvento.Location = new System.Drawing.Point(9, 22);
+            this.gbEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbEvento.Name = "gbEvento";
+            this.gbEvento.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbEvento.Size = new System.Drawing.Size(269, 245);
+            this.gbEvento.TabIndex = 0;
+            this.gbEvento.TabStop = false;
+            this.gbEvento.Text = "Evento";
             // 
             // lblExcedente2
             // 
@@ -502,14 +468,33 @@
             this.lblTipoEvento1.Text = "Tipo de Evento:";
             this.lblTipoEvento1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // gridReserva
+            // 
+            this.gridReserva.AllowUserToAddRows = false;
+            this.gridReserva.AllowUserToDeleteRows = false;
+            this.gridReserva.AllowUserToResizeRows = false;
+            this.gridReserva.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridReserva.Location = new System.Drawing.Point(13, 118);
+            this.gridReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridReserva.MultiSelect = false;
+            this.gridReserva.Name = "gridReserva";
+            this.gridReserva.ReadOnly = true;
+            this.gridReserva.RowHeadersVisible = false;
+            this.gridReserva.RowTemplate.Height = 24;
+            this.gridReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridReserva.Size = new System.Drawing.Size(661, 173);
+            this.gridReserva.TabIndex = 1;
+            // 
             // FDetalleEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(683, 574);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gridReserva);
+            this.Controls.Add(this.gbDetalles);
+            this.Controls.Add(this.gbBusqueda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(701, 621);
@@ -517,46 +502,43 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Detalle de Eventos";
             this.Load += new System.EventHandler(this.FDetalleEvento_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.gbBusqueda.ResumeLayout(false);
+            this.gbBusqueda.PerformLayout();
+            this.gbDetalles.ResumeLayout(false);
+            this.gbCotizacion.ResumeLayout(false);
+            this.gbCotizacion.PerformLayout();
+            this.gbCliente.ResumeLayout(false);
+            this.gbCliente.PerformLayout();
+            this.gbEvento.ResumeLayout(false);
+            this.gbEvento.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridReserva)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbBusqueda;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label lblFechaHasta;
         private System.Windows.Forms.DateTimePicker dtpFechaHasta;
         private System.Windows.Forms.Label lblFechaDesde;
         private System.Windows.Forms.DateTimePicker dtpFechaDesde;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView gridReserva;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gbDetalles;
+        private System.Windows.Forms.GroupBox gbEvento;
         private System.Windows.Forms.Label lblServicios;
         private System.Windows.Forms.Label lblEmpleadosNecesarios1;
         private System.Windows.Forms.Label lblCantidadNiños1;
         private System.Windows.Forms.Label lblCantidadAdultos1;
         private System.Windows.Forms.Label lblTipoEvento1;
         private System.Windows.Forms.ListBox listServicios;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox gbCliente;
         private System.Windows.Forms.Label lblDireccion1;
         private System.Windows.Forms.Label lblTel1;
         private System.Windows.Forms.Label lblNombre1;
         private System.Windows.Forms.Label lblApellido1;
         private System.Windows.Forms.Label lblDUCliente1;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox gbCotizacion;
         private System.Windows.Forms.Label lblMontoTotal1;
         private System.Windows.Forms.Label lblMontoPagado1;
         private System.Windows.Forms.Button btnModificar;
@@ -573,5 +555,6 @@
         private System.Windows.Forms.Label lblTipoEvento2;
         private System.Windows.Forms.Label lblExcedente2;
         private System.Windows.Forms.Label lblExcedente1;
+        private System.Windows.Forms.DataGridView gridReserva;
     }
 }

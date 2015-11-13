@@ -43,7 +43,7 @@ namespace Gestor_de_Eventos
                 MessageBox.Show(mensajeError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            HabilitarControles(false);
+            this.gbDatosUsuario.Enabled = false;
 
             CargarUsuarios();
             CargarPermisos();
@@ -118,6 +118,7 @@ namespace Gestor_de_Eventos
         private void btnAlta_Click(object sender, EventArgs e)
         {
             this.Operacion = FABMUsuario.Accion.Alta;
+            this.gbDatosUsuario.Enabled = true;
             HabilitarControles(true);
         }
 
@@ -148,7 +149,8 @@ namespace Gestor_de_Eventos
                     if (GestorBD.ObtenerInstancia().ActualizarDVV("USUARIO"))
                     {
                         MessageBox.Show("Se ha creado/modificado el usuario correctamente");
-                        HabilitarControles(false);
+                        HabilitarControles(true);
+                        this.gbDatosUsuario.Enabled = false;
                         LimpiarControles();
                         CargarUsuarios();   
                     }
@@ -173,14 +175,11 @@ namespace Gestor_de_Eventos
             }
         }
 
-        private void HabilitarControles(bool bHabilita)
+        private void HabilitarControles(bool habilita)
         {
-            this.txtUsuario.Enabled = bHabilita;
-            this.txtClave.Enabled = bHabilita;
-            this.cboIdioma.Enabled = bHabilita;
-            this.cboPerfil.Enabled = bHabilita;
-            this.btnAceptar.Enabled = bHabilita;
-            this.btnCancelar.Enabled = bHabilita;
+            this.btnAceptar.Enabled = habilita;
+            this.btnModificacion.Enabled = habilita;
+            this.btnBaja.Enabled = habilita;
         }
 
         private void LimpiarControles()
@@ -193,7 +192,8 @@ namespace Gestor_de_Eventos
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            HabilitarControles(false);
+            HabilitarControles(true);
+            this.gbDatosUsuario.Enabled = false;
             LimpiarControles();
         }
 
@@ -201,6 +201,8 @@ namespace Gestor_de_Eventos
         {
             try
             {
+                HabilitarControles(false);
+
                 if (gridUsuarios.SelectedRows.Count != 0)
                 {
                     this.Operacion = FABMUsuario.Accion.Modificacion;

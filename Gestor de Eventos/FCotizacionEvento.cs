@@ -81,10 +81,14 @@ namespace Gestor_de_Eventos
 
         private void HabilitarControles(bool habilitado)
         {
-            this.gpEvento.Enabled = habilitado;
+            this.gbEvento.Enabled = habilitado;
             this.gpPersonas.Enabled = habilitado;
             this.gpServicios.Enabled = habilitado;
-            this.gpCotizacion.Enabled = habilitado;
+            this.gbCotizacion.Enabled = habilitado;
+            this.gbEmpleados.Enabled = habilitado;
+            this.gbInfo.Enabled = habilitado;
+            this.btnAceptar.Enabled = habilitado;
+            this.btnCancelar.Enabled = habilitado;
         }
 
         private void CargarDatosReserva(Reserva res)
@@ -348,6 +352,9 @@ namespace Gestor_de_Eventos
                 string mensajeError = ErrorManager.ObtenerInstancia().LoguearGenerarMensajeError(ex, MensajeError.TraduccionFallida, FormHelper.ObtenerInstancia().TraerUltimoIdioma());
                 MessageBox.Show(mensajeError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            HabilitarControles(false);
         }
+
     }
 }

@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gpNuevoIdioma = new System.Windows.Forms.GroupBox();
+            this.gbNuevoIdioma = new System.Windows.Forms.GroupBox();
             this.cboCulturas = new System.Windows.Forms.ComboBox();
             this.txtNombreIdioma = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCultura = new System.Windows.Forms.Label();
             this.lblNombreIdioma = new System.Windows.Forms.Label();
             this.gridTraduccion = new System.Windows.Forms.DataGridView();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.gpNuevoIdioma.SuspendLayout();
+            this.gbNuevoIdioma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTraduccion)).BeginInit();
             this.SuspendLayout();
             // 
-            // gpNuevoIdioma
+            // gbNuevoIdioma
             // 
-            this.gpNuevoIdioma.Controls.Add(this.cboCulturas);
-            this.gpNuevoIdioma.Controls.Add(this.txtNombreIdioma);
-            this.gpNuevoIdioma.Controls.Add(this.label1);
-            this.gpNuevoIdioma.Controls.Add(this.lblNombreIdioma);
-            this.gpNuevoIdioma.Location = new System.Drawing.Point(12, 12);
-            this.gpNuevoIdioma.Name = "gpNuevoIdioma";
-            this.gpNuevoIdioma.Size = new System.Drawing.Size(451, 113);
-            this.gpNuevoIdioma.TabIndex = 0;
-            this.gpNuevoIdioma.TabStop = false;
-            this.gpNuevoIdioma.Text = "Nuevo Idioma";
+            this.gbNuevoIdioma.Controls.Add(this.cboCulturas);
+            this.gbNuevoIdioma.Controls.Add(this.txtNombreIdioma);
+            this.gbNuevoIdioma.Controls.Add(this.lblCultura);
+            this.gbNuevoIdioma.Controls.Add(this.lblNombreIdioma);
+            this.gbNuevoIdioma.Location = new System.Drawing.Point(12, 12);
+            this.gbNuevoIdioma.Name = "gbNuevoIdioma";
+            this.gbNuevoIdioma.Size = new System.Drawing.Size(451, 113);
+            this.gbNuevoIdioma.TabIndex = 0;
+            this.gbNuevoIdioma.TabStop = false;
+            this.gbNuevoIdioma.Text = "Nuevo Idioma";
             // 
             // cboCulturas
             // 
@@ -69,15 +69,15 @@
             this.txtNombreIdioma.Size = new System.Drawing.Size(314, 22);
             this.txtNombreIdioma.TabIndex = 0;
             // 
-            // label1
+            // lblCultura
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Cultura:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblCultura.AutoSize = true;
+            this.lblCultura.Location = new System.Drawing.Point(56, 73);
+            this.lblCultura.Name = "lblCultura";
+            this.lblCultura.Size = new System.Drawing.Size(57, 17);
+            this.lblCultura.TabIndex = 2;
+            this.lblCultura.Text = "Cultura:";
+            this.lblCultura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblNombreIdioma
             // 
@@ -101,14 +101,14 @@
             this.gridTraduccion.RowHeadersVisible = false;
             this.gridTraduccion.RowTemplate.Height = 24;
             this.gridTraduccion.Size = new System.Drawing.Size(628, 527);
-            this.gridTraduccion.TabIndex = 4;
+            this.gridTraduccion.TabIndex = 3;
             // 
             // btnAceptar
             // 
             this.btnAceptar.Location = new System.Drawing.Point(469, 42);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(82, 66);
-            this.btnAceptar.TabIndex = 2;
+            this.btnAceptar.TabIndex = 1;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -118,7 +118,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(557, 42);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(82, 66);
-            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -131,14 +131,14 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.gridTraduccion);
-            this.Controls.Add(this.gpNuevoIdioma);
+            this.Controls.Add(this.gbNuevoIdioma);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(669, 718);
             this.Name = "FABMIdioma";
             this.Text = "Agregar Idioma";
             this.Load += new System.EventHandler(this.FABMIdioma_Load);
-            this.gpNuevoIdioma.ResumeLayout(false);
-            this.gpNuevoIdioma.PerformLayout();
+            this.gbNuevoIdioma.ResumeLayout(false);
+            this.gbNuevoIdioma.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTraduccion)).EndInit();
             this.ResumeLayout(false);
 
@@ -146,10 +146,10 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gpNuevoIdioma;
+        private System.Windows.Forms.GroupBox gbNuevoIdioma;
         private System.Windows.Forms.ComboBox cboCulturas;
         private System.Windows.Forms.TextBox txtNombreIdioma;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCultura;
         private System.Windows.Forms.Label lblNombreIdioma;
         private System.Windows.Forms.DataGridView gridTraduccion;
         private System.Windows.Forms.Button btnAceptar;

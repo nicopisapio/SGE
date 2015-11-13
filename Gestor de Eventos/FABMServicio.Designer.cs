@@ -61,7 +61,7 @@
             this.gridServicios.RowTemplate.Height = 24;
             this.gridServicios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridServicios.Size = new System.Drawing.Size(607, 303);
-            this.gridServicios.TabIndex = 7;
+            this.gridServicios.TabIndex = 4;
             // 
             // btnBaja
             // 
@@ -109,9 +109,9 @@
             this.gbDatosServicio.Name = "gbDatosServicio";
             this.gbDatosServicio.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbDatosServicio.Size = new System.Drawing.Size(486, 174);
-            this.gbDatosServicio.TabIndex = 10;
+            this.gbDatosServicio.TabIndex = 3;
             this.gbDatosServicio.TabStop = false;
-            this.gbDatosServicio.Text = "Datos del Evento";
+            this.gbDatosServicio.Text = "Datos del Servicio";
             // 
             // btnCancelar
             // 
@@ -119,7 +119,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 39);
-            this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -130,7 +130,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(85, 39);
-            this.btnAceptar.TabIndex = 5;
+            this.btnAceptar.TabIndex = 2;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -141,7 +141,7 @@
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(98, 22);
-            this.txtPrecio.TabIndex = 4;
+            this.txtPrecio.TabIndex = 1;
             // 
             // txtDescripcion
             // 
@@ -149,7 +149,7 @@
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(354, 22);
-            this.txtDescripcion.TabIndex = 3;
+            this.txtDescripcion.TabIndex = 0;
             // 
             // lblPrecio
             // 

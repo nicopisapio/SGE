@@ -70,6 +70,7 @@ namespace Gestor_de_Eventos
         {
             this.Operacion = Accion.Alta;
             this.gbDatosEvento.Enabled = true;
+            HabilitarControles(false);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -111,6 +112,7 @@ namespace Gestor_de_Eventos
                     if (GestorBD.ObtenerInstancia().ActualizarDVV("EVENTO"))
                     {
                         MessageBox.Show("Se ha creado/modificado el Evento correctamente");
+                        HabilitarControles(true);
                         this.gbDatosEvento.Enabled = false;
                         LimpiarControles();
                         CargarEventos();
@@ -152,6 +154,9 @@ namespace Gestor_de_Eventos
         {
             try
             {
+
+                HabilitarControles(false);
+
                 if (this.gridEventos.CurrentRow != null)
                 {
                     this.Operacion = Accion.Modificacion;
@@ -213,8 +218,16 @@ namespace Gestor_de_Eventos
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            HabilitarControles(true);
             this.gbDatosEvento.Enabled = false;
             LimpiarControles();
+        }
+
+        private void HabilitarControles(bool habilita)
+        {
+            this.btnAceptar.Enabled = habilita;
+            this.btnModificacion.Enabled = habilita;
+            this.btnBaja.Enabled = habilita;
         }
     }
 }

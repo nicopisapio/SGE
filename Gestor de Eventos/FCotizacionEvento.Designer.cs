@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gpEvento = new System.Windows.Forms.GroupBox();
+            this.gbEvento = new System.Windows.Forms.GroupBox();
             this.lblCantidadNiños2 = new System.Windows.Forms.Label();
             this.lblCantidadAdultos2 = new System.Windows.Forms.Label();
-            this.lblCantidadNiños = new System.Windows.Forms.Label();
+            this.lblCantidadNiños1 = new System.Windows.Forms.Label();
             this.lblCantidadAdultos1 = new System.Windows.Forms.Label();
             this.cboTipoEvento = new System.Windows.Forms.ComboBox();
             this.lblTipoEvento = new System.Windows.Forms.Label();
-            this.gpDatosReserva = new System.Windows.Forms.GroupBox();
+            this.gbDatosReserva = new System.Windows.Forms.GroupBox();
             this.lblDuracion2 = new System.Windows.Forms.Label();
             this.lblDuracion1 = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -58,11 +58,11 @@
             this.listServiciosAgregados = new System.Windows.Forms.ListBox();
             this.btnAgregarServicio = new System.Windows.Forms.Button();
             this.cboServicios = new System.Windows.Forms.ComboBox();
-            this.gpCotizacion = new System.Windows.Forms.GroupBox();
+            this.gbCotizacion = new System.Windows.Forms.GroupBox();
             this.btnCotizar = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.gbPago = new System.Windows.Forms.GroupBox();
             this.txtPagoAdelantado = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.lblMoneda = new System.Windows.Forms.Label();
             this.lblTotal2 = new System.Windows.Forms.Label();
             this.lblPrecioTiempoExtra2 = new System.Windows.Forms.Label();
             this.lblPrecioTiempoExtra1 = new System.Windows.Forms.Label();
@@ -73,44 +73,44 @@
             this.lblPrecioServiciosExtra1 = new System.Windows.Forms.Label();
             this.lblPrecioPersonasExtra1 = new System.Windows.Forms.Label();
             this.lblPrecioEvento1 = new System.Windows.Forms.Label();
-            this.btnCancelarCotizacion = new System.Windows.Forms.Button();
-            this.btnAceptarCotizacion = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.gbBusqueda = new System.Windows.Forms.GroupBox();
             this.lblIdReserva = new System.Windows.Forms.Label();
             this.txtIdReserva = new System.Windows.Forms.TextBox();
-            this.gpEmpleados = new System.Windows.Forms.GroupBox();
+            this.gbEmpleados = new System.Windows.Forms.GroupBox();
             this.listEmpleadosAsignados = new System.Windows.Forms.ListBox();
-            this.gpInfo = new System.Windows.Forms.GroupBox();
+            this.gbInfo = new System.Windows.Forms.GroupBox();
             this.lblBebidas2 = new System.Windows.Forms.Label();
             this.lblBebidas1 = new System.Windows.Forms.Label();
-            this.gpEvento.SuspendLayout();
-            this.gpDatosReserva.SuspendLayout();
+            this.gbEvento.SuspendLayout();
+            this.gbDatosReserva.SuspendLayout();
             this.gpPersonas.SuspendLayout();
             this.gpServicios.SuspendLayout();
-            this.gpCotizacion.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.gpEmpleados.SuspendLayout();
-            this.gpInfo.SuspendLayout();
+            this.gbCotizacion.SuspendLayout();
+            this.gbPago.SuspendLayout();
+            this.gbBusqueda.SuspendLayout();
+            this.gbEmpleados.SuspendLayout();
+            this.gbInfo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gpEvento
+            // gbEvento
             // 
-            this.gpEvento.Controls.Add(this.lblCantidadNiños2);
-            this.gpEvento.Controls.Add(this.lblCantidadAdultos2);
-            this.gpEvento.Controls.Add(this.lblCantidadNiños);
-            this.gpEvento.Controls.Add(this.lblCantidadAdultos1);
-            this.gpEvento.Controls.Add(this.cboTipoEvento);
-            this.gpEvento.Controls.Add(this.lblTipoEvento);
-            this.gpEvento.Enabled = false;
-            this.gpEvento.Location = new System.Drawing.Point(15, 165);
-            this.gpEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gpEvento.Name = "gpEvento";
-            this.gpEvento.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gpEvento.Size = new System.Drawing.Size(483, 101);
-            this.gpEvento.TabIndex = 0;
-            this.gpEvento.TabStop = false;
-            this.gpEvento.Text = "Evento";
+            this.gbEvento.Controls.Add(this.lblCantidadNiños2);
+            this.gbEvento.Controls.Add(this.lblCantidadAdultos2);
+            this.gbEvento.Controls.Add(this.lblCantidadNiños1);
+            this.gbEvento.Controls.Add(this.lblCantidadAdultos1);
+            this.gbEvento.Controls.Add(this.cboTipoEvento);
+            this.gbEvento.Controls.Add(this.lblTipoEvento);
+            this.gbEvento.Enabled = false;
+            this.gbEvento.Location = new System.Drawing.Point(15, 165);
+            this.gbEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbEvento.Name = "gbEvento";
+            this.gbEvento.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbEvento.Size = new System.Drawing.Size(483, 101);
+            this.gbEvento.TabIndex = 1;
+            this.gbEvento.TabStop = false;
+            this.gbEvento.Text = "Evento";
             // 
             // lblCantidadNiños2
             // 
@@ -130,14 +130,14 @@
             this.lblCantidadAdultos2.TabIndex = 4;
             this.lblCantidadAdultos2.Text = "0";
             // 
-            // lblCantidadNiños
+            // lblCantidadNiños1
             // 
-            this.lblCantidadNiños.AutoSize = true;
-            this.lblCantidadNiños.Location = new System.Drawing.Point(205, 68);
-            this.lblCantidadNiños.Name = "lblCantidadNiños";
-            this.lblCantidadNiños.Size = new System.Drawing.Size(128, 17);
-            this.lblCantidadNiños.TabIndex = 3;
-            this.lblCantidadNiños.Text = "Cantidad de Niños:";
+            this.lblCantidadNiños1.AutoSize = true;
+            this.lblCantidadNiños1.Location = new System.Drawing.Point(205, 68);
+            this.lblCantidadNiños1.Name = "lblCantidadNiños1";
+            this.lblCantidadNiños1.Size = new System.Drawing.Size(128, 17);
+            this.lblCantidadNiños1.TabIndex = 3;
+            this.lblCantidadNiños1.Text = "Cantidad de Niños:";
             // 
             // lblCantidadAdultos1
             // 
@@ -156,7 +156,7 @@
             this.cboTipoEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTipoEvento.Name = "cboTipoEvento";
             this.cboTipoEvento.Size = new System.Drawing.Size(349, 24);
-            this.cboTipoEvento.TabIndex = 2;
+            this.cboTipoEvento.TabIndex = 0;
             this.cboTipoEvento.SelectedIndexChanged += new System.EventHandler(this.cboTipoEvento_SelectedIndexChanged);
             // 
             // lblTipoEvento
@@ -168,26 +168,26 @@
             this.lblTipoEvento.TabIndex = 0;
             this.lblTipoEvento.Text = "Tipo de Evento:";
             // 
-            // gpDatosReserva
+            // gbDatosReserva
             // 
-            this.gpDatosReserva.Controls.Add(this.lblDuracion2);
-            this.gpDatosReserva.Controls.Add(this.lblDuracion1);
-            this.gpDatosReserva.Controls.Add(this.lblNombre);
-            this.gpDatosReserva.Controls.Add(this.lblCliente);
-            this.gpDatosReserva.Controls.Add(this.lblHoraFin2);
-            this.gpDatosReserva.Controls.Add(this.lblHoraInicio2);
-            this.gpDatosReserva.Controls.Add(this.lblFecha2);
-            this.gpDatosReserva.Controls.Add(this.lblHoraFin1);
-            this.gpDatosReserva.Controls.Add(this.lblHoraInicio1);
-            this.gpDatosReserva.Controls.Add(this.lblFecha1);
-            this.gpDatosReserva.Location = new System.Drawing.Point(503, 14);
-            this.gpDatosReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gpDatosReserva.Name = "gpDatosReserva";
-            this.gpDatosReserva.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gpDatosReserva.Size = new System.Drawing.Size(484, 146);
-            this.gpDatosReserva.TabIndex = 1;
-            this.gpDatosReserva.TabStop = false;
-            this.gpDatosReserva.Text = "Datos de Reserva";
+            this.gbDatosReserva.Controls.Add(this.lblDuracion2);
+            this.gbDatosReserva.Controls.Add(this.lblDuracion1);
+            this.gbDatosReserva.Controls.Add(this.lblNombre);
+            this.gbDatosReserva.Controls.Add(this.lblCliente);
+            this.gbDatosReserva.Controls.Add(this.lblHoraFin2);
+            this.gbDatosReserva.Controls.Add(this.lblHoraInicio2);
+            this.gbDatosReserva.Controls.Add(this.lblFecha2);
+            this.gbDatosReserva.Controls.Add(this.lblHoraFin1);
+            this.gbDatosReserva.Controls.Add(this.lblHoraInicio1);
+            this.gbDatosReserva.Controls.Add(this.lblFecha1);
+            this.gbDatosReserva.Location = new System.Drawing.Point(503, 14);
+            this.gbDatosReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbDatosReserva.Name = "gbDatosReserva";
+            this.gbDatosReserva.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbDatosReserva.Size = new System.Drawing.Size(484, 146);
+            this.gbDatosReserva.TabIndex = 1;
+            this.gbDatosReserva.TabStop = false;
+            this.gbDatosReserva.Text = "Datos de Reserva";
             // 
             // lblDuracion2
             // 
@@ -295,7 +295,7 @@
             this.btnBuscarReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscarReserva.Name = "btnBuscarReserva";
             this.btnBuscarReserva.Size = new System.Drawing.Size(99, 78);
-            this.btnBuscarReserva.TabIndex = 1;
+            this.btnBuscarReserva.TabIndex = 2;
             this.btnBuscarReserva.Text = "Buscar Reserva";
             this.btnBuscarReserva.UseVisualStyleBackColor = true;
             this.btnBuscarReserva.Click += new System.EventHandler(this.btnBuscarReserva_Click);
@@ -363,7 +363,7 @@
             this.btnAgregarPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarPersonas.Name = "btnAgregarPersonas";
             this.btnAgregarPersonas.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarPersonas.TabIndex = 4;
+            this.btnAgregarPersonas.TabIndex = 1;
             this.btnAgregarPersonas.Text = "Agregar";
             this.btnAgregarPersonas.UseVisualStyleBackColor = true;
             this.btnAgregarPersonas.Click += new System.EventHandler(this.btnAgregarPersonas_Click);
@@ -379,7 +379,7 @@
             this.cboPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPersonas.Name = "cboPersonas";
             this.cboPersonas.Size = new System.Drawing.Size(183, 24);
-            this.cboPersonas.TabIndex = 3;
+            this.cboPersonas.TabIndex = 0;
             // 
             // gpServicios
             // 
@@ -405,6 +405,7 @@
             this.listServiciosAgregados.Name = "listServiciosAgregados";
             this.listServiciosAgregados.Size = new System.Drawing.Size(261, 132);
             this.listServiciosAgregados.TabIndex = 3;
+            this.listServiciosAgregados.TabStop = false;
             // 
             // btnAgregarServicio
             // 
@@ -413,7 +414,7 @@
             this.btnAgregarServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarServicio.Name = "btnAgregarServicio";
             this.btnAgregarServicio.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarServicio.TabIndex = 6;
+            this.btnAgregarServicio.TabIndex = 1;
             this.btnAgregarServicio.Text = "Agregar";
             this.btnAgregarServicio.UseVisualStyleBackColor = true;
             this.btnAgregarServicio.Click += new System.EventHandler(this.btnAgregarServicio_Click);
@@ -426,31 +427,31 @@
             this.cboServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboServicios.Name = "cboServicios";
             this.cboServicios.Size = new System.Drawing.Size(183, 24);
-            this.cboServicios.TabIndex = 5;
+            this.cboServicios.TabIndex = 0;
             // 
-            // gpCotizacion
+            // gbCotizacion
             // 
-            this.gpCotizacion.Controls.Add(this.btnCotizar);
-            this.gpCotizacion.Controls.Add(this.groupBox6);
-            this.gpCotizacion.Controls.Add(this.lblTotal2);
-            this.gpCotizacion.Controls.Add(this.lblPrecioTiempoExtra2);
-            this.gpCotizacion.Controls.Add(this.lblPrecioTiempoExtra1);
-            this.gpCotizacion.Controls.Add(this.lblPrecioServiciosExtra2);
-            this.gpCotizacion.Controls.Add(this.lblPrecioPersonasExtra2);
-            this.gpCotizacion.Controls.Add(this.lblPrecioEvento2);
-            this.gpCotizacion.Controls.Add(this.lblTotal1);
-            this.gpCotizacion.Controls.Add(this.lblPrecioServiciosExtra1);
-            this.gpCotizacion.Controls.Add(this.lblPrecioPersonasExtra1);
-            this.gpCotizacion.Controls.Add(this.lblPrecioEvento1);
-            this.gpCotizacion.Enabled = false;
-            this.gpCotizacion.Location = new System.Drawing.Point(503, 273);
-            this.gpCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gpCotizacion.Name = "gpCotizacion";
-            this.gpCotizacion.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gpCotizacion.Size = new System.Drawing.Size(484, 185);
-            this.gpCotizacion.TabIndex = 4;
-            this.gpCotizacion.TabStop = false;
-            this.gpCotizacion.Text = "Cotización";
+            this.gbCotizacion.Controls.Add(this.btnCotizar);
+            this.gbCotizacion.Controls.Add(this.gbPago);
+            this.gbCotizacion.Controls.Add(this.lblTotal2);
+            this.gbCotizacion.Controls.Add(this.lblPrecioTiempoExtra2);
+            this.gbCotizacion.Controls.Add(this.lblPrecioTiempoExtra1);
+            this.gbCotizacion.Controls.Add(this.lblPrecioServiciosExtra2);
+            this.gbCotizacion.Controls.Add(this.lblPrecioPersonasExtra2);
+            this.gbCotizacion.Controls.Add(this.lblPrecioEvento2);
+            this.gbCotizacion.Controls.Add(this.lblTotal1);
+            this.gbCotizacion.Controls.Add(this.lblPrecioServiciosExtra1);
+            this.gbCotizacion.Controls.Add(this.lblPrecioPersonasExtra1);
+            this.gbCotizacion.Controls.Add(this.lblPrecioEvento1);
+            this.gbCotizacion.Enabled = false;
+            this.gbCotizacion.Location = new System.Drawing.Point(503, 273);
+            this.gbCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCotizacion.Name = "gbCotizacion";
+            this.gbCotizacion.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbCotizacion.Size = new System.Drawing.Size(484, 185);
+            this.gbCotizacion.TabIndex = 4;
+            this.gbCotizacion.TabStop = false;
+            this.gbCotizacion.Text = "Cotización";
             // 
             // btnCotizar
             // 
@@ -459,23 +460,23 @@
             this.btnCotizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCotizar.Name = "btnCotizar";
             this.btnCotizar.Size = new System.Drawing.Size(105, 50);
-            this.btnCotizar.TabIndex = 8;
+            this.btnCotizar.TabIndex = 1;
             this.btnCotizar.Text = "Cotizar";
             this.btnCotizar.UseVisualStyleBackColor = true;
             this.btnCotizar.Click += new System.EventHandler(this.btnCotizar_Click);
             // 
-            // groupBox6
+            // gbPago
             // 
-            this.groupBox6.Controls.Add(this.txtPagoAdelantado);
-            this.groupBox6.Controls.Add(this.label26);
-            this.groupBox6.Location = new System.Drawing.Point(261, 22);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Size = new System.Drawing.Size(217, 78);
-            this.groupBox6.TabIndex = 10;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Pago por adelantado";
+            this.gbPago.Controls.Add(this.txtPagoAdelantado);
+            this.gbPago.Controls.Add(this.lblMoneda);
+            this.gbPago.Location = new System.Drawing.Point(261, 22);
+            this.gbPago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbPago.Name = "gbPago";
+            this.gbPago.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbPago.Size = new System.Drawing.Size(217, 78);
+            this.gbPago.TabIndex = 0;
+            this.gbPago.TabStop = false;
+            this.gbPago.Text = "Pago por adelantado";
             // 
             // txtPagoAdelantado
             // 
@@ -483,16 +484,16 @@
             this.txtPagoAdelantado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPagoAdelantado.Name = "txtPagoAdelantado";
             this.txtPagoAdelantado.Size = new System.Drawing.Size(181, 22);
-            this.txtPagoAdelantado.TabIndex = 7;
+            this.txtPagoAdelantado.TabIndex = 0;
             // 
-            // label26
+            // lblMoneda
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(7, 34);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(16, 17);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "$";
+            this.lblMoneda.AutoSize = true;
+            this.lblMoneda.Location = new System.Drawing.Point(7, 34);
+            this.lblMoneda.Name = "lblMoneda";
+            this.lblMoneda.Size = new System.Drawing.Size(16, 17);
+            this.lblMoneda.TabIndex = 0;
+            this.lblMoneda.Text = "$";
             // 
             // lblTotal2
             // 
@@ -586,43 +587,43 @@
             this.lblPrecioEvento1.TabIndex = 0;
             this.lblPrecioEvento1.Text = "Precio de Evento:";
             // 
-            // btnCancelarCotizacion
+            // btnCancelar
             // 
-            this.btnCancelarCotizacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCancelarCotizacion.Location = new System.Drawing.Point(881, 601);
-            this.btnCancelarCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCancelarCotizacion.Name = "btnCancelarCotizacion";
-            this.btnCancelarCotizacion.Size = new System.Drawing.Size(105, 50);
-            this.btnCancelarCotizacion.TabIndex = 10;
-            this.btnCancelarCotizacion.Text = "Cancelar";
-            this.btnCancelarCotizacion.UseVisualStyleBackColor = true;
-            this.btnCancelarCotizacion.Click += new System.EventHandler(this.btnCancelarCotizacion_Click);
+            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancelar.Location = new System.Drawing.Point(881, 601);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(105, 50);
+            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelarCotizacion_Click);
             // 
-            // btnAceptarCotizacion
+            // btnAceptar
             // 
-            this.btnAceptarCotizacion.ForeColor = System.Drawing.Color.Green;
-            this.btnAceptarCotizacion.Location = new System.Drawing.Point(761, 601);
-            this.btnAceptarCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAceptarCotizacion.Name = "btnAceptarCotizacion";
-            this.btnAceptarCotizacion.Size = new System.Drawing.Size(105, 50);
-            this.btnAceptarCotizacion.TabIndex = 9;
-            this.btnAceptarCotizacion.Text = "Aceptar";
-            this.btnAceptarCotizacion.UseVisualStyleBackColor = true;
-            this.btnAceptarCotizacion.Click += new System.EventHandler(this.btnAceptarCotizacion_Click);
+            this.btnAceptar.ForeColor = System.Drawing.Color.Green;
+            this.btnAceptar.Location = new System.Drawing.Point(761, 601);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(105, 50);
+            this.btnAceptar.TabIndex = 7;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptarCotizacion_Click);
             // 
-            // groupBox2
+            // gbBusqueda
             // 
-            this.groupBox2.Controls.Add(this.lblIdReserva);
-            this.groupBox2.Controls.Add(this.txtIdReserva);
-            this.groupBox2.Controls.Add(this.btnBuscarReserva);
-            this.groupBox2.Location = new System.Drawing.Point(13, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(484, 144);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Búsqueda de Reserva";
+            this.gbBusqueda.Controls.Add(this.lblIdReserva);
+            this.gbBusqueda.Controls.Add(this.txtIdReserva);
+            this.gbBusqueda.Controls.Add(this.btnBuscarReserva);
+            this.gbBusqueda.Location = new System.Drawing.Point(13, 15);
+            this.gbBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.gbBusqueda.Name = "gbBusqueda";
+            this.gbBusqueda.Padding = new System.Windows.Forms.Padding(4);
+            this.gbBusqueda.Size = new System.Drawing.Size(484, 144);
+            this.gbBusqueda.TabIndex = 0;
+            this.gbBusqueda.TabStop = false;
+            this.gbBusqueda.Text = "Búsqueda de Reserva";
             // 
             // lblIdReserva
             // 
@@ -640,19 +641,20 @@
             this.txtIdReserva.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdReserva.Name = "txtIdReserva";
             this.txtIdReserva.Size = new System.Drawing.Size(191, 22);
-            this.txtIdReserva.TabIndex = 0;
+            this.txtIdReserva.TabIndex = 1;
             // 
-            // gpEmpleados
+            // gbEmpleados
             // 
-            this.gpEmpleados.Controls.Add(this.listEmpleadosAsignados);
-            this.gpEmpleados.Location = new System.Drawing.Point(13, 464);
-            this.gpEmpleados.Margin = new System.Windows.Forms.Padding(4);
-            this.gpEmpleados.Name = "gpEmpleados";
-            this.gpEmpleados.Padding = new System.Windows.Forms.Padding(4);
-            this.gpEmpleados.Size = new System.Drawing.Size(484, 187);
-            this.gpEmpleados.TabIndex = 13;
-            this.gpEmpleados.TabStop = false;
-            this.gpEmpleados.Text = "Empleados";
+            this.gbEmpleados.Controls.Add(this.listEmpleadosAsignados);
+            this.gbEmpleados.Enabled = false;
+            this.gbEmpleados.Location = new System.Drawing.Point(13, 464);
+            this.gbEmpleados.Margin = new System.Windows.Forms.Padding(4);
+            this.gbEmpleados.Name = "gbEmpleados";
+            this.gbEmpleados.Padding = new System.Windows.Forms.Padding(4);
+            this.gbEmpleados.Size = new System.Drawing.Size(484, 187);
+            this.gbEmpleados.TabIndex = 5;
+            this.gbEmpleados.TabStop = false;
+            this.gbEmpleados.Text = "Empleados";
             // 
             // listEmpleadosAsignados
             // 
@@ -663,19 +665,21 @@
             this.listEmpleadosAsignados.Name = "listEmpleadosAsignados";
             this.listEmpleadosAsignados.Size = new System.Drawing.Size(461, 148);
             this.listEmpleadosAsignados.TabIndex = 4;
+            this.listEmpleadosAsignados.TabStop = false;
             // 
-            // gpInfo
+            // gbInfo
             // 
-            this.gpInfo.Controls.Add(this.lblBebidas2);
-            this.gpInfo.Controls.Add(this.lblBebidas1);
-            this.gpInfo.Location = new System.Drawing.Point(505, 464);
-            this.gpInfo.Margin = new System.Windows.Forms.Padding(4);
-            this.gpInfo.Name = "gpInfo";
-            this.gpInfo.Padding = new System.Windows.Forms.Padding(4);
-            this.gpInfo.Size = new System.Drawing.Size(481, 130);
-            this.gpInfo.TabIndex = 14;
-            this.gpInfo.TabStop = false;
-            this.gpInfo.Text = "Información Adicional";
+            this.gbInfo.Controls.Add(this.lblBebidas2);
+            this.gbInfo.Controls.Add(this.lblBebidas1);
+            this.gbInfo.Enabled = false;
+            this.gbInfo.Location = new System.Drawing.Point(505, 464);
+            this.gbInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.gbInfo.Name = "gbInfo";
+            this.gbInfo.Padding = new System.Windows.Forms.Padding(4);
+            this.gbInfo.Size = new System.Drawing.Size(481, 130);
+            this.gbInfo.TabIndex = 6;
+            this.gbInfo.TabStop = false;
+            this.gbInfo.Text = "Información Adicional";
             // 
             // lblBebidas2
             // 
@@ -700,48 +704,48 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 666);
-            this.Controls.Add(this.gpInfo);
-            this.Controls.Add(this.gpEmpleados);
-            this.Controls.Add(this.btnCancelarCotizacion);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btnAceptarCotizacion);
-            this.Controls.Add(this.gpCotizacion);
+            this.Controls.Add(this.gbInfo);
+            this.Controls.Add(this.gbEmpleados);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.gbBusqueda);
+            this.Controls.Add(this.btnAceptar);
+            this.Controls.Add(this.gbCotizacion);
             this.Controls.Add(this.gpServicios);
             this.Controls.Add(this.gpPersonas);
-            this.Controls.Add(this.gpDatosReserva);
-            this.Controls.Add(this.gpEvento);
+            this.Controls.Add(this.gbDatosReserva);
+            this.Controls.Add(this.gbEvento);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1022, 713);
             this.Name = "FCotizacionEvento";
             this.Text = "Cotización de Eventos";
             this.Load += new System.EventHandler(this.FCotizacionEvento_Load);
-            this.gpEvento.ResumeLayout(false);
-            this.gpEvento.PerformLayout();
-            this.gpDatosReserva.ResumeLayout(false);
-            this.gpDatosReserva.PerformLayout();
+            this.gbEvento.ResumeLayout(false);
+            this.gbEvento.PerformLayout();
+            this.gbDatosReserva.ResumeLayout(false);
+            this.gbDatosReserva.PerformLayout();
             this.gpPersonas.ResumeLayout(false);
             this.gpPersonas.PerformLayout();
             this.gpServicios.ResumeLayout(false);
-            this.gpCotizacion.ResumeLayout(false);
-            this.gpCotizacion.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.gpEmpleados.ResumeLayout(false);
-            this.gpInfo.ResumeLayout(false);
-            this.gpInfo.PerformLayout();
+            this.gbCotizacion.ResumeLayout(false);
+            this.gbCotizacion.PerformLayout();
+            this.gbPago.ResumeLayout(false);
+            this.gbPago.PerformLayout();
+            this.gbBusqueda.ResumeLayout(false);
+            this.gbBusqueda.PerformLayout();
+            this.gbEmpleados.ResumeLayout(false);
+            this.gbInfo.ResumeLayout(false);
+            this.gbInfo.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gpEvento;
+        private System.Windows.Forms.GroupBox gbEvento;
         private System.Windows.Forms.ComboBox cboTipoEvento;
         private System.Windows.Forms.Label lblTipoEvento;
-        private System.Windows.Forms.GroupBox gpDatosReserva;
+        private System.Windows.Forms.GroupBox gbDatosReserva;
         private System.Windows.Forms.Label lblFecha1;
         private System.Windows.Forms.Label lblHoraFin2;
         private System.Windows.Forms.Label lblHoraInicio2;
@@ -750,7 +754,7 @@
         private System.Windows.Forms.Label lblHoraInicio1;
         private System.Windows.Forms.Label lblCantidadNiños2;
         private System.Windows.Forms.Label lblCantidadAdultos2;
-        private System.Windows.Forms.Label lblCantidadNiños;
+        private System.Windows.Forms.Label lblCantidadNiños1;
         private System.Windows.Forms.Label lblCantidadAdultos1;
         private System.Windows.Forms.GroupBox gpPersonas;
         private System.Windows.Forms.Button btnAgregarPersonas;
@@ -763,13 +767,13 @@
         private System.Windows.Forms.ListBox listServiciosAgregados;
         private System.Windows.Forms.Button btnAgregarServicio;
         private System.Windows.Forms.ComboBox cboServicios;
-        private System.Windows.Forms.GroupBox gpCotizacion;
+        private System.Windows.Forms.GroupBox gbCotizacion;
         private System.Windows.Forms.Label lblPrecioServiciosExtra1;
         private System.Windows.Forms.Label lblPrecioPersonasExtra1;
         private System.Windows.Forms.Label lblPrecioEvento1;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox gbPago;
         private System.Windows.Forms.TextBox txtPagoAdelantado;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label lblMoneda;
         private System.Windows.Forms.Label lblTotal2;
         private System.Windows.Forms.Label lblPrecioTiempoExtra2;
         private System.Windows.Forms.Label lblPrecioTiempoExtra1;
@@ -777,18 +781,18 @@
         private System.Windows.Forms.Label lblPrecioPersonasExtra2;
         private System.Windows.Forms.Label lblPrecioEvento2;
         private System.Windows.Forms.Label lblTotal1;
-        private System.Windows.Forms.Button btnCancelarCotizacion;
-        private System.Windows.Forms.Button btnAceptarCotizacion;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Button btnBuscarReserva;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbBusqueda;
         private System.Windows.Forms.Label lblIdReserva;
         private System.Windows.Forms.TextBox txtIdReserva;
         private System.Windows.Forms.Button btnCotizar;
-        private System.Windows.Forms.GroupBox gpEmpleados;
+        private System.Windows.Forms.GroupBox gbEmpleados;
         private System.Windows.Forms.ListBox listEmpleadosAsignados;
-        private System.Windows.Forms.GroupBox gpInfo;
+        private System.Windows.Forms.GroupBox gbInfo;
         private System.Windows.Forms.Label lblDuracion2;
         private System.Windows.Forms.Label lblDuracion1;
         private System.Windows.Forms.Label lblBebidas2;

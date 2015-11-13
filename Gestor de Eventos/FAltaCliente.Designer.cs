@@ -72,7 +72,7 @@
             this.gbDatosCliente.Name = "gbDatosCliente";
             this.gbDatosCliente.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbDatosCliente.Size = new System.Drawing.Size(563, 266);
-            this.gbDatosCliente.TabIndex = 11;
+            this.gbDatosCliente.TabIndex = 0;
             this.gbDatosCliente.TabStop = false;
             this.gbDatosCliente.Text = "Datos del Cliente";
             // 
@@ -91,7 +91,7 @@
             this.gbDireccion.Location = new System.Drawing.Point(276, 20);
             this.gbDireccion.Name = "gbDireccion";
             this.gbDireccion.Size = new System.Drawing.Size(275, 180);
-            this.gbDireccion.TabIndex = 12;
+            this.gbDireccion.TabIndex = 4;
             this.gbDireccion.TabStop = false;
             this.gbDireccion.Text = "Dirección";
             // 
@@ -101,7 +101,7 @@
             this.txtDepto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDepto.Name = "txtDepto";
             this.txtDepto.Size = new System.Drawing.Size(40, 22);
-            this.txtDepto.TabIndex = 8;
+            this.txtDepto.TabIndex = 4;
             // 
             // lblDpto
             // 
@@ -118,7 +118,7 @@
             this.txtPiso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPiso.Name = "txtPiso";
             this.txtPiso.Size = new System.Drawing.Size(40, 22);
-            this.txtPiso.TabIndex = 7;
+            this.txtPiso.TabIndex = 3;
             // 
             // lblPiso
             // 
@@ -135,7 +135,7 @@
             this.txtLocalidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(151, 22);
-            this.txtLocalidad.TabIndex = 6;
+            this.txtLocalidad.TabIndex = 2;
             // 
             // lblLocalidad
             // 
@@ -152,7 +152,7 @@
             this.txtAltura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(151, 22);
-            this.txtAltura.TabIndex = 5;
+            this.txtAltura.TabIndex = 1;
             // 
             // txtCalle
             // 
@@ -160,7 +160,7 @@
             this.txtCalle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(151, 22);
-            this.txtCalle.TabIndex = 4;
+            this.txtCalle.TabIndex = 0;
             // 
             // lblAltura
             // 
@@ -220,7 +220,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 39);
-            this.btnCancelar.TabIndex = 10;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -231,7 +231,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(85, 39);
-            this.btnAceptar.TabIndex = 9;
+            this.btnAceptar.TabIndex = 5;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
