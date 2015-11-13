@@ -50,8 +50,8 @@
             this.menuGestionDePermisos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGestionDeCargos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDetalleDeHorasTrabajadas = new System.Windows.Forms.ToolStripMenuItem();
-            this.semanalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mensualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuSemanal = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuMensual = new System.Windows.Forms.ToolStripMenuItem();
             this.menuOpciones = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCambiarIdioma = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAgregarIdioma = new System.Windows.Forms.ToolStripMenuItem();
@@ -240,25 +240,25 @@
             // menuDetalleDeHorasTrabajadas
             // 
             this.menuDetalleDeHorasTrabajadas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.semanalToolStripMenuItem,
-            this.mensualToolStripMenuItem});
+            this.menuSemanal,
+            this.menuMensual});
             this.menuDetalleDeHorasTrabajadas.Name = "menuDetalleDeHorasTrabajadas";
             this.menuDetalleDeHorasTrabajadas.Size = new System.Drawing.Size(272, 26);
             this.menuDetalleDeHorasTrabajadas.Text = "Detalle de Horas Trabajadas";
             // 
-            // semanalToolStripMenuItem
+            // menuSemanal
             // 
-            this.semanalToolStripMenuItem.Name = "semanalToolStripMenuItem";
-            this.semanalToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
-            this.semanalToolStripMenuItem.Text = "Semanal";
-            this.semanalToolStripMenuItem.Click += new System.EventHandler(this.semanalToolStripMenuItem_Click);
+            this.menuSemanal.Name = "menuSemanal";
+            this.menuSemanal.Size = new System.Drawing.Size(181, 26);
+            this.menuSemanal.Text = "Semanal";
+            this.menuSemanal.Click += new System.EventHandler(this.semanalToolStripMenuItem_Click);
             // 
-            // mensualToolStripMenuItem
+            // menuMensual
             // 
-            this.mensualToolStripMenuItem.Name = "mensualToolStripMenuItem";
-            this.mensualToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
-            this.mensualToolStripMenuItem.Text = "Mensual";
-            this.mensualToolStripMenuItem.Click += new System.EventHandler(this.mensualToolStripMenuItem_Click);
+            this.menuMensual.Name = "menuMensual";
+            this.menuMensual.Size = new System.Drawing.Size(181, 26);
+            this.menuMensual.Text = "Mensual";
+            this.menuMensual.Click += new System.EventHandler(this.mensualToolStripMenuItem_Click);
             // 
             // menuOpciones
             // 
@@ -376,8 +376,8 @@
         private System.Windows.Forms.ToolStripMenuItem menuRealizarRestore;
         private System.Windows.Forms.ToolStripMenuItem menuBitacora;
         private System.Windows.Forms.ToolStripMenuItem menuAgregarIdioma;
-        private System.Windows.Forms.ToolStripMenuItem semanalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mensualToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuSemanal;
+        private System.Windows.Forms.ToolStripMenuItem menuMensual;
         private System.Windows.Forms.ToolStripMenuItem menuGestionDeCargos;
     }
 }

@@ -39,7 +39,7 @@
             this.gbNuevaReserva = new System.Windows.Forms.GroupBox();
             this.btnNuevoCliente = new System.Windows.Forms.Button();
             this.cboCliente = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCliente = new System.Windows.Forms.Label();
             this.dtpHoraFin = new System.Windows.Forms.DateTimePicker();
             this.dtpHoraInicio = new System.Windows.Forms.DateTimePicker();
             this.lblHoraFin = new System.Windows.Forms.Label();
@@ -154,7 +154,7 @@
             // 
             this.gbNuevaReserva.Controls.Add(this.btnNuevoCliente);
             this.gbNuevaReserva.Controls.Add(this.cboCliente);
-            this.gbNuevaReserva.Controls.Add(this.label1);
+            this.gbNuevaReserva.Controls.Add(this.lblCliente);
             this.gbNuevaReserva.Controls.Add(this.dtpHoraFin);
             this.gbNuevaReserva.Controls.Add(this.btnCancelar);
             this.gbNuevaReserva.Controls.Add(this.dtpHoraInicio);
@@ -193,16 +193,16 @@
             this.cboCliente.Size = new System.Drawing.Size(184, 24);
             this.cboCliente.TabIndex = 2;
             // 
-            // label1
+            // lblCliente
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 121);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 17);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Cliente:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Location = new System.Drawing.Point(33, 121);
+            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(55, 17);
+            this.lblCliente.TabIndex = 11;
+            this.lblCliente.Text = "Cliente:";
+            this.lblCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpHoraFin
             // 
@@ -276,7 +276,7 @@
         private System.Windows.Forms.Label lblHoraFin;
         private System.Windows.Forms.Button btnNuevaReserva;
         private System.Windows.Forms.ComboBox cboCliente;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Button btnNuevoCliente;
     }
 }

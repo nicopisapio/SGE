@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.gbFecha = new System.Windows.Forms.GroupBox();
-            this.Semana = new System.Windows.Forms.Label();
+            this.lblSemana = new System.Windows.Forms.Label();
             this.lblMes = new System.Windows.Forms.Label();
             this.lblAño = new System.Windows.Forms.Label();
             this.cboSemana = new System.Windows.Forms.ComboBox();
@@ -43,7 +43,7 @@
             // 
             // gbFecha
             // 
-            this.gbFecha.Controls.Add(this.Semana);
+            this.gbFecha.Controls.Add(this.lblSemana);
             this.gbFecha.Controls.Add(this.lblMes);
             this.gbFecha.Controls.Add(this.lblAño);
             this.gbFecha.Controls.Add(this.cboSemana);
@@ -58,14 +58,14 @@
             this.gbFecha.TabStop = false;
             this.gbFecha.Text = "Fecha";
             // 
-            // Semana
+            // lblSemana
             // 
-            this.Semana.AutoSize = true;
-            this.Semana.Location = new System.Drawing.Point(20, 118);
-            this.Semana.Name = "Semana";
-            this.Semana.Size = new System.Drawing.Size(64, 17);
-            this.Semana.TabIndex = 5;
-            this.Semana.Text = "Semana:";
+            this.lblSemana.AutoSize = true;
+            this.lblSemana.Location = new System.Drawing.Point(20, 118);
+            this.lblSemana.Name = "lblSemana";
+            this.lblSemana.Size = new System.Drawing.Size(64, 17);
+            this.lblSemana.TabIndex = 5;
+            this.lblSemana.Text = "Semana:";
             // 
             // lblMes
             // 
@@ -169,7 +169,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbFecha;
-        private System.Windows.Forms.Label Semana;
+        private System.Windows.Forms.Label lblSemana;
         private System.Windows.Forms.Label lblMes;
         private System.Windows.Forms.Label lblAño;
         private System.Windows.Forms.ComboBox cboSemana;

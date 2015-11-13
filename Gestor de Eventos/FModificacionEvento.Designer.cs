@@ -30,11 +30,11 @@
         {
             this.gbBusqueda = new System.Windows.Forms.GroupBox();
             this.txtClienteDU = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblDUCliente = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblFechaHasta = new System.Windows.Forms.Label();
             this.dtpFechaHasta = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFechaDesde = new System.Windows.Forms.Label();
             this.dtpFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.gbCotizacion = new System.Windows.Forms.GroupBox();
             this.btnRecotizar = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             this.lblMontoPagado1 = new System.Windows.Forms.Label();
             this.gbDetalleEvento = new System.Windows.Forms.GroupBox();
             this.lblEstado2 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblEstado1 = new System.Windows.Forms.Label();
             this.gbDuracion = new System.Windows.Forms.GroupBox();
             this.lblCantidadHoras2 = new System.Windows.Forms.Label();
             this.lblCantidadHoras1 = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@
             this.lblAdultos2 = new System.Windows.Forms.Label();
             this.lblNiños1 = new System.Windows.Forms.Label();
             this.lblTipoEvento2 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblTipoEvento1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.gridReserva = new System.Windows.Forms.DataGridView();
@@ -93,11 +93,11 @@
             // gbBusqueda
             // 
             this.gbBusqueda.Controls.Add(this.txtClienteDU);
-            this.gbBusqueda.Controls.Add(this.label3);
+            this.gbBusqueda.Controls.Add(this.lblDUCliente);
             this.gbBusqueda.Controls.Add(this.btnBuscar);
-            this.gbBusqueda.Controls.Add(this.label2);
+            this.gbBusqueda.Controls.Add(this.lblFechaHasta);
             this.gbBusqueda.Controls.Add(this.dtpFechaHasta);
-            this.gbBusqueda.Controls.Add(this.label1);
+            this.gbBusqueda.Controls.Add(this.lblFechaDesde);
             this.gbBusqueda.Controls.Add(this.dtpFechaDesde);
             this.gbBusqueda.Location = new System.Drawing.Point(12, 12);
             this.gbBusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -116,14 +116,14 @@
             this.txtClienteDU.Size = new System.Drawing.Size(200, 22);
             this.txtClienteDU.TabIndex = 0;
             // 
-            // label3
+            // lblDUCliente
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "DU Cliente:";
+            this.lblDUCliente.AutoSize = true;
+            this.lblDUCliente.Location = new System.Drawing.Point(29, 36);
+            this.lblDUCliente.Name = "lblDUCliente";
+            this.lblDUCliente.Size = new System.Drawing.Size(79, 17);
+            this.lblDUCliente.TabIndex = 5;
+            this.lblDUCliente.Text = "DU Cliente:";
             // 
             // btnBuscar
             // 
@@ -137,14 +137,14 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // label2
+            // lblFechaHasta
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Fecha Hasta:";
+            this.lblFechaHasta.AutoSize = true;
+            this.lblFechaHasta.Location = new System.Drawing.Point(16, 94);
+            this.lblFechaHasta.Name = "lblFechaHasta";
+            this.lblFechaHasta.Size = new System.Drawing.Size(92, 17);
+            this.lblFechaHasta.TabIndex = 3;
+            this.lblFechaHasta.Text = "Fecha Hasta:";
             // 
             // dtpFechaHasta
             // 
@@ -154,14 +154,14 @@
             this.dtpFechaHasta.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaHasta.TabIndex = 2;
             // 
-            // label1
+            // lblFechaDesde
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Fecha Desde:";
+            this.lblFechaDesde.AutoSize = true;
+            this.lblFechaDesde.Location = new System.Drawing.Point(12, 66);
+            this.lblFechaDesde.Name = "lblFechaDesde";
+            this.lblFechaDesde.Size = new System.Drawing.Size(96, 17);
+            this.lblFechaDesde.TabIndex = 1;
+            this.lblFechaDesde.Text = "Fecha Desde:";
             // 
             // dtpFechaDesde
             // 
@@ -292,13 +292,13 @@
             // gbDetalleEvento
             // 
             this.gbDetalleEvento.Controls.Add(this.lblEstado2);
-            this.gbDetalleEvento.Controls.Add(this.label21);
+            this.gbDetalleEvento.Controls.Add(this.lblEstado1);
             this.gbDetalleEvento.Controls.Add(this.gbCotizacion);
             this.gbDetalleEvento.Controls.Add(this.gbDuracion);
             this.gbDetalleEvento.Controls.Add(this.gbServicios);
             this.gbDetalleEvento.Controls.Add(this.gbPersonas);
             this.gbDetalleEvento.Controls.Add(this.lblTipoEvento2);
-            this.gbDetalleEvento.Controls.Add(this.label19);
+            this.gbDetalleEvento.Controls.Add(this.lblTipoEvento1);
             this.gbDetalleEvento.Enabled = false;
             this.gbDetalleEvento.Location = new System.Drawing.Point(12, 313);
             this.gbDetalleEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -319,15 +319,15 @@
             this.lblEstado2.Text = "RESERVADO";
             this.lblEstado2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label21
+            // lblEstado1
             // 
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(37, 28);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(88, 25);
-            this.label21.TabIndex = 18;
-            this.label21.Text = "Estado:";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblEstado1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado1.Location = new System.Drawing.Point(37, 28);
+            this.lblEstado1.Name = "lblEstado1";
+            this.lblEstado1.Size = new System.Drawing.Size(88, 25);
+            this.lblEstado1.TabIndex = 18;
+            this.lblEstado1.Text = "Estado:";
+            this.lblEstado1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // gbDuracion
             // 
@@ -614,15 +614,15 @@
             this.lblTipoEvento2.Text = "Cumpleaños Infantil";
             this.lblTipoEvento2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label19
+            // lblTipoEvento1
             // 
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(362, 28);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(167, 25);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Tipo de Evento:";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTipoEvento1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoEvento1.Location = new System.Drawing.Point(362, 28);
+            this.lblTipoEvento1.Name = "lblTipoEvento1";
+            this.lblTipoEvento1.Size = new System.Drawing.Size(167, 25);
+            this.lblTipoEvento1.TabIndex = 0;
+            this.lblTipoEvento1.Text = "Tipo de Evento:";
+            this.lblTipoEvento1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnCancelar
             // 
@@ -717,12 +717,12 @@
 
         private System.Windows.Forms.GroupBox gbBusqueda;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblFechaHasta;
         private System.Windows.Forms.DateTimePicker dtpFechaHasta;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFechaDesde;
         private System.Windows.Forms.DateTimePicker dtpFechaDesde;
         private System.Windows.Forms.TextBox txtClienteDU;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDUCliente;
         private System.Windows.Forms.GroupBox gbCotizacion;
         private System.Windows.Forms.Label lblMontoTotalAnt2;
         private System.Windows.Forms.Label lblMontoPagado2;
@@ -735,7 +735,7 @@
         private System.Windows.Forms.ListBox listServicios;
         private System.Windows.Forms.Label lblNiños1;
         private System.Windows.Forms.Label lblAdultos1;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblTipoEvento1;
         private System.Windows.Forms.GroupBox gbPersonas;
         private System.Windows.Forms.Button btnQuitarPersonas;
         private System.Windows.Forms.Button btnAgregarPersonas;
@@ -756,7 +756,7 @@
         private System.Windows.Forms.Label lblMontoTotalNvo2;
         private System.Windows.Forms.Label lblMontoTotalNuevo1;
         private System.Windows.Forms.Label lblEstado2;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblEstado1;
         private System.Windows.Forms.GroupBox gbPago;
         private System.Windows.Forms.TextBox txtPago;
         private System.Windows.Forms.Label label22;
