@@ -87,6 +87,10 @@ namespace Gestor_de_Eventos
             this.gbCotizacion.Enabled = habilitado;
             this.gbEmpleados.Enabled = habilitado;
             this.gbInfo.Enabled = habilitado;
+        }
+
+        private void HabilitarBotones(bool habilitado)
+        {
             this.btnAceptar.Enabled = habilitado;
             this.btnCancelar.Enabled = habilitado;
         }
@@ -231,6 +235,8 @@ namespace Gestor_de_Eventos
         {
             try
             {
+                HabilitarBotones(true);
+
                 this.lblPrecioTiempoExtra2.Text = GestorReserva.ObtenerInstancia().CalcularCostoTiempoExtra(reserva).ToString("C2");
                 this.lblPrecioServiciosExtra2.Text = GestorReserva.ObtenerInstancia().CalcularCostoServicios(reserva).ToString("C2");
                 this.lblPrecioPersonasExtra2.Text = GestorReserva.ObtenerInstancia().CalcularCostoPersonasExtra(reserva).ToString("C2");
@@ -282,6 +288,8 @@ namespace Gestor_de_Eventos
 
                     if (GestorBD.ObtenerInstancia().ActualizarDVV("RESERVA"))
                     {
+                        HabilitarBotones(false);
+                        LimpiarControles();
                         MessageBox.Show("La cotización se ha guardado con éxito.", "Cotización", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
 
@@ -337,6 +345,7 @@ namespace Gestor_de_Eventos
 
         private void btnCancelarCotizacion_Click(object sender, EventArgs e)
         {
+            HabilitarBotones(false);
             LimpiarControles();
             HabilitarControles(false);
         }
@@ -354,6 +363,7 @@ namespace Gestor_de_Eventos
             }
 
             HabilitarControles(false);
+            HabilitarBotones(false);
         }
 
     }

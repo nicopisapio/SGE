@@ -326,7 +326,7 @@ namespace Gestor_de_Eventos
 
         private void HabilitarControles(bool habilita)
         {
-            this.btnAceptar.Enabled = habilita;
+            this.btnAlta.Enabled = habilita;
             this.btnModificacion.Enabled = habilita;
             this.btnBaja.Enabled = habilita;
         }

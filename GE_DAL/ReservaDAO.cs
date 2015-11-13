@@ -1192,7 +1192,7 @@ namespace GE_DAL
             try
             {
 
-                List<Excedente> excedentes = null;
+                List<Excedente> excedentes = new List<Excedente>();
                 Excedente excedente = null;
 
                 using (SqlConnection conexion = Conexion.ObtenerInstancia().CrearConexionSQL())

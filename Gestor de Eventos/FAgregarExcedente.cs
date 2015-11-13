@@ -45,6 +45,7 @@ namespace Gestor_de_Eventos
                         }
                         else
                         {
+                            gridReserva.DataSource = null;
                             MessageBox.Show("No se han encontrado coincidencias.", "Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
@@ -76,6 +77,7 @@ namespace Gestor_de_Eventos
                     if (reserva != null)
                     {
                         CargarDatos(reserva);
+                        this.gbCotizacion.Enabled = true;
                     }
                 }
             }
@@ -105,6 +107,7 @@ namespace Gestor_de_Eventos
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             HabilitarControles(false);
+            this.gbCotizacion.Enabled = false;
             LimpiarControles();
         }
 
@@ -156,6 +159,8 @@ namespace Gestor_de_Eventos
                             {
                                 MessageBox.Show("El excedente se ha guardado con éxito.", "Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 HabilitarControles(false);
+                                LimpiarControles();
+                                this.gbCotizacion.Enabled = false;
                             }
                         }
                     }

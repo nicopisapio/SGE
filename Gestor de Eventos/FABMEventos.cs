@@ -78,14 +78,26 @@ namespace Gestor_de_Eventos
             try
             {
                 double precio = 0;
-                Double.TryParse(this.txtPrecio.Text, out precio);
+                if (!Double.TryParse(this.txtPrecio.Text, out precio))
+                {
+                    MessageBox.Show("Ingrese un valor numérico.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.txtPrecio.Focus();
+                }
 
                 double precioBloque = 0;
-                Double.TryParse(this.txtPrecioBloque.Text, out precioBloque);
+                if (!Double.TryParse(this.txtPrecioBloque.Text, out precioBloque))
+                {
+                    MessageBox.Show("Ingrese un valor numérico.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.txtPrecioBloque.Focus();
+                }
 
                 double precioDecena = 0;
-                Double.TryParse(this.txtPrecioDecena.Text, out precioDecena);
-
+                if (!Double.TryParse(this.txtPrecioDecena.Text, out precioDecena))
+                {
+                    MessageBox.Show("Ingrese un valor numérico.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.txtPrecioDecena.Focus();
+                }
+                
                 Evento evento = new Evento();
                 evento.Descripcion = txtDescripcion.Text;
                 evento.Precio = precio;
@@ -111,7 +123,7 @@ namespace Gestor_de_Eventos
                 {
                     if (GestorBD.ObtenerInstancia().ActualizarDVV("EVENTO"))
                     {
-                        MessageBox.Show("Se ha creado/modificado el Evento correctamente");
+                        MessageBox.Show("Se ha creado/modificado el Evento correctamente.", "Alta de Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         HabilitarControles(true);
                         this.gbDatosEvento.Enabled = false;
                         LimpiarControles();
@@ -201,7 +213,7 @@ namespace Gestor_de_Eventos
                         {
                             if (GestorBD.ObtenerInstancia().ActualizarDVV("EVENTO"))
                             {
-                                MessageBox.Show("El evento se ha eliminado correctamente", "Baja de Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show("El evento se ha eliminado correctamente.", "Baja de Evento", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 CargarEventos();
                             }
                         }
@@ -225,7 +237,7 @@ namespace Gestor_de_Eventos
 
         private void HabilitarControles(bool habilita)
         {
-            this.btnAceptar.Enabled = habilita;
+            this.btnAlta.Enabled = habilita;
             this.btnModificacion.Enabled = habilita;
             this.btnBaja.Enabled = habilita;
         }

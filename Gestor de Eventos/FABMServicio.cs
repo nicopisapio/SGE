@@ -76,7 +76,11 @@ namespace Gestor_de_Eventos
             try
             {
                 double precio = 0;
-                Double.TryParse(this.txtPrecio.Text, out precio);
+                if (!Double.TryParse(this.txtPrecio.Text, out precio))
+                {
+                    MessageBox.Show("Ingrese un valor numérico.", "Gestión de Servicios.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.txtPrecio.Focus();
+                }
 
                 Servicio servicio = new Servicio();
                 servicio.Descripcion = txtDescripcion.Text;
@@ -196,7 +200,7 @@ namespace Gestor_de_Eventos
 
         private void HabilitarControles(bool habilita)
         {
-            this.btnAceptar.Enabled = habilita;
+            this.btnAlta.Enabled = habilita;
             this.btnModificacion.Enabled = habilita;
             this.btnBaja.Enabled = habilita;
         }
