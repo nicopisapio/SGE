@@ -210,7 +210,7 @@ namespace Gestor_de_Eventos
             {
                 string tipoPersona = this.cboPersonas.SelectedItem != null ? this.cboPersonas.SelectedItem.ToString() : string.Empty;
 
-                if (string.IsNullOrWhiteSpace(tipoPersona))
+                if (!string.IsNullOrWhiteSpace(tipoPersona))
                 {
                     int cant = 0;
 

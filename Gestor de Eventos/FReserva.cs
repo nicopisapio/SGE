@@ -120,7 +120,7 @@ namespace Gestor_de_Eventos
                                 {
                                     MessageBox.Show("Se ha generado la reserva número " + idReservaNueva + " correctamente.", "Alta de Reserva", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                    DialogResult dialogo = MessageBox.Show("¿Desea cotizar la reserva + " + idReservaNueva + "?", "Alta de Reserva", MessageBoxButtons.YesNo);
+                                    DialogResult dialogo = MessageBox.Show("¿Desea cotizar la reserva " + idReservaNueva + "?", "Alta de Reserva", MessageBoxButtons.YesNo);
 
                                     if (dialogo == System.Windows.Forms.DialogResult.Yes)
                                     {
