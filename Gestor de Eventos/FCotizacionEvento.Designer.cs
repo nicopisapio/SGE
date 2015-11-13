@@ -156,7 +156,7 @@
             this.cboTipoEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTipoEvento.Name = "cboTipoEvento";
             this.cboTipoEvento.Size = new System.Drawing.Size(349, 24);
-            this.cboTipoEvento.TabIndex = 1;
+            this.cboTipoEvento.TabIndex = 2;
             this.cboTipoEvento.SelectedIndexChanged += new System.EventHandler(this.cboTipoEvento_SelectedIndexChanged);
             // 
             // lblTipoEvento
@@ -295,7 +295,7 @@
             this.btnBuscarReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscarReserva.Name = "btnBuscarReserva";
             this.btnBuscarReserva.Size = new System.Drawing.Size(99, 78);
-            this.btnBuscarReserva.TabIndex = 8;
+            this.btnBuscarReserva.TabIndex = 1;
             this.btnBuscarReserva.Text = "Buscar Reserva";
             this.btnBuscarReserva.UseVisualStyleBackColor = true;
             this.btnBuscarReserva.Click += new System.EventHandler(this.btnBuscarReserva_Click);
@@ -363,7 +363,7 @@
             this.btnAgregarPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarPersonas.Name = "btnAgregarPersonas";
             this.btnAgregarPersonas.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarPersonas.TabIndex = 1;
+            this.btnAgregarPersonas.TabIndex = 4;
             this.btnAgregarPersonas.Text = "Agregar";
             this.btnAgregarPersonas.UseVisualStyleBackColor = true;
             this.btnAgregarPersonas.Click += new System.EventHandler(this.btnAgregarPersonas_Click);
@@ -379,7 +379,7 @@
             this.cboPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPersonas.Name = "cboPersonas";
             this.cboPersonas.Size = new System.Drawing.Size(183, 24);
-            this.cboPersonas.TabIndex = 0;
+            this.cboPersonas.TabIndex = 3;
             // 
             // gpServicios
             // 
@@ -413,7 +413,7 @@
             this.btnAgregarServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarServicio.Name = "btnAgregarServicio";
             this.btnAgregarServicio.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarServicio.TabIndex = 2;
+            this.btnAgregarServicio.TabIndex = 6;
             this.btnAgregarServicio.Text = "Agregar";
             this.btnAgregarServicio.UseVisualStyleBackColor = true;
             this.btnAgregarServicio.Click += new System.EventHandler(this.btnAgregarServicio_Click);
@@ -426,7 +426,7 @@
             this.cboServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboServicios.Name = "cboServicios";
             this.cboServicios.Size = new System.Drawing.Size(183, 24);
-            this.cboServicios.TabIndex = 1;
+            this.cboServicios.TabIndex = 5;
             // 
             // gpCotizacion
             // 
@@ -459,7 +459,7 @@
             this.btnCotizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCotizar.Name = "btnCotizar";
             this.btnCotizar.Size = new System.Drawing.Size(105, 50);
-            this.btnCotizar.TabIndex = 11;
+            this.btnCotizar.TabIndex = 8;
             this.btnCotizar.Text = "Cotizar";
             this.btnCotizar.UseVisualStyleBackColor = true;
             this.btnCotizar.Click += new System.EventHandler(this.btnCotizar_Click);
@@ -483,7 +483,7 @@
             this.txtPagoAdelantado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPagoAdelantado.Name = "txtPagoAdelantado";
             this.txtPagoAdelantado.Size = new System.Drawing.Size(181, 22);
-            this.txtPagoAdelantado.TabIndex = 1;
+            this.txtPagoAdelantado.TabIndex = 7;
             // 
             // label26
             // 
@@ -593,7 +593,7 @@
             this.btnCancelarCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelarCotizacion.Name = "btnCancelarCotizacion";
             this.btnCancelarCotizacion.Size = new System.Drawing.Size(105, 50);
-            this.btnCancelarCotizacion.TabIndex = 12;
+            this.btnCancelarCotizacion.TabIndex = 10;
             this.btnCancelarCotizacion.Text = "Cancelar";
             this.btnCancelarCotizacion.UseVisualStyleBackColor = true;
             this.btnCancelarCotizacion.Click += new System.EventHandler(this.btnCancelarCotizacion_Click);
@@ -605,7 +605,7 @@
             this.btnAceptarCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptarCotizacion.Name = "btnAceptarCotizacion";
             this.btnAceptarCotizacion.Size = new System.Drawing.Size(105, 50);
-            this.btnAceptarCotizacion.TabIndex = 11;
+            this.btnAceptarCotizacion.TabIndex = 9;
             this.btnAceptarCotizacion.Text = "Aceptar";
             this.btnAceptarCotizacion.UseVisualStyleBackColor = true;
             this.btnAceptarCotizacion.Click += new System.EventHandler(this.btnAceptarCotizacion_Click);
@@ -640,7 +640,7 @@
             this.txtIdReserva.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdReserva.Name = "txtIdReserva";
             this.txtIdReserva.Size = new System.Drawing.Size(191, 22);
-            this.txtIdReserva.TabIndex = 9;
+            this.txtIdReserva.TabIndex = 0;
             // 
             // gpEmpleados
             // 
@@ -712,6 +712,7 @@
             this.Controls.Add(this.gpEvento);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1022, 713);
             this.Name = "FCotizacionEvento";
             this.Text = "Cotización de Eventos";
             this.Load += new System.EventHandler(this.FCotizacionEvento_Load);

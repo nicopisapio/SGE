@@ -80,7 +80,7 @@
             this.txtClienteDU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtClienteDU.Name = "txtClienteDU";
             this.txtClienteDU.Size = new System.Drawing.Size(200, 22);
-            this.txtClienteDU.TabIndex = 6;
+            this.txtClienteDU.TabIndex = 0;
             // 
             // label3
             // 
@@ -98,7 +98,7 @@
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 53);
-            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -135,7 +135,7 @@
             this.dtpFechaDesde.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
             this.dtpFechaDesde.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechaDesde.TabIndex = 0;
+            this.dtpFechaDesde.TabIndex = 1;
             // 
             // gridReserva
             // 
@@ -153,7 +153,7 @@
             this.gridReserva.RowTemplate.Height = 24;
             this.gridReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridReserva.Size = new System.Drawing.Size(449, 160);
-            this.gridReserva.TabIndex = 23;
+            this.gridReserva.TabIndex = 4;
             this.gridReserva.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridReserva_CellDoubleClick);
             // 
             // btnCancelar
@@ -163,7 +163,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(105, 50);
-            this.btnCancelar.TabIndex = 26;
+            this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -175,7 +175,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(105, 50);
-            this.btnAceptar.TabIndex = 25;
+            this.btnAceptar.TabIndex = 7;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -206,7 +206,7 @@
             this.btnRecotizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRecotizar.Name = "btnRecotizar";
             this.btnRecotizar.Size = new System.Drawing.Size(99, 46);
-            this.btnRecotizar.TabIndex = 24;
+            this.btnRecotizar.TabIndex = 6;
             this.btnRecotizar.Text = "Recotizar";
             this.btnRecotizar.UseVisualStyleBackColor = true;
             this.btnRecotizar.Click += new System.EventHandler(this.btnRecotizar_Click);
@@ -230,7 +230,7 @@
             this.txtExcedente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtExcedente.Name = "txtExcedente";
             this.txtExcedente.Size = new System.Drawing.Size(101, 22);
-            this.txtExcedente.TabIndex = 1;
+            this.txtExcedente.TabIndex = 5;
             // 
             // label22
             // 
@@ -310,6 +310,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(490, 567);
             this.Name = "FAgregarExcedente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar Excedentes";

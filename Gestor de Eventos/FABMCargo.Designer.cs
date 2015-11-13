@@ -61,7 +61,7 @@
             this.gridCargos.RowTemplate.Height = 24;
             this.gridCargos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridCargos.Size = new System.Drawing.Size(441, 396);
-            this.gridCargos.TabIndex = 19;
+            this.gridCargos.TabIndex = 7;
             // 
             // btnBaja
             // 
@@ -69,7 +69,7 @@
             this.btnBaja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(104, 50);
-            this.btnBaja.TabIndex = 18;
+            this.btnBaja.TabIndex = 2;
             this.btnBaja.Text = "Baja";
             this.btnBaja.UseVisualStyleBackColor = true;
             this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
@@ -80,7 +80,7 @@
             this.btnModificacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificacion.Name = "btnModificacion";
             this.btnModificacion.Size = new System.Drawing.Size(104, 50);
-            this.btnModificacion.TabIndex = 17;
+            this.btnModificacion.TabIndex = 1;
             this.btnModificacion.Text = "Modificación";
             this.btnModificacion.UseVisualStyleBackColor = true;
             this.btnModificacion.Click += new System.EventHandler(this.btnModificacion_Click);
@@ -91,7 +91,7 @@
             this.btnAlta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAlta.Name = "btnAlta";
             this.btnAlta.Size = new System.Drawing.Size(104, 50);
-            this.btnAlta.TabIndex = 16;
+            this.btnAlta.TabIndex = 0;
             this.btnAlta.Text = "Alta";
             this.btnAlta.UseVisualStyleBackColor = true;
             this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
@@ -119,7 +119,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 39);
-            this.btnCancelar.TabIndex = 10;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -130,7 +130,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(85, 39);
-            this.btnAceptar.TabIndex = 9;
+            this.btnAceptar.TabIndex = 5;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -141,7 +141,7 @@
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(98, 22);
-            this.txtPrecio.TabIndex = 6;
+            this.txtPrecio.TabIndex = 4;
             // 
             // txtDescripcion
             // 
@@ -149,7 +149,7 @@
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(185, 22);
-            this.txtDescripcion.TabIndex = 5;
+            this.txtDescripcion.TabIndex = 3;
             // 
             // lblPrecio
             // 
@@ -179,6 +179,8 @@
             this.Controls.Add(this.btnModificacion);
             this.Controls.Add(this.btnAlta);
             this.Controls.Add(this.gbDatosCargo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MinimumSize = new System.Drawing.Size(483, 656);
             this.Name = "FABMCargo";
             this.Text = "Gestión de Cargos";
             this.Load += new System.EventHandler(this.FABMCargo_Load);

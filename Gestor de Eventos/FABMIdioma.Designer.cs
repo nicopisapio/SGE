@@ -60,14 +60,14 @@
             this.cboCulturas.Location = new System.Drawing.Point(119, 70);
             this.cboCulturas.Name = "cboCulturas";
             this.cboCulturas.Size = new System.Drawing.Size(314, 24);
-            this.cboCulturas.TabIndex = 4;
+            this.cboCulturas.TabIndex = 1;
             // 
             // txtNombreIdioma
             // 
             this.txtNombreIdioma.Location = new System.Drawing.Point(119, 30);
             this.txtNombreIdioma.Name = "txtNombreIdioma";
             this.txtNombreIdioma.Size = new System.Drawing.Size(314, 22);
-            this.txtNombreIdioma.TabIndex = 3;
+            this.txtNombreIdioma.TabIndex = 0;
             // 
             // label1
             // 
@@ -96,11 +96,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridTraduccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridTraduccion.Location = new System.Drawing.Point(12, 132);
+            this.gridTraduccion.MinimumSize = new System.Drawing.Size(628, 527);
             this.gridTraduccion.Name = "gridTraduccion";
             this.gridTraduccion.RowHeadersVisible = false;
             this.gridTraduccion.RowTemplate.Height = 24;
             this.gridTraduccion.Size = new System.Drawing.Size(628, 527);
-            this.gridTraduccion.TabIndex = 1;
+            this.gridTraduccion.TabIndex = 4;
             // 
             // btnAceptar
             // 
@@ -131,6 +132,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.gridTraduccion);
             this.Controls.Add(this.gpNuevoIdioma);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(669, 718);
             this.Name = "FABMIdioma";
             this.Text = "Agregar Idioma";

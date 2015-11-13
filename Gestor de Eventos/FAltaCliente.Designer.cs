@@ -101,7 +101,7 @@
             this.txtDepto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDepto.Name = "txtDepto";
             this.txtDepto.Size = new System.Drawing.Size(40, 22);
-            this.txtDepto.TabIndex = 24;
+            this.txtDepto.TabIndex = 8;
             // 
             // lblDpto
             // 
@@ -118,7 +118,7 @@
             this.txtPiso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPiso.Name = "txtPiso";
             this.txtPiso.Size = new System.Drawing.Size(40, 22);
-            this.txtPiso.TabIndex = 22;
+            this.txtPiso.TabIndex = 7;
             // 
             // lblPiso
             // 
@@ -135,7 +135,7 @@
             this.txtLocalidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(151, 22);
-            this.txtLocalidad.TabIndex = 20;
+            this.txtLocalidad.TabIndex = 6;
             // 
             // lblLocalidad
             // 
@@ -152,7 +152,7 @@
             this.txtAltura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(151, 22);
-            this.txtAltura.TabIndex = 18;
+            this.txtAltura.TabIndex = 5;
             // 
             // txtCalle
             // 
@@ -160,7 +160,7 @@
             this.txtCalle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(151, 22);
-            this.txtCalle.TabIndex = 17;
+            this.txtCalle.TabIndex = 4;
             // 
             // lblAltura
             // 
@@ -186,7 +186,7 @@
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(151, 22);
-            this.txtTelefono.TabIndex = 14;
+            this.txtTelefono.TabIndex = 3;
             // 
             // lblTelefono
             // 
@@ -203,7 +203,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(151, 22);
-            this.txtNombre.TabIndex = 12;
+            this.txtNombre.TabIndex = 2;
             // 
             // lblNombre
             // 
@@ -242,7 +242,7 @@
             this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(151, 22);
-            this.txtApellido.TabIndex = 6;
+            this.txtApellido.TabIndex = 1;
             // 
             // txtDU
             // 
@@ -250,7 +250,7 @@
             this.txtDU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDU.Name = "txtDU";
             this.txtDU.Size = new System.Drawing.Size(151, 22);
-            this.txtDU.TabIndex = 5;
+            this.txtDU.TabIndex = 0;
             // 
             // lblApellido
             // 
@@ -276,6 +276,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 280);
             this.Controls.Add(this.gbDatosCliente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MinimumSize = new System.Drawing.Size(596, 327);
             this.Name = "FAltaCliente";
             this.Text = "Alta de Cliente";
             this.Load += new System.EventHandler(this.FAltaCliente_Load);

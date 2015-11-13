@@ -48,6 +48,7 @@
             this.menuGestionDeEmpleados = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGestionDeUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGestionDePermisos = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuGestionDeCargos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDetalleDeHorasTrabajadas = new System.Windows.Forms.ToolStripMenuItem();
             this.semanalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mensualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,7 +60,6 @@
             this.menuRealizarBackup = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRealizarRestore = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBitacora = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuGestionDeCargos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,26 +94,28 @@
             // menuIniciarSesion
             // 
             this.menuIniciarSesion.Name = "menuIniciarSesion";
-            this.menuIniciarSesion.Size = new System.Drawing.Size(171, 26);
+            this.menuIniciarSesion.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.menuIniciarSesion.Size = new System.Drawing.Size(195, 26);
             this.menuIniciarSesion.Text = "Iniciar Sesion";
             this.menuIniciarSesion.Click += new System.EventHandler(this.menuIniciarSesion_Click);
             // 
             // menuCerrarSesion
             // 
             this.menuCerrarSesion.Name = "menuCerrarSesion";
-            this.menuCerrarSesion.Size = new System.Drawing.Size(171, 26);
+            this.menuCerrarSesion.Size = new System.Drawing.Size(195, 26);
             this.menuCerrarSesion.Text = "Cerrar Sesión";
             this.menuCerrarSesion.Click += new System.EventHandler(this.menuCerrarSesion_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(168, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(192, 6);
             // 
             // menuSalir
             // 
             this.menuSalir.Name = "menuSalir";
-            this.menuSalir.Size = new System.Drawing.Size(171, 26);
+            this.menuSalir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.menuSalir.Size = new System.Drawing.Size(195, 26);
             this.menuSalir.Text = "Salir";
             this.menuSalir.Click += new System.EventHandler(this.menuSalir_Click);
             // 
@@ -228,6 +230,13 @@
             this.menuGestionDePermisos.Text = "Gestión de Permisos";
             this.menuGestionDePermisos.Click += new System.EventHandler(this.menuGestionDePermisos_Click);
             // 
+            // menuGestionDeCargos
+            // 
+            this.menuGestionDeCargos.Name = "menuGestionDeCargos";
+            this.menuGestionDeCargos.Size = new System.Drawing.Size(272, 26);
+            this.menuGestionDeCargos.Text = "Gestión de Cargos";
+            this.menuGestionDeCargos.Click += new System.EventHandler(this.menuGestionDeCargos_Click);
+            // 
             // menuDetalleDeHorasTrabajadas
             // 
             this.menuDetalleDeHorasTrabajadas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -314,13 +323,6 @@
             this.menuBitacora.Size = new System.Drawing.Size(179, 26);
             this.menuBitacora.Text = "Bitácora";
             this.menuBitacora.Click += new System.EventHandler(this.menuBitacora_Click);
-            // 
-            // menuGestionDeCargos
-            // 
-            this.menuGestionDeCargos.Name = "menuGestionDeCargos";
-            this.menuGestionDeCargos.Size = new System.Drawing.Size(272, 26);
-            this.menuGestionDeCargos.Text = "Gestión de Cargos";
-            this.menuGestionDeCargos.Click += new System.EventHandler(this.menuGestionDeCargos_Click);
             // 
             // FPrincipal
             // 

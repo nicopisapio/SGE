@@ -55,6 +55,8 @@
             this.lblApellido1 = new System.Windows.Forms.Label();
             this.lblDUCliente1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lblExcedente2 = new System.Windows.Forms.Label();
+            this.lblExcedente1 = new System.Windows.Forms.Label();
             this.lblEmpleadosNecesarios2 = new System.Windows.Forms.Label();
             this.lblCantidadNiños2 = new System.Windows.Forms.Label();
             this.lblCantidadAdultos2 = new System.Windows.Forms.Label();
@@ -65,8 +67,6 @@
             this.lblCantidadNiños1 = new System.Windows.Forms.Label();
             this.lblCantidadAdultos1 = new System.Windows.Forms.Label();
             this.lblTipoEvento1 = new System.Windows.Forms.Label();
-            this.lblExcedente2 = new System.Windows.Forms.Label();
-            this.lblExcedente1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridReserva)).BeginInit();
@@ -99,7 +99,7 @@
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 53);
-            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.button1_Click);
@@ -119,7 +119,7 @@
             this.dtpFechaHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFechaHasta.Name = "dtpFechaHasta";
             this.dtpFechaHasta.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechaHasta.TabIndex = 2;
+            this.dtpFechaHasta.TabIndex = 1;
             // 
             // lblFechaDesde
             // 
@@ -155,6 +155,8 @@
             this.gridReserva.AllowUserToAddRows = false;
             this.gridReserva.AllowUserToDeleteRows = false;
             this.gridReserva.AllowUserToResizeRows = false;
+            this.gridReserva.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gridReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridReserva.Location = new System.Drawing.Point(7, 22);
             this.gridReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -165,7 +167,7 @@
             this.gridReserva.RowTemplate.Height = 24;
             this.gridReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridReserva.Size = new System.Drawing.Size(647, 140);
-            this.gridReserva.TabIndex = 0;
+            this.gridReserva.TabIndex = 3;
             this.gridReserva.SelectionChanged += new System.EventHandler(this.gridReserva_SelectionChanged);
             // 
             // groupBox3
@@ -190,7 +192,7 @@
             this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(105, 82);
-            this.btnModificar.TabIndex = 3;
+            this.btnModificar.TabIndex = 4;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             // 
@@ -386,6 +388,25 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Evento";
             // 
+            // lblExcedente2
+            // 
+            this.lblExcedente2.AutoSize = true;
+            this.lblExcedente2.Location = new System.Drawing.Point(168, 128);
+            this.lblExcedente2.Name = "lblExcedente2";
+            this.lblExcedente2.Size = new System.Drawing.Size(13, 17);
+            this.lblExcedente2.TabIndex = 11;
+            this.lblExcedente2.Text = "-";
+            // 
+            // lblExcedente1
+            // 
+            this.lblExcedente1.AutoSize = true;
+            this.lblExcedente1.Location = new System.Drawing.Point(77, 128);
+            this.lblExcedente1.Name = "lblExcedente1";
+            this.lblExcedente1.Size = new System.Drawing.Size(85, 17);
+            this.lblExcedente1.TabIndex = 10;
+            this.lblExcedente1.Text = "Excedentes:";
+            this.lblExcedente1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // lblEmpleadosNecesarios2
             // 
             this.lblEmpleadosNecesarios2.AutoSize = true;
@@ -481,25 +502,6 @@
             this.lblTipoEvento1.Text = "Tipo de Evento:";
             this.lblTipoEvento1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblExcedente2
-            // 
-            this.lblExcedente2.AutoSize = true;
-            this.lblExcedente2.Location = new System.Drawing.Point(168, 128);
-            this.lblExcedente2.Name = "lblExcedente2";
-            this.lblExcedente2.Size = new System.Drawing.Size(13, 17);
-            this.lblExcedente2.TabIndex = 11;
-            this.lblExcedente2.Text = "-";
-            // 
-            // lblExcedente1
-            // 
-            this.lblExcedente1.AutoSize = true;
-            this.lblExcedente1.Location = new System.Drawing.Point(77, 128);
-            this.lblExcedente1.Name = "lblExcedente1";
-            this.lblExcedente1.Size = new System.Drawing.Size(85, 17);
-            this.lblExcedente1.TabIndex = 10;
-            this.lblExcedente1.Text = "Excedentes:";
-            this.lblExcedente1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // FDetalleEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -510,6 +512,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(701, 621);
             this.Name = "FDetalleEvento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Detalle de Eventos";

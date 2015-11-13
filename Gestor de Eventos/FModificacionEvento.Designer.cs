@@ -113,7 +113,7 @@
             this.txtClienteDU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtClienteDU.Name = "txtClienteDU";
             this.txtClienteDU.Size = new System.Drawing.Size(200, 22);
-            this.txtClienteDU.TabIndex = 6;
+            this.txtClienteDU.TabIndex = 0;
             // 
             // label3
             // 
@@ -131,7 +131,7 @@
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 53);
-            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -168,7 +168,7 @@
             this.dtpFechaDesde.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
             this.dtpFechaDesde.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechaDesde.TabIndex = 0;
+            this.dtpFechaDesde.TabIndex = 1;
             // 
             // groupBox6
             // 
@@ -196,7 +196,7 @@
             this.btnRecotizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRecotizar.Name = "btnRecotizar";
             this.btnRecotizar.Size = new System.Drawing.Size(99, 46);
-            this.btnRecotizar.TabIndex = 24;
+            this.btnRecotizar.TabIndex = 15;
             this.btnRecotizar.Text = "Recotizar";
             this.btnRecotizar.UseVisualStyleBackColor = true;
             this.btnRecotizar.Click += new System.EventHandler(this.btnRecotizar_Click);
@@ -220,7 +220,7 @@
             this.txtPago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPago.Name = "txtPago";
             this.txtPago.Size = new System.Drawing.Size(101, 22);
-            this.txtPago.TabIndex = 1;
+            this.txtPago.TabIndex = 14;
             // 
             // label22
             // 
@@ -375,7 +375,7 @@
             this.btnQuitarDuracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarDuracion.Name = "btnQuitarDuracion";
             this.btnQuitarDuracion.Size = new System.Drawing.Size(105, 50);
-            this.btnQuitarDuracion.TabIndex = 2;
+            this.btnQuitarDuracion.TabIndex = 13;
             this.btnQuitarDuracion.Text = "Quitar";
             this.btnQuitarDuracion.UseVisualStyleBackColor = true;
             this.btnQuitarDuracion.Click += new System.EventHandler(this.btnQuitarDuracion_Click);
@@ -387,7 +387,7 @@
             this.btnAgregarDuracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarDuracion.Name = "btnAgregarDuracion";
             this.btnAgregarDuracion.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarDuracion.TabIndex = 1;
+            this.btnAgregarDuracion.TabIndex = 12;
             this.btnAgregarDuracion.Text = "Agregar";
             this.btnAgregarDuracion.UseVisualStyleBackColor = true;
             this.btnAgregarDuracion.Click += new System.EventHandler(this.btnAgregarDuracion_Click);
@@ -473,7 +473,7 @@
             this.btnQuitarServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarServicio.Name = "btnQuitarServicio";
             this.btnQuitarServicio.Size = new System.Drawing.Size(105, 50);
-            this.btnQuitarServicio.TabIndex = 7;
+            this.btnQuitarServicio.TabIndex = 11;
             this.btnQuitarServicio.Text = "Quitar";
             this.btnQuitarServicio.UseVisualStyleBackColor = true;
             this.btnQuitarServicio.Click += new System.EventHandler(this.btnQuitarServicio_Click);
@@ -486,7 +486,7 @@
             this.listServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listServicios.Name = "listServicios";
             this.listServicios.Size = new System.Drawing.Size(199, 100);
-            this.listServicios.TabIndex = 5;
+            this.listServicios.TabIndex = 9;
             // 
             // cboServicios
             // 
@@ -496,7 +496,7 @@
             this.cboServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboServicios.Name = "cboServicios";
             this.cboServicios.Size = new System.Drawing.Size(215, 24);
-            this.cboServicios.TabIndex = 1;
+            this.cboServicios.TabIndex = 8;
             // 
             // btnAgregarServicio
             // 
@@ -505,7 +505,7 @@
             this.btnAgregarServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarServicio.Name = "btnAgregarServicio";
             this.btnAgregarServicio.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarServicio.TabIndex = 6;
+            this.btnAgregarServicio.TabIndex = 10;
             this.btnAgregarServicio.Text = "Agregar";
             this.btnAgregarServicio.UseVisualStyleBackColor = true;
             this.btnAgregarServicio.Click += new System.EventHandler(this.btnAgregarServicio_Click);
@@ -535,7 +535,7 @@
             this.btnQuitarPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarPersonas.Name = "btnQuitarPersonas";
             this.btnQuitarPersonas.Size = new System.Drawing.Size(105, 50);
-            this.btnQuitarPersonas.TabIndex = 2;
+            this.btnQuitarPersonas.TabIndex = 7;
             this.btnQuitarPersonas.Text = "Quitar";
             this.btnQuitarPersonas.UseVisualStyleBackColor = true;
             this.btnQuitarPersonas.Click += new System.EventHandler(this.btnQuitarPersonas_Click);
@@ -547,7 +547,7 @@
             this.btnAgregarPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarPersonas.Name = "btnAgregarPersonas";
             this.btnAgregarPersonas.Size = new System.Drawing.Size(105, 50);
-            this.btnAgregarPersonas.TabIndex = 1;
+            this.btnAgregarPersonas.TabIndex = 6;
             this.btnAgregarPersonas.Text = "Agregar";
             this.btnAgregarPersonas.UseVisualStyleBackColor = true;
             this.btnAgregarPersonas.Click += new System.EventHandler(this.btnAgregarPersonas_Click);
@@ -563,7 +563,7 @@
             this.cboPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPersonas.Name = "cboPersonas";
             this.cboPersonas.Size = new System.Drawing.Size(159, 24);
-            this.cboPersonas.TabIndex = 0;
+            this.cboPersonas.TabIndex = 5;
             // 
             // label4
             // 
@@ -630,7 +630,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(105, 50);
-            this.btnCancelar.TabIndex = 22;
+            this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -642,7 +642,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(105, 50);
-            this.btnAceptar.TabIndex = 21;
+            this.btnAceptar.TabIndex = 16;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -652,8 +652,7 @@
             this.gridReserva.AllowUserToAddRows = false;
             this.gridReserva.AllowUserToDeleteRows = false;
             this.gridReserva.AllowUserToResizeRows = false;
-            this.gridReserva.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gridReserva.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridReserva.Location = new System.Drawing.Point(13, 142);
@@ -664,7 +663,7 @@
             this.gridReserva.RowTemplate.Height = 24;
             this.gridReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridReserva.Size = new System.Drawing.Size(780, 165);
-            this.gridReserva.TabIndex = 23;
+            this.gridReserva.TabIndex = 4;
             this.gridReserva.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridReserva_CellDoubleClick);
             // 
             // FModificacionEvento
@@ -679,6 +678,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(821, 801);
             this.Name = "FModificacionEvento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Modificación de Eventos";

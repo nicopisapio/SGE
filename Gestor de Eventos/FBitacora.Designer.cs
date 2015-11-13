@@ -68,7 +68,7 @@
             this.chkUsuario.Location = new System.Drawing.Point(405, 40);
             this.chkUsuario.Name = "chkUsuario";
             this.chkUsuario.Size = new System.Drawing.Size(152, 21);
-            this.chkUsuario.TabIndex = 5;
+            this.chkUsuario.TabIndex = 3;
             this.chkUsuario.Text = "Buscar por Usuario";
             this.chkUsuario.UseVisualStyleBackColor = true;
             this.chkUsuario.CheckedChanged += new System.EventHandler(this.chkUsuario_CheckedChanged);
@@ -99,14 +99,14 @@
             this.cboTipo.Location = new System.Drawing.Point(121, 38);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(200, 24);
-            this.cboTipo.TabIndex = 2;
+            this.cboTipo.TabIndex = 1;
             // 
             // dtpFechaDesde
             // 
             this.dtpFechaDesde.Location = new System.Drawing.Point(121, 78);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
             this.dtpFechaDesde.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechaDesde.TabIndex = 1;
+            this.dtpFechaDesde.TabIndex = 2;
             // 
             // lblFechaDesde
             // 
@@ -139,14 +139,14 @@
             this.gridBitacora.RowHeadersVisible = false;
             this.gridBitacora.RowTemplate.Height = 24;
             this.gridBitacora.Size = new System.Drawing.Size(729, 384);
-            this.gridBitacora.TabIndex = 1;
+            this.gridBitacora.TabIndex = 6;
             // 
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(643, 50);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(97, 58);
-            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.TabIndex = 5;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -159,6 +159,7 @@
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.gridBitacora);
             this.Controls.Add(this.gpFiltro);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(769, 592);
             this.Name = "FBitacora";
             this.Text = "Bitácora";

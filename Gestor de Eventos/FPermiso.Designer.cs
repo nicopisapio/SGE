@@ -48,9 +48,9 @@
             this.gpPermiso.Controls.Add(this.txtDescripcion);
             this.gpPermiso.Controls.Add(this.lblDescripcion);
             this.gpPermiso.Location = new System.Drawing.Point(16, 15);
-            this.gpPermiso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpPermiso.Margin = new System.Windows.Forms.Padding(4);
             this.gpPermiso.Name = "gpPermiso";
-            this.gpPermiso.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpPermiso.Padding = new System.Windows.Forms.Padding(4);
             this.gpPermiso.Size = new System.Drawing.Size(421, 105);
             this.gpPermiso.TabIndex = 0;
             this.gpPermiso.TabStop = false;
@@ -59,10 +59,10 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(104, 46);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(308, 22);
-            this.txtDescripcion.TabIndex = 2;
+            this.txtDescripcion.TabIndex = 0;
             // 
             // lblDescripcion
             // 
@@ -80,7 +80,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(83, 66);
-            this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -90,7 +90,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(83, 66);
-            this.btnAceptar.TabIndex = 4;
+            this.btnAceptar.TabIndex = 1;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -108,20 +108,20 @@
             // treePermisosPadre
             // 
             this.treePermisosPadre.Location = new System.Drawing.Point(16, 166);
-            this.treePermisosPadre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.treePermisosPadre.Margin = new System.Windows.Forms.Padding(4);
             this.treePermisosPadre.Name = "treePermisosPadre";
             this.treePermisosPadre.Size = new System.Drawing.Size(299, 372);
-            this.treePermisosPadre.TabIndex = 8;
+            this.treePermisosPadre.TabIndex = 3;
             // 
             // listPermisosPadre
             // 
             this.listPermisosPadre.FormattingEnabled = true;
             this.listPermisosPadre.ItemHeight = 16;
             this.listPermisosPadre.Location = new System.Drawing.Point(324, 166);
-            this.listPermisosPadre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listPermisosPadre.Margin = new System.Windows.Forms.Padding(4);
             this.listPermisosPadre.Name = "listPermisosPadre";
             this.listPermisosPadre.Size = new System.Drawing.Size(299, 180);
-            this.listPermisosPadre.TabIndex = 9;
+            this.listPermisosPadre.TabIndex = 4;
             this.listPermisosPadre.SelectedIndexChanged += new System.EventHandler(this.listPermisosPadre_SelectedIndexChanged);
             // 
             // listPermisosHijo
@@ -129,10 +129,10 @@
             this.listPermisosHijo.FormattingEnabled = true;
             this.listPermisosHijo.ItemHeight = 16;
             this.listPermisosHijo.Location = new System.Drawing.Point(324, 358);
-            this.listPermisosHijo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listPermisosHijo.Margin = new System.Windows.Forms.Padding(4);
             this.listPermisosHijo.Name = "listPermisosHijo";
             this.listPermisosHijo.Size = new System.Drawing.Size(299, 180);
-            this.listPermisosHijo.TabIndex = 10;
+            this.listPermisosHijo.TabIndex = 5;
             // 
             // btnEliminarPermiso
             // 
@@ -140,7 +140,7 @@
             this.btnEliminarPermiso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarPermiso.Name = "btnEliminarPermiso";
             this.btnEliminarPermiso.Size = new System.Drawing.Size(83, 46);
-            this.btnEliminarPermiso.TabIndex = 11;
+            this.btnEliminarPermiso.TabIndex = 6;
             this.btnEliminarPermiso.Text = "Eliminar";
             this.btnEliminarPermiso.UseVisualStyleBackColor = true;
             this.btnEliminarPermiso.Click += new System.EventHandler(this.btnEliminarPermiso_Click);
@@ -151,7 +151,7 @@
             this.btnAgregarPermiso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarPermiso.Name = "btnAgregarPermiso";
             this.btnAgregarPermiso.Size = new System.Drawing.Size(83, 46);
-            this.btnAgregarPermiso.TabIndex = 12;
+            this.btnAgregarPermiso.TabIndex = 7;
             this.btnAgregarPermiso.Text = "Agregar";
             this.btnAgregarPermiso.UseVisualStyleBackColor = true;
             this.btnAgregarPermiso.Click += new System.EventHandler(this.btnAgregarPermiso_Click);
@@ -162,7 +162,7 @@
             this.btnQuitarPermiso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuitarPermiso.Name = "btnQuitarPermiso";
             this.btnQuitarPermiso.Size = new System.Drawing.Size(83, 46);
-            this.btnQuitarPermiso.TabIndex = 13;
+            this.btnQuitarPermiso.TabIndex = 8;
             this.btnQuitarPermiso.Text = "Quitar";
             this.btnQuitarPermiso.UseVisualStyleBackColor = true;
             this.btnQuitarPermiso.Click += new System.EventHandler(this.btnQuitarPermiso_Click);
@@ -182,8 +182,11 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.gpPermiso);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(658, 645);
             this.Name = "FPermiso";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Permiso";
             this.Load += new System.EventHandler(this.FPermiso_Load);
             this.gpPermiso.ResumeLayout(false);

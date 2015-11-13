@@ -225,6 +225,7 @@
             this.Controls.Add(this.btnModificacion);
             this.Controls.Add(this.btnAlta);
             this.Controls.Add(this.gbDatosUsuario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(514, 637);
             this.Name = "FABMUsuario";

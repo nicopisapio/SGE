@@ -263,6 +263,8 @@
             this.Controls.Add(this.btnModificacion);
             this.Controls.Add(this.btnAlta);
             this.Controls.Add(this.gbDatosEvento);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MinimumSize = new System.Drawing.Size(653, 661);
             this.Name = "FABMEventos";
             this.Text = "Gestión de Eventos";
             this.Load += new System.EventHandler(this.FABMEventos_Load);

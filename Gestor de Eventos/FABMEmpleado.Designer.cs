@@ -80,7 +80,7 @@
             this.gridEmpleados.RowTemplate.Height = 24;
             this.gridEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridEmpleados.Size = new System.Drawing.Size(678, 344);
-            this.gridEmpleados.TabIndex = 9;
+            this.gridEmpleados.TabIndex = 16;
             // 
             // btnBaja
             // 
@@ -88,7 +88,7 @@
             this.btnBaja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(102, 58);
-            this.btnBaja.TabIndex = 8;
+            this.btnBaja.TabIndex = 2;
             this.btnBaja.Text = "Baja";
             this.btnBaja.UseVisualStyleBackColor = true;
             this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
@@ -99,7 +99,7 @@
             this.btnModificacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificacion.Name = "btnModificacion";
             this.btnModificacion.Size = new System.Drawing.Size(102, 58);
-            this.btnModificacion.TabIndex = 7;
+            this.btnModificacion.TabIndex = 1;
             this.btnModificacion.Text = "Modificación";
             this.btnModificacion.UseVisualStyleBackColor = true;
             this.btnModificacion.Click += new System.EventHandler(this.btnModificacion_Click);
@@ -110,7 +110,7 @@
             this.btnAlta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAlta.Name = "btnAlta";
             this.btnAlta.Size = new System.Drawing.Size(102, 58);
-            this.btnAlta.TabIndex = 6;
+            this.btnAlta.TabIndex = 0;
             this.btnAlta.Text = "Alta";
             this.btnAlta.UseVisualStyleBackColor = true;
             this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
@@ -148,7 +148,7 @@
             this.cboCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCargo.Name = "cboCargo";
             this.cboCargo.Size = new System.Drawing.Size(151, 24);
-            this.cboCargo.TabIndex = 16;
+            this.cboCargo.TabIndex = 7;
             // 
             // lblCargo
             // 
@@ -166,7 +166,7 @@
             this.chkActivo.Location = new System.Drawing.Point(169, 217);
             this.chkActivo.Name = "chkActivo";
             this.chkActivo.Size = new System.Drawing.Size(68, 21);
-            this.chkActivo.TabIndex = 13;
+            this.chkActivo.TabIndex = 8;
             this.chkActivo.Text = "Activo";
             this.chkActivo.UseVisualStyleBackColor = true;
             // 
@@ -195,7 +195,7 @@
             this.txtDepto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDepto.Name = "txtDepto";
             this.txtDepto.Size = new System.Drawing.Size(40, 22);
-            this.txtDepto.TabIndex = 24;
+            this.txtDepto.TabIndex = 13;
             // 
             // lblDpto
             // 
@@ -212,7 +212,7 @@
             this.txtPiso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPiso.Name = "txtPiso";
             this.txtPiso.Size = new System.Drawing.Size(40, 22);
-            this.txtPiso.TabIndex = 22;
+            this.txtPiso.TabIndex = 12;
             // 
             // lblPiso
             // 
@@ -229,7 +229,7 @@
             this.txtLocalidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(151, 22);
-            this.txtLocalidad.TabIndex = 20;
+            this.txtLocalidad.TabIndex = 11;
             // 
             // lblLocalidad
             // 
@@ -246,7 +246,7 @@
             this.txtAltura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(151, 22);
-            this.txtAltura.TabIndex = 18;
+            this.txtAltura.TabIndex = 10;
             // 
             // txtCalle
             // 
@@ -254,7 +254,7 @@
             this.txtCalle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(151, 22);
-            this.txtCalle.TabIndex = 17;
+            this.txtCalle.TabIndex = 9;
             // 
             // lblAltura
             // 
@@ -280,7 +280,7 @@
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(151, 22);
-            this.txtTelefono.TabIndex = 14;
+            this.txtTelefono.TabIndex = 6;
             // 
             // lblTelefono
             // 
@@ -297,7 +297,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(151, 22);
-            this.txtNombre.TabIndex = 12;
+            this.txtNombre.TabIndex = 5;
             // 
             // lblNombre
             // 
@@ -314,7 +314,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 39);
-            this.btnCancelar.TabIndex = 10;
+            this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -325,7 +325,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(85, 39);
-            this.btnAceptar.TabIndex = 9;
+            this.btnAceptar.TabIndex = 14;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -336,7 +336,7 @@
             this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(151, 22);
-            this.txtApellido.TabIndex = 6;
+            this.txtApellido.TabIndex = 4;
             // 
             // txtDU
             // 
@@ -344,7 +344,7 @@
             this.txtDU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDU.Name = "txtDU";
             this.txtDU.Size = new System.Drawing.Size(151, 22);
-            this.txtDU.TabIndex = 5;
+            this.txtDU.TabIndex = 3;
             // 
             // lblApellido
             // 
@@ -374,6 +374,8 @@
             this.Controls.Add(this.btnBaja);
             this.Controls.Add(this.btnModificacion);
             this.Controls.Add(this.btnAlta);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MinimumSize = new System.Drawing.Size(719, 698);
             this.Name = "FABMEmpleado";
             this.Text = "Gestión de Empleados";
             this.Load += new System.EventHandler(this.FABMEmpleado_Load);
