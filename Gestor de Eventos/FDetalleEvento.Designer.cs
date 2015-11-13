@@ -100,7 +100,7 @@
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.button1_Click);
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblFechaHasta
             // 
@@ -146,7 +146,7 @@
             this.gbDetalles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbDetalles.Name = "gbDetalles";
             this.gbDetalles.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbDetalles.Size = new System.Drawing.Size(661, 273);
+            this.gbDetalles.Size = new System.Drawing.Size(753, 273);
             this.gbDetalles.TabIndex = 2;
             this.gbDetalles.TabStop = false;
             this.gbDetalles.Text = "Detalles";
@@ -154,7 +154,7 @@
             // btnModificar
             // 
             this.btnModificar.ForeColor = System.Drawing.Color.Navy;
-            this.btnModificar.Location = new System.Drawing.Point(549, 193);
+            this.btnModificar.Location = new System.Drawing.Point(641, 193);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(105, 74);
@@ -168,7 +168,7 @@
             this.gbCotizacion.Controls.Add(this.lblMontoPagado2);
             this.gbCotizacion.Controls.Add(this.lblMontoTotal1);
             this.gbCotizacion.Controls.Add(this.lblMontoPagado1);
-            this.gbCotizacion.Location = new System.Drawing.Point(284, 185);
+            this.gbCotizacion.Location = new System.Drawing.Point(376, 185);
             this.gbCotizacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbCotizacion.Name = "gbCotizacion";
             this.gbCotizacion.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -227,7 +227,7 @@
             this.gbCliente.Controls.Add(this.lblNombre1);
             this.gbCliente.Controls.Add(this.lblApellido1);
             this.gbCliente.Controls.Add(this.lblDUCliente1);
-            this.gbCliente.Location = new System.Drawing.Point(284, 22);
+            this.gbCliente.Location = new System.Drawing.Point(376, 22);
             this.gbCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbCliente.Name = "gbCliente";
             this.gbCliente.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -349,7 +349,7 @@
             this.gbEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbEvento.Name = "gbEvento";
             this.gbEvento.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbEvento.Size = new System.Drawing.Size(269, 245);
+            this.gbEvento.Size = new System.Drawing.Size(361, 245);
             this.gbEvento.TabIndex = 0;
             this.gbEvento.TabStop = false;
             this.gbEvento.Text = "Evento";
@@ -416,7 +416,7 @@
             this.listServicios.Location = new System.Drawing.Point(5, 171);
             this.listServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listServicios.Name = "listServicios";
-            this.listServicios.Size = new System.Drawing.Size(257, 68);
+            this.listServicios.Size = new System.Drawing.Size(176, 68);
             this.listServicios.TabIndex = 5;
             // 
             // lblServicios
@@ -484,18 +484,19 @@
             this.gridReserva.RowHeadersVisible = false;
             this.gridReserva.RowTemplate.Height = 24;
             this.gridReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridReserva.Size = new System.Drawing.Size(661, 173);
+            this.gridReserva.Size = new System.Drawing.Size(756, 173);
             this.gridReserva.TabIndex = 1;
+            this.gridReserva.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridReserva_CellClick);
             // 
             // FDetalleEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 574);
+            this.ClientSize = new System.Drawing.Size(778, 574);
             this.Controls.Add(this.gridReserva);
             this.Controls.Add(this.gbDetalles);
             this.Controls.Add(this.gbBusqueda);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(701, 621);
             this.Name = "FDetalleEvento";

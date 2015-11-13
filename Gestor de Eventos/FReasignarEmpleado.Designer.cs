@@ -235,6 +235,7 @@
             this.Controls.Add(this.gbEmpleados);
             this.Controls.Add(this.gridReserva);
             this.Controls.Add(this.gbBusqueda);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FReasignarEmpleado";
             this.Text = "Reasignación de Empleados";

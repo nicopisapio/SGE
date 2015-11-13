@@ -308,7 +308,6 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.gridReserva);
             this.Controls.Add(this.gbBusqueda);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(490, 567);
             this.Name = "FAgregarExcedente";

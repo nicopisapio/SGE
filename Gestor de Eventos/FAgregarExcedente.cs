@@ -46,6 +46,8 @@ namespace Gestor_de_Eventos
                         else
                         {
                             gridReserva.DataSource = null;
+                            LimpiarControles();
+                            HabilitarControles(false);
                             MessageBox.Show("No se han encontrado coincidencias.", "Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }

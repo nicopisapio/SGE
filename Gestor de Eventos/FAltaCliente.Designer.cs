@@ -276,7 +276,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 280);
             this.Controls.Add(this.gbDatosCliente);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MinimumSize = new System.Drawing.Size(596, 327);
             this.Name = "FAltaCliente";
             this.Text = "Alta de Cliente";

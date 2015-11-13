@@ -19,7 +19,7 @@ namespace Gestor_de_Eventos
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -47,26 +47,6 @@ namespace Gestor_de_Eventos
                 string mensajeError = ErrorManager.ObtenerInstancia().LoguearGenerarMensajeError(ex, MensajeError.ConsultaReservasFallida, FormHelper.ObtenerInstancia().TraerUltimoIdioma());
                 MessageBox.Show(mensajeError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void gridReserva_SelectionChanged(object sender, EventArgs e)
-        {
-
-            try
-            {
-                Reserva reserva = (Reserva)this.gridReserva.CurrentRow.DataBoundItem;
-
-                if (reserva != null)
-                {
-                    CargarDatos(reserva);
-                }
-            }
-            catch (Exception ex)
-            {
-                ErrorManager.ObtenerInstancia().LoguearErrorBD(ex);
-                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
         }
 
         private void CargarDatos(Reserva reserva)
@@ -97,6 +77,24 @@ namespace Gestor_de_Eventos
             {
                 string mensajeError = ErrorManager.ObtenerInstancia().LoguearGenerarMensajeError(ex, MensajeError.TraduccionFallida, FormHelper.ObtenerInstancia().TraerUltimoIdioma());
                 MessageBox.Show(mensajeError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void gridReserva_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                Reserva reserva = (Reserva)this.gridReserva.CurrentRow.DataBoundItem;
+
+                if (reserva != null)
+                {
+                    CargarDatos(reserva);
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorManager.ObtenerInstancia().LoguearErrorBD(ex);
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
