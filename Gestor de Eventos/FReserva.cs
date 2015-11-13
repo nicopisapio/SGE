@@ -98,7 +98,6 @@ namespace Gestor_de_Eventos
         {
             try
             {
-
                 DateTime fechaDesde = this.dtpHoraInicio.Value;
                 DateTime fechaHasta = this.dtpHoraFin.Value;
 
