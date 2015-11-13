@@ -133,7 +133,7 @@ namespace Gestor_de_Eventos
                 if (!double.TryParse(this.txtExcedente.Text, out precioExcedente))
                 {
                     MessageBox.Show("Ingrese un valor numérico.", "Gestión de Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    this.txtPrecio.Focus();
+                    this.txtExcedente.Focus();
                     return;
                 }
 
