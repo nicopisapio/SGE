@@ -148,7 +148,7 @@ namespace Gestor_de_Eventos
                 {
                     if (GestorBD.ObtenerInstancia().ActualizarDVV("USUARIO"))
                     {
-                        MessageBox.Show("Se ha creado/modificado el usuario correctamente");
+                        MessageBox.Show("El usuario se ha creado/modificado correctamente.", "Gestión de Usuarios", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         HabilitarControles(true);
                         this.gbDatosUsuario.Enabled = false;
                         LimpiarControles();
