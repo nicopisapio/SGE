@@ -92,30 +92,37 @@ namespace Gestor_de_Eventos
             try
             {
 
-                List<Componente> componentes = new List<Componente>();
-                Componente componente;
-
-                CultureInfo culturaElegida = (CultureInfo)cboCulturas.SelectedItem;
-
-                DataTable tabla = (DataTable)this.gridTraduccion.DataSource;
-
-                foreach (DataRow row in tabla.Rows)
+                if (!string.IsNullOrWhiteSpace(txtNombreIdioma.Text))
                 {
-                    componente = new Componente();
-                    componente.Idioma = new Idioma();
-                    componente.Idioma.ID = culturaElegida.Name;
-                    componente.Idioma.Nombre = txtNombreIdioma.Text.Trim();
-                    componente.Leyenda = new Leyenda();
-                    componente.Leyenda.ID = Convert.ToInt32(row[0]);
-                    componente.Traduccion = string.IsNullOrWhiteSpace(Convert.ToString(row[2])) ? Convert.ToString(row[1]) : Convert.ToString(row[2]);
+                    List<Componente> componentes = new List<Componente>();
+                    Componente componente;
 
-                    componentes.Add(componente);
+                    CultureInfo culturaElegida = (CultureInfo)cboCulturas.SelectedItem;
+
+                    DataTable tabla = (DataTable)this.gridTraduccion.DataSource;
+
+                    foreach (DataRow row in tabla.Rows)
+                    {
+                        componente = new Componente();
+                        componente.Idioma = new Idioma();
+                        componente.Idioma.ID = culturaElegida.Name;
+                        componente.Idioma.Nombre = txtNombreIdioma.Text.Trim();
+                        componente.Leyenda = new Leyenda();
+                        componente.Leyenda.ID = Convert.ToInt32(row[0]);
+                        componente.Traduccion = string.IsNullOrWhiteSpace(Convert.ToString(row[2])) ? Convert.ToString(row[1]) : Convert.ToString(row[2]);
+
+                        componentes.Add(componente);
+                    }
+
+                    if (GestorIdioma.ObtenerInstancia().InsertarNuevoIdioma(componentes))
+                    {
+                        MessageBox.Show("El idioma se ha creado correctamente", "Gestor de Idioma", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LimpiarComponentes();
+                    }
                 }
-
-                if(GestorIdioma.ObtenerInstancia().InsertarNuevoIdioma(componentes))
+                else
                 {
-                    MessageBox.Show("El idioma se ha creado correctamente");
-                    LimpiarComponentes();
+                    MessageBox.Show("Debe ingresar un nombre de Idioma.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
