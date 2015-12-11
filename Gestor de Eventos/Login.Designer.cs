@@ -39,14 +39,14 @@
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(56, 134);
+            this.txtUser.Location = new System.Drawing.Point(53, 134);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(236, 22);
             this.txtUser.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(56, 189);
+            this.txtPassword.Location = new System.Drawing.Point(53, 189);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(236, 22);
             this.txtPassword.TabIndex = 1;
@@ -74,6 +74,7 @@
             this.lblLogo.Size = new System.Drawing.Size(233, 37);
             this.lblLogo.TabIndex = 3;
             this.lblLogo.Text = "Gestor de Eventos";
+            this.lblLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblUsuario
             // 
@@ -83,6 +84,7 @@
             this.lblUsuario.Size = new System.Drawing.Size(57, 17);
             this.lblUsuario.TabIndex = 4;
             this.lblUsuario.Text = "Usuario";
+            this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblContraseña
             // 
@@ -92,6 +94,7 @@
             this.lblContraseña.Size = new System.Drawing.Size(81, 17);
             this.lblContraseña.TabIndex = 5;
             this.lblContraseña.Text = "Contraseña";
+            this.lblContraseña.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMensaje
             // 

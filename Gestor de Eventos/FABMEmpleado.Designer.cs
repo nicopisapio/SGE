@@ -144,7 +144,7 @@
             // 
             this.cboCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCargo.FormattingEnabled = true;
-            this.cboCargo.Location = new System.Drawing.Point(86, 179);
+            this.cboCargo.Location = new System.Drawing.Point(86, 173);
             this.cboCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCargo.Name = "cboCargo";
             this.cboCargo.Size = new System.Drawing.Size(151, 24);
@@ -152,9 +152,10 @@
             // 
             // lblCargo
             // 
-            this.lblCargo.Location = new System.Drawing.Point(6, 180);
+            this.lblCargo.AutoSize = true;
+            this.lblCargo.Location = new System.Drawing.Point(30, 177);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(74, 20);
+            this.lblCargo.Size = new System.Drawing.Size(50, 17);
             this.lblCargo.TabIndex = 15;
             this.lblCargo.Text = "Cargo:";
             this.lblCargo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -168,6 +169,7 @@
             this.chkActivo.Size = new System.Drawing.Size(68, 21);
             this.chkActivo.TabIndex = 9;
             this.chkActivo.Text = "Activo";
+            this.chkActivo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chkActivo.UseVisualStyleBackColor = true;
             // 
             // gbDireccion
@@ -191,7 +193,7 @@
             // 
             // txtDepto
             // 
-            this.txtDepto.Location = new System.Drawing.Point(207, 142);
+            this.txtDepto.Location = new System.Drawing.Point(207, 138);
             this.txtDepto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDepto.Name = "txtDepto";
             this.txtDepto.Size = new System.Drawing.Size(40, 22);
@@ -199,16 +201,17 @@
             // 
             // lblDpto
             // 
-            this.lblDpto.Location = new System.Drawing.Point(150, 143);
+            this.lblDpto.AutoSize = true;
+            this.lblDpto.Location = new System.Drawing.Point(159, 141);
             this.lblDpto.Name = "lblDpto";
-            this.lblDpto.Size = new System.Drawing.Size(51, 20);
+            this.lblDpto.Size = new System.Drawing.Size(42, 17);
             this.lblDpto.TabIndex = 23;
             this.lblDpto.Text = "Dpto:";
             this.lblDpto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPiso
             // 
-            this.txtPiso.Location = new System.Drawing.Point(96, 142);
+            this.txtPiso.Location = new System.Drawing.Point(96, 138);
             this.txtPiso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPiso.Name = "txtPiso";
             this.txtPiso.Size = new System.Drawing.Size(40, 22);
@@ -216,16 +219,17 @@
             // 
             // lblPiso
             // 
-            this.lblPiso.Location = new System.Drawing.Point(16, 143);
+            this.lblPiso.AutoSize = true;
+            this.lblPiso.Location = new System.Drawing.Point(51, 141);
             this.lblPiso.Name = "lblPiso";
-            this.lblPiso.Size = new System.Drawing.Size(74, 20);
+            this.lblPiso.Size = new System.Drawing.Size(39, 17);
             this.lblPiso.TabIndex = 21;
             this.lblPiso.Text = "Piso:";
             this.lblPiso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtLocalidad
             // 
-            this.txtLocalidad.Location = new System.Drawing.Point(96, 107);
+            this.txtLocalidad.Location = new System.Drawing.Point(96, 104);
             this.txtLocalidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(151, 22);
@@ -233,16 +237,17 @@
             // 
             // lblLocalidad
             // 
-            this.lblLocalidad.Location = new System.Drawing.Point(16, 108);
+            this.lblLocalidad.AutoSize = true;
+            this.lblLocalidad.Location = new System.Drawing.Point(17, 107);
             this.lblLocalidad.Name = "lblLocalidad";
-            this.lblLocalidad.Size = new System.Drawing.Size(74, 20);
+            this.lblLocalidad.Size = new System.Drawing.Size(73, 17);
             this.lblLocalidad.TabIndex = 19;
             this.lblLocalidad.Text = "Localidad:";
             this.lblLocalidad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtAltura
             // 
-            this.txtAltura.Location = new System.Drawing.Point(96, 73);
+            this.txtAltura.Location = new System.Drawing.Point(96, 70);
             this.txtAltura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(151, 22);
@@ -250,7 +255,7 @@
             // 
             // txtCalle
             // 
-            this.txtCalle.Location = new System.Drawing.Point(96, 39);
+            this.txtCalle.Location = new System.Drawing.Point(96, 36);
             this.txtCalle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(151, 22);
@@ -258,25 +263,27 @@
             // 
             // lblAltura
             // 
-            this.lblAltura.Location = new System.Drawing.Point(16, 74);
+            this.lblAltura.AutoSize = true;
+            this.lblAltura.Location = new System.Drawing.Point(41, 73);
             this.lblAltura.Name = "lblAltura";
-            this.lblAltura.Size = new System.Drawing.Size(74, 20);
+            this.lblAltura.Size = new System.Drawing.Size(49, 17);
             this.lblAltura.TabIndex = 16;
             this.lblAltura.Text = "Altura:";
             this.lblAltura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblCalle
             // 
-            this.lblCalle.Location = new System.Drawing.Point(35, 40);
+            this.lblCalle.AutoSize = true;
+            this.lblCalle.Location = new System.Drawing.Point(47, 39);
             this.lblCalle.Name = "lblCalle";
-            this.lblCalle.Size = new System.Drawing.Size(55, 21);
+            this.lblCalle.Size = new System.Drawing.Size(43, 17);
             this.lblCalle.TabIndex = 15;
             this.lblCalle.Text = "Calle:";
             this.lblCalle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(86, 143);
+            this.txtTelefono.Location = new System.Drawing.Point(86, 140);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(151, 22);
@@ -284,16 +291,17 @@
             // 
             // lblTelefono
             // 
-            this.lblTelefono.Location = new System.Drawing.Point(6, 144);
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(12, 143);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(74, 20);
+            this.lblTelefono.Size = new System.Drawing.Size(68, 17);
             this.lblTelefono.TabIndex = 13;
             this.lblTelefono.Text = "Teléfono:";
             this.lblTelefono.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(86, 108);
+            this.txtNombre.Location = new System.Drawing.Point(86, 106);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(151, 22);
@@ -301,9 +309,10 @@
             // 
             // lblNombre
             // 
-            this.lblNombre.Location = new System.Drawing.Point(6, 109);
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(18, 109);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(74, 20);
+            this.lblNombre.Size = new System.Drawing.Size(62, 17);
             this.lblNombre.TabIndex = 11;
             this.lblNombre.Text = "Nombre:";
             this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -332,7 +341,7 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(86, 74);
+            this.txtApellido.Location = new System.Drawing.Point(86, 72);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(151, 22);
@@ -340,7 +349,7 @@
             // 
             // txtDU
             // 
-            this.txtDU.Location = new System.Drawing.Point(86, 41);
+            this.txtDU.Location = new System.Drawing.Point(86, 38);
             this.txtDU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDU.Name = "txtDU";
             this.txtDU.Size = new System.Drawing.Size(151, 22);
@@ -348,18 +357,20 @@
             // 
             // lblApellido
             // 
-            this.lblApellido.Location = new System.Drawing.Point(6, 75);
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Location = new System.Drawing.Point(18, 75);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(74, 20);
+            this.lblApellido.Size = new System.Drawing.Size(62, 17);
             this.lblApellido.TabIndex = 2;
             this.lblApellido.Text = "Apellido:";
             this.lblApellido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblDU
             // 
-            this.lblDU.Location = new System.Drawing.Point(25, 41);
+            this.lblDU.AutoSize = true;
+            this.lblDU.Location = new System.Drawing.Point(48, 41);
             this.lblDU.Name = "lblDU";
-            this.lblDU.Size = new System.Drawing.Size(55, 21);
+            this.lblDU.Size = new System.Drawing.Size(32, 17);
             this.lblDU.TabIndex = 1;
             this.lblDU.Text = "DU:";
             this.lblDU.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

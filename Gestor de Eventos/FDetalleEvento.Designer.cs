@@ -52,6 +52,7 @@
             this.lblApellido1 = new System.Windows.Forms.Label();
             this.lblDUCliente1 = new System.Windows.Forms.Label();
             this.gbEvento = new System.Windows.Forms.GroupBox();
+            this.lblEstado = new System.Windows.Forms.Label();
             this.lblExcedente2 = new System.Windows.Forms.Label();
             this.lblExcedente1 = new System.Windows.Forms.Label();
             this.lblEmpleadosNecesarios2 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.lblCantidadAdultos1 = new System.Windows.Forms.Label();
             this.lblTipoEvento1 = new System.Windows.Forms.Label();
             this.gridReserva = new System.Windows.Forms.DataGridView();
-            this.lblEstado = new System.Windows.Forms.Label();
             this.gbBusqueda.SuspendLayout();
             this.gbDetalles.SuspendLayout();
             this.gbCotizacion.SuspendLayout();
@@ -105,15 +105,16 @@
             // lblFechaHasta
             // 
             this.lblFechaHasta.AutoSize = true;
-            this.lblFechaHasta.Location = new System.Drawing.Point(5, 64);
+            this.lblFechaHasta.Location = new System.Drawing.Point(9, 64);
             this.lblFechaHasta.Name = "lblFechaHasta";
             this.lblFechaHasta.Size = new System.Drawing.Size(92, 17);
             this.lblFechaHasta.TabIndex = 3;
             this.lblFechaHasta.Text = "Fecha Hasta:";
+            this.lblFechaHasta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpFechaHasta
             // 
-            this.dtpFechaHasta.Location = new System.Drawing.Point(108, 59);
+            this.dtpFechaHasta.Location = new System.Drawing.Point(108, 61);
             this.dtpFechaHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFechaHasta.Name = "dtpFechaHasta";
             this.dtpFechaHasta.Size = new System.Drawing.Size(200, 22);
@@ -127,10 +128,11 @@
             this.lblFechaDesde.Size = new System.Drawing.Size(96, 17);
             this.lblFechaDesde.TabIndex = 1;
             this.lblFechaDesde.Text = "Fecha Desde:";
+            this.lblFechaDesde.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpFechaDesde
             // 
-            this.dtpFechaDesde.Location = new System.Drawing.Point(108, 28);
+            this.dtpFechaDesde.Location = new System.Drawing.Point(108, 30);
             this.dtpFechaDesde.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
             this.dtpFechaDesde.Size = new System.Drawing.Size(200, 22);
@@ -173,6 +175,7 @@
             this.lblMontoTotal2.Size = new System.Drawing.Size(44, 17);
             this.lblMontoTotal2.TabIndex = 17;
             this.lblMontoTotal2.Text = "$0,00";
+            this.lblMontoTotal2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMontoPagado2
             // 
@@ -182,6 +185,7 @@
             this.lblMontoPagado2.Size = new System.Drawing.Size(44, 17);
             this.lblMontoPagado2.TabIndex = 16;
             this.lblMontoPagado2.Text = "$0,00";
+            this.lblMontoPagado2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMontoTotal1
             // 
@@ -227,38 +231,42 @@
             // lblDireccion2
             // 
             this.lblDireccion2.AutoSize = true;
-            this.lblDireccion2.Location = new System.Drawing.Point(82, 128);
+            this.lblDireccion2.Location = new System.Drawing.Point(82, 126);
             this.lblDireccion2.Name = "lblDireccion2";
             this.lblDireccion2.Size = new System.Drawing.Size(13, 17);
             this.lblDireccion2.TabIndex = 15;
             this.lblDireccion2.Text = "-";
+            this.lblDireccion2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTel2
             // 
             this.lblTel2.AutoSize = true;
-            this.lblTel2.Location = new System.Drawing.Point(82, 101);
+            this.lblTel2.Location = new System.Drawing.Point(82, 100);
             this.lblTel2.Name = "lblTel2";
             this.lblTel2.Size = new System.Drawing.Size(13, 17);
             this.lblTel2.TabIndex = 14;
             this.lblTel2.Text = "-";
+            this.lblTel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblNombre2
             // 
             this.lblNombre2.AutoSize = true;
-            this.lblNombre2.Location = new System.Drawing.Point(82, 75);
+            this.lblNombre2.Location = new System.Drawing.Point(82, 74);
             this.lblNombre2.Name = "lblNombre2";
             this.lblNombre2.Size = new System.Drawing.Size(13, 17);
             this.lblNombre2.TabIndex = 13;
             this.lblNombre2.Text = "-";
+            this.lblNombre2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblApellido2
             // 
             this.lblApellido2.AutoSize = true;
-            this.lblApellido2.Location = new System.Drawing.Point(82, 49);
+            this.lblApellido2.Location = new System.Drawing.Point(82, 48);
             this.lblApellido2.Name = "lblApellido2";
             this.lblApellido2.Size = new System.Drawing.Size(13, 17);
             this.lblApellido2.TabIndex = 12;
             this.lblApellido2.Text = "-";
+            this.lblApellido2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblDUCliente2
             // 
@@ -268,11 +276,12 @@
             this.lblDUCliente2.Size = new System.Drawing.Size(13, 17);
             this.lblDUCliente2.TabIndex = 11;
             this.lblDUCliente2.Text = "-";
+            this.lblDUCliente2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblDireccion1
             // 
             this.lblDireccion1.AutoSize = true;
-            this.lblDireccion1.Location = new System.Drawing.Point(5, 128);
+            this.lblDireccion1.Location = new System.Drawing.Point(5, 126);
             this.lblDireccion1.Name = "lblDireccion1";
             this.lblDireccion1.Size = new System.Drawing.Size(71, 17);
             this.lblDireccion1.TabIndex = 4;
@@ -282,7 +291,7 @@
             // lblTel1
             // 
             this.lblTel1.AutoSize = true;
-            this.lblTel1.Location = new System.Drawing.Point(8, 101);
+            this.lblTel1.Location = new System.Drawing.Point(8, 100);
             this.lblTel1.Name = "lblTel1";
             this.lblTel1.Size = new System.Drawing.Size(68, 17);
             this.lblTel1.TabIndex = 3;
@@ -292,7 +301,7 @@
             // lblNombre1
             // 
             this.lblNombre1.AutoSize = true;
-            this.lblNombre1.Location = new System.Drawing.Point(14, 75);
+            this.lblNombre1.Location = new System.Drawing.Point(14, 74);
             this.lblNombre1.Name = "lblNombre1";
             this.lblNombre1.Size = new System.Drawing.Size(62, 17);
             this.lblNombre1.TabIndex = 2;
@@ -302,7 +311,7 @@
             // lblApellido1
             // 
             this.lblApellido1.AutoSize = true;
-            this.lblApellido1.Location = new System.Drawing.Point(14, 49);
+            this.lblApellido1.Location = new System.Drawing.Point(14, 48);
             this.lblApellido1.Name = "lblApellido1";
             this.lblApellido1.Size = new System.Drawing.Size(62, 17);
             this.lblApellido1.TabIndex = 1;
@@ -343,19 +352,30 @@
             this.gbEvento.TabStop = false;
             this.gbEvento.Text = "Evento";
             // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(225, 195);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(13, 17);
+            this.lblEstado.TabIndex = 12;
+            this.lblEstado.Text = "-";
+            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // lblExcedente2
             // 
             this.lblExcedente2.AutoSize = true;
-            this.lblExcedente2.Location = new System.Drawing.Point(168, 128);
+            this.lblExcedente2.Location = new System.Drawing.Point(168, 126);
             this.lblExcedente2.Name = "lblExcedente2";
             this.lblExcedente2.Size = new System.Drawing.Size(13, 17);
             this.lblExcedente2.TabIndex = 11;
             this.lblExcedente2.Text = "-";
+            this.lblExcedente2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblExcedente1
             // 
             this.lblExcedente1.AutoSize = true;
-            this.lblExcedente1.Location = new System.Drawing.Point(77, 128);
+            this.lblExcedente1.Location = new System.Drawing.Point(77, 126);
             this.lblExcedente1.Name = "lblExcedente1";
             this.lblExcedente1.Size = new System.Drawing.Size(85, 17);
             this.lblExcedente1.TabIndex = 10;
@@ -365,29 +385,32 @@
             // lblEmpleadosNecesarios2
             // 
             this.lblEmpleadosNecesarios2.AutoSize = true;
-            this.lblEmpleadosNecesarios2.Location = new System.Drawing.Point(168, 101);
+            this.lblEmpleadosNecesarios2.Location = new System.Drawing.Point(168, 100);
             this.lblEmpleadosNecesarios2.Name = "lblEmpleadosNecesarios2";
             this.lblEmpleadosNecesarios2.Size = new System.Drawing.Size(13, 17);
             this.lblEmpleadosNecesarios2.TabIndex = 9;
             this.lblEmpleadosNecesarios2.Text = "-";
+            this.lblEmpleadosNecesarios2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCantidadNiños2
             // 
             this.lblCantidadNiños2.AutoSize = true;
-            this.lblCantidadNiños2.Location = new System.Drawing.Point(168, 75);
+            this.lblCantidadNiños2.Location = new System.Drawing.Point(168, 74);
             this.lblCantidadNiños2.Name = "lblCantidadNiños2";
             this.lblCantidadNiños2.Size = new System.Drawing.Size(13, 17);
             this.lblCantidadNiños2.TabIndex = 8;
             this.lblCantidadNiños2.Text = "-";
+            this.lblCantidadNiños2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCantidadAdultos2
             // 
             this.lblCantidadAdultos2.AutoSize = true;
-            this.lblCantidadAdultos2.Location = new System.Drawing.Point(168, 49);
+            this.lblCantidadAdultos2.Location = new System.Drawing.Point(168, 48);
             this.lblCantidadAdultos2.Name = "lblCantidadAdultos2";
             this.lblCantidadAdultos2.Size = new System.Drawing.Size(13, 17);
             this.lblCantidadAdultos2.TabIndex = 7;
             this.lblCantidadAdultos2.Text = "-";
+            this.lblCantidadAdultos2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTipoEvento2
             // 
@@ -397,6 +420,7 @@
             this.lblTipoEvento2.Size = new System.Drawing.Size(13, 17);
             this.lblTipoEvento2.TabIndex = 6;
             this.lblTipoEvento2.Text = "-";
+            this.lblTipoEvento2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // listServicios
             // 
@@ -416,11 +440,12 @@
             this.lblServicios.Size = new System.Drawing.Size(148, 17);
             this.lblServicios.TabIndex = 4;
             this.lblServicios.Text = "Servicios contratados:";
+            this.lblServicios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblEmpleadosNecesarios1
             // 
             this.lblEmpleadosNecesarios1.AutoSize = true;
-            this.lblEmpleadosNecesarios1.Location = new System.Drawing.Point(7, 101);
+            this.lblEmpleadosNecesarios1.Location = new System.Drawing.Point(7, 100);
             this.lblEmpleadosNecesarios1.Name = "lblEmpleadosNecesarios1";
             this.lblEmpleadosNecesarios1.Size = new System.Drawing.Size(155, 17);
             this.lblEmpleadosNecesarios1.TabIndex = 3;
@@ -430,7 +455,7 @@
             // lblCantidadNiños1
             // 
             this.lblCantidadNiños1.AutoSize = true;
-            this.lblCantidadNiños1.Location = new System.Drawing.Point(34, 75);
+            this.lblCantidadNiños1.Location = new System.Drawing.Point(34, 74);
             this.lblCantidadNiños1.Name = "lblCantidadNiños1";
             this.lblCantidadNiños1.Size = new System.Drawing.Size(128, 17);
             this.lblCantidadNiños1.TabIndex = 2;
@@ -440,7 +465,7 @@
             // lblCantidadAdultos1
             // 
             this.lblCantidadAdultos1.AutoSize = true;
-            this.lblCantidadAdultos1.Location = new System.Drawing.Point(43, 49);
+            this.lblCantidadAdultos1.Location = new System.Drawing.Point(43, 48);
             this.lblCantidadAdultos1.Name = "lblCantidadAdultos1";
             this.lblCantidadAdultos1.Size = new System.Drawing.Size(119, 17);
             this.lblCantidadAdultos1.TabIndex = 1;
@@ -476,16 +501,6 @@
             this.gridReserva.Size = new System.Drawing.Size(756, 173);
             this.gridReserva.TabIndex = 1;
             this.gridReserva.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridReserva_CellClick);
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(225, 195);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(13, 17);
-            this.lblEstado.TabIndex = 12;
-            this.lblEstado.Text = "-";
-            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FDetalleEvento
             // 

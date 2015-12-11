@@ -61,20 +61,22 @@
             // lblSemana
             // 
             this.lblSemana.AutoSize = true;
-            this.lblSemana.Location = new System.Drawing.Point(20, 118);
+            this.lblSemana.Location = new System.Drawing.Point(18, 117);
             this.lblSemana.Name = "lblSemana";
             this.lblSemana.Size = new System.Drawing.Size(64, 17);
             this.lblSemana.TabIndex = 5;
             this.lblSemana.Text = "Semana:";
+            this.lblSemana.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblMes
             // 
             this.lblMes.AutoSize = true;
-            this.lblMes.Location = new System.Drawing.Point(45, 78);
+            this.lblMes.Location = new System.Drawing.Point(44, 78);
             this.lblMes.Name = "lblMes";
             this.lblMes.Size = new System.Drawing.Size(38, 17);
             this.lblMes.TabIndex = 4;
             this.lblMes.Text = "Mes:";
+            this.lblMes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblAño
             // 
@@ -84,12 +86,13 @@
             this.lblAño.Size = new System.Drawing.Size(37, 17);
             this.lblAño.TabIndex = 1;
             this.lblAño.Text = "Año:";
+            this.lblAño.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // cboSemana
             // 
             this.cboSemana.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSemana.FormattingEnabled = true;
-            this.cboSemana.Location = new System.Drawing.Point(85, 114);
+            this.cboSemana.Location = new System.Drawing.Point(85, 113);
             this.cboSemana.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboSemana.Name = "cboSemana";
             this.cboSemana.Size = new System.Drawing.Size(121, 24);
@@ -99,7 +102,7 @@
             // 
             this.cboMes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMes.FormattingEnabled = true;
-            this.cboMes.Location = new System.Drawing.Point(85, 75);
+            this.cboMes.Location = new System.Drawing.Point(85, 74);
             this.cboMes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMes.Name = "cboMes";
             this.cboMes.Size = new System.Drawing.Size(121, 24);
@@ -110,7 +113,7 @@
             // 
             this.cboAño.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAño.FormattingEnabled = true;
-            this.cboAño.Location = new System.Drawing.Point(85, 36);
+            this.cboAño.Location = new System.Drawing.Point(85, 35);
             this.cboAño.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboAño.Name = "cboAño";
             this.cboAño.Size = new System.Drawing.Size(121, 24);

@@ -51,7 +51,7 @@
             // 
             // calFecha
             // 
-            this.calFecha.Location = new System.Drawing.Point(12, 27);
+            this.calFecha.Location = new System.Drawing.Point(41, 26);
             this.calFecha.MaxSelectionCount = 1;
             this.calFecha.Name = "calFecha";
             this.calFecha.TabIndex = 0;
@@ -174,7 +174,7 @@
             // btnNuevoCliente
             // 
             this.btnNuevoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoCliente.Location = new System.Drawing.Point(290, 116);
+            this.btnNuevoCliente.Location = new System.Drawing.Point(290, 115);
             this.btnNuevoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
             this.btnNuevoCliente.Size = new System.Drawing.Size(65, 28);
@@ -208,7 +208,7 @@
             // 
             this.dtpHoraFin.CustomFormat = "HH:mm";
             this.dtpHoraFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHoraFin.Location = new System.Drawing.Point(97, 71);
+            this.dtpHoraFin.Location = new System.Drawing.Point(97, 76);
             this.dtpHoraFin.Margin = new System.Windows.Forms.Padding(4);
             this.dtpHoraFin.Name = "dtpHoraFin";
             this.dtpHoraFin.ShowUpDown = true;
@@ -219,7 +219,7 @@
             // 
             this.dtpHoraInicio.CustomFormat = "HH:mm";
             this.dtpHoraInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHoraInicio.Location = new System.Drawing.Point(97, 33);
+            this.dtpHoraInicio.Location = new System.Drawing.Point(97, 34);
             this.dtpHoraInicio.Margin = new System.Windows.Forms.Padding(4);
             this.dtpHoraInicio.Name = "dtpHoraInicio";
             this.dtpHoraInicio.ShowUpDown = true;
@@ -229,7 +229,7 @@
             // lblHoraFin
             // 
             this.lblHoraFin.AutoSize = true;
-            this.lblHoraFin.Location = new System.Drawing.Point(23, 76);
+            this.lblHoraFin.Location = new System.Drawing.Point(23, 79);
             this.lblHoraFin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoraFin.Name = "lblHoraFin";
             this.lblHoraFin.Size = new System.Drawing.Size(66, 17);

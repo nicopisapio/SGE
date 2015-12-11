@@ -94,7 +94,7 @@
             // 
             this.cboIdioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboIdioma.FormattingEnabled = true;
-            this.cboIdioma.Location = new System.Drawing.Point(97, 146);
+            this.cboIdioma.Location = new System.Drawing.Point(97, 145);
             this.cboIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboIdioma.Name = "cboIdioma";
             this.cboIdioma.Size = new System.Drawing.Size(245, 24);
@@ -104,7 +104,7 @@
             // 
             this.cboPerfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPerfil.FormattingEnabled = true;
-            this.cboPerfil.Location = new System.Drawing.Point(97, 111);
+            this.cboPerfil.Location = new System.Drawing.Point(97, 110);
             this.cboPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPerfil.Name = "cboPerfil";
             this.cboPerfil.Size = new System.Drawing.Size(245, 24);
@@ -112,7 +112,7 @@
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(97, 74);
+            this.txtClave.Location = new System.Drawing.Point(97, 76);
             this.txtClave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(245, 22);
@@ -128,25 +128,28 @@
             // 
             // lblIdioma
             // 
-            this.lblIdioma.Location = new System.Drawing.Point(9, 146);
+            this.lblIdioma.AutoSize = true;
+            this.lblIdioma.Location = new System.Drawing.Point(38, 149);
             this.lblIdioma.Name = "lblIdioma";
-            this.lblIdioma.Size = new System.Drawing.Size(83, 20);
+            this.lblIdioma.Size = new System.Drawing.Size(53, 17);
             this.lblIdioma.TabIndex = 4;
             this.lblIdioma.Text = "Idioma:";
             this.lblIdioma.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblPerfil
             // 
-            this.lblPerfil.Location = new System.Drawing.Point(9, 111);
+            this.lblPerfil.AutoSize = true;
+            this.lblPerfil.Location = new System.Drawing.Point(47, 114);
             this.lblPerfil.Name = "lblPerfil";
-            this.lblPerfil.Size = new System.Drawing.Size(83, 20);
+            this.lblPerfil.Size = new System.Drawing.Size(44, 17);
             this.lblPerfil.TabIndex = 3;
             this.lblPerfil.Text = "Perfil:";
             this.lblPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblContraseña
             // 
-            this.lblContraseña.Location = new System.Drawing.Point(5, 78);
+            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Location = new System.Drawing.Point(6, 79);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(85, 17);
             this.lblContraseña.TabIndex = 2;
@@ -155,9 +158,10 @@
             // 
             // lblUsuario
             // 
-            this.lblUsuario.Location = new System.Drawing.Point(9, 41);
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(30, 44);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(83, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(61, 17);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuario:";
             this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

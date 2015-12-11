@@ -120,6 +120,7 @@
             this.lblCantidadNiños2.Size = new System.Drawing.Size(16, 17);
             this.lblCantidadNiños2.TabIndex = 5;
             this.lblCantidadNiños2.Text = "0";
+            this.lblCantidadNiños2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCantidadAdultos2
             // 
@@ -129,6 +130,7 @@
             this.lblCantidadAdultos2.Size = new System.Drawing.Size(16, 17);
             this.lblCantidadAdultos2.TabIndex = 4;
             this.lblCantidadAdultos2.Text = "0";
+            this.lblCantidadAdultos2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCantidadNiños1
             // 
@@ -138,6 +140,7 @@
             this.lblCantidadNiños1.Size = new System.Drawing.Size(128, 17);
             this.lblCantidadNiños1.TabIndex = 3;
             this.lblCantidadNiños1.Text = "Cantidad de Niños:";
+            this.lblCantidadNiños1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblCantidadAdultos1
             // 
@@ -147,6 +150,7 @@
             this.lblCantidadAdultos1.Size = new System.Drawing.Size(139, 17);
             this.lblCantidadAdultos1.TabIndex = 2;
             this.lblCantidadAdultos1.Text = "Cantidad de Adultos:";
+            this.lblCantidadAdultos1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // cboTipoEvento
             // 
@@ -167,6 +171,7 @@
             this.lblTipoEvento.Size = new System.Drawing.Size(108, 17);
             this.lblTipoEvento.TabIndex = 0;
             this.lblTipoEvento.Text = "Tipo de Evento:";
+            this.lblTipoEvento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // gbDatosReserva
             // 
@@ -197,6 +202,7 @@
             this.lblDuracion2.Size = new System.Drawing.Size(13, 17);
             this.lblDuracion2.TabIndex = 9;
             this.lblDuracion2.Text = "-";
+            this.lblDuracion2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblDuracion1
             // 
@@ -208,6 +214,7 @@
             this.lblDuracion1.Size = new System.Drawing.Size(69, 17);
             this.lblDuracion1.TabIndex = 8;
             this.lblDuracion1.Text = "Duración:";
+            this.lblDuracion1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblNombre
             // 
@@ -217,6 +224,7 @@
             this.lblNombre.Size = new System.Drawing.Size(13, 17);
             this.lblNombre.TabIndex = 7;
             this.lblNombre.Text = "-";
+            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCliente
             // 
@@ -228,15 +236,17 @@
             this.lblCliente.Size = new System.Drawing.Size(55, 17);
             this.lblCliente.TabIndex = 6;
             this.lblCliente.Text = "Cliente:";
+            this.lblCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblHoraFin2
             // 
             this.lblHoraFin2.AutoSize = true;
-            this.lblHoraFin2.Location = new System.Drawing.Point(115, 108);
+            this.lblHoraFin2.Location = new System.Drawing.Point(115, 107);
             this.lblHoraFin2.Name = "lblHoraFin2";
             this.lblHoraFin2.Size = new System.Drawing.Size(13, 17);
             this.lblHoraFin2.TabIndex = 5;
             this.lblHoraFin2.Text = "-";
+            this.lblHoraFin2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblHoraInicio2
             // 
@@ -246,6 +256,7 @@
             this.lblHoraInicio2.Size = new System.Drawing.Size(13, 17);
             this.lblHoraInicio2.TabIndex = 4;
             this.lblHoraInicio2.Text = "-";
+            this.lblHoraInicio2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblFecha2
             // 
@@ -255,16 +266,18 @@
             this.lblFecha2.Size = new System.Drawing.Size(13, 17);
             this.lblFecha2.TabIndex = 3;
             this.lblFecha2.Text = "-";
+            this.lblFecha2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblHoraFin1
             // 
             this.lblHoraFin1.AutoSize = true;
             this.lblHoraFin1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblHoraFin1.Location = new System.Drawing.Point(37, 108);
+            this.lblHoraFin1.Location = new System.Drawing.Point(37, 107);
             this.lblHoraFin1.Name = "lblHoraFin1";
             this.lblHoraFin1.Size = new System.Drawing.Size(66, 17);
             this.lblHoraFin1.TabIndex = 2;
             this.lblHoraFin1.Text = "Hora Fin:";
+            this.lblHoraFin1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblHoraInicio1
             // 
@@ -276,6 +289,7 @@
             this.lblHoraInicio1.Size = new System.Drawing.Size(79, 17);
             this.lblHoraInicio1.TabIndex = 1;
             this.lblHoraInicio1.Text = "Hora Inicio:";
+            this.lblHoraInicio1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblFecha1
             // 
@@ -287,6 +301,7 @@
             this.lblFecha1.Size = new System.Drawing.Size(51, 17);
             this.lblFecha1.TabIndex = 0;
             this.lblFecha1.Text = "Fecha:";
+            this.lblFecha1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnBuscarReserva
             // 
@@ -326,15 +341,17 @@
             this.lblNiñosExtra2.Size = new System.Drawing.Size(16, 17);
             this.lblNiñosExtra2.TabIndex = 5;
             this.lblNiñosExtra2.Text = "0";
+            this.lblNiñosExtra2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblAdultosExtra2
             // 
             this.lblAdultosExtra2.AutoSize = true;
-            this.lblAdultosExtra2.Location = new System.Drawing.Point(437, 22);
+            this.lblAdultosExtra2.Location = new System.Drawing.Point(437, 21);
             this.lblAdultosExtra2.Name = "lblAdultosExtra2";
             this.lblAdultosExtra2.Size = new System.Drawing.Size(16, 17);
             this.lblAdultosExtra2.TabIndex = 4;
             this.lblAdultosExtra2.Text = "0";
+            this.lblAdultosExtra2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblNiñosExtra1
             // 
@@ -499,93 +516,103 @@
             // 
             this.lblTotal2.AutoSize = true;
             this.lblTotal2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal2.Location = new System.Drawing.Point(97, 144);
+            this.lblTotal2.Location = new System.Drawing.Point(179, 139);
             this.lblTotal2.Name = "lblTotal2";
             this.lblTotal2.Size = new System.Drawing.Size(61, 25);
             this.lblTotal2.TabIndex = 9;
             this.lblTotal2.Text = "$0.00";
+            this.lblTotal2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblPrecioTiempoExtra2
             // 
             this.lblPrecioTiempoExtra2.AutoSize = true;
-            this.lblPrecioTiempoExtra2.Location = new System.Drawing.Point(172, 57);
+            this.lblPrecioTiempoExtra2.Location = new System.Drawing.Point(181, 58);
             this.lblPrecioTiempoExtra2.Name = "lblPrecioTiempoExtra2";
             this.lblPrecioTiempoExtra2.Size = new System.Drawing.Size(44, 17);
             this.lblPrecioTiempoExtra2.TabIndex = 8;
             this.lblPrecioTiempoExtra2.Text = "$0.00";
+            this.lblPrecioTiempoExtra2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblPrecioTiempoExtra1
             // 
             this.lblPrecioTiempoExtra1.AutoSize = true;
-            this.lblPrecioTiempoExtra1.Location = new System.Drawing.Point(7, 57);
+            this.lblPrecioTiempoExtra1.Location = new System.Drawing.Point(16, 58);
             this.lblPrecioTiempoExtra1.Name = "lblPrecioTiempoExtra1";
             this.lblPrecioTiempoExtra1.Size = new System.Drawing.Size(159, 17);
             this.lblPrecioTiempoExtra1.TabIndex = 7;
             this.lblPrecioTiempoExtra1.Text = "Precio de Tiempo Extra:";
+            this.lblPrecioTiempoExtra1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblPrecioServiciosExtra2
             // 
             this.lblPrecioServiciosExtra2.AutoSize = true;
-            this.lblPrecioServiciosExtra2.Location = new System.Drawing.Point(181, 110);
+            this.lblPrecioServiciosExtra2.Location = new System.Drawing.Point(181, 112);
             this.lblPrecioServiciosExtra2.Name = "lblPrecioServiciosExtra2";
             this.lblPrecioServiciosExtra2.Size = new System.Drawing.Size(44, 17);
             this.lblPrecioServiciosExtra2.TabIndex = 6;
             this.lblPrecioServiciosExtra2.Text = "$0.00";
+            this.lblPrecioServiciosExtra2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblPrecioPersonasExtra2
             // 
             this.lblPrecioPersonasExtra2.AutoSize = true;
-            this.lblPrecioPersonasExtra2.Location = new System.Drawing.Point(185, 82);
+            this.lblPrecioPersonasExtra2.Location = new System.Drawing.Point(181, 85);
             this.lblPrecioPersonasExtra2.Name = "lblPrecioPersonasExtra2";
             this.lblPrecioPersonasExtra2.Size = new System.Drawing.Size(44, 17);
             this.lblPrecioPersonasExtra2.TabIndex = 5;
             this.lblPrecioPersonasExtra2.Text = "$0.00";
+            this.lblPrecioPersonasExtra2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblPrecioEvento2
             // 
             this.lblPrecioEvento2.AutoSize = true;
-            this.lblPrecioEvento2.Location = new System.Drawing.Point(133, 31);
+            this.lblPrecioEvento2.Location = new System.Drawing.Point(181, 31);
             this.lblPrecioEvento2.Name = "lblPrecioEvento2";
             this.lblPrecioEvento2.Size = new System.Drawing.Size(44, 17);
             this.lblPrecioEvento2.TabIndex = 4;
             this.lblPrecioEvento2.Text = "$0.00";
+            this.lblPrecioEvento2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTotal1
             // 
             this.lblTotal1.AutoSize = true;
             this.lblTotal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal1.Location = new System.Drawing.Point(5, 144);
+            this.lblTotal1.Location = new System.Drawing.Point(90, 139);
             this.lblTotal1.Name = "lblTotal1";
             this.lblTotal1.Size = new System.Drawing.Size(85, 25);
             this.lblTotal1.TabIndex = 3;
             this.lblTotal1.Text = "TOTAL:";
+            this.lblTotal1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblPrecioServiciosExtra1
             // 
             this.lblPrecioServiciosExtra1.AutoSize = true;
-            this.lblPrecioServiciosExtra1.Location = new System.Drawing.Point(7, 110);
+            this.lblPrecioServiciosExtra1.Location = new System.Drawing.Point(6, 112);
             this.lblPrecioServiciosExtra1.Name = "lblPrecioServiciosExtra1";
             this.lblPrecioServiciosExtra1.Size = new System.Drawing.Size(169, 17);
             this.lblPrecioServiciosExtra1.TabIndex = 2;
             this.lblPrecioServiciosExtra1.Text = "Precio de Servicios Extra:";
+            this.lblPrecioServiciosExtra1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblPrecioPersonasExtra1
             // 
             this.lblPrecioPersonasExtra1.AutoSize = true;
-            this.lblPrecioPersonasExtra1.Location = new System.Drawing.Point(7, 82);
+            this.lblPrecioPersonasExtra1.Location = new System.Drawing.Point(3, 85);
             this.lblPrecioPersonasExtra1.Name = "lblPrecioPersonasExtra1";
             this.lblPrecioPersonasExtra1.Size = new System.Drawing.Size(172, 17);
             this.lblPrecioPersonasExtra1.TabIndex = 1;
             this.lblPrecioPersonasExtra1.Text = "Precio de Personas Extra:";
+            this.lblPrecioPersonasExtra1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblPrecioEvento1
             // 
             this.lblPrecioEvento1.AutoSize = true;
-            this.lblPrecioEvento1.Location = new System.Drawing.Point(7, 31);
+            this.lblPrecioEvento1.Location = new System.Drawing.Point(55, 31);
             this.lblPrecioEvento1.Name = "lblPrecioEvento1";
             this.lblPrecioEvento1.Size = new System.Drawing.Size(120, 17);
             this.lblPrecioEvento1.TabIndex = 0;
             this.lblPrecioEvento1.Text = "Precio de Evento:";
+            this.lblPrecioEvento1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnCancelar
             // 
@@ -628,16 +655,16 @@
             // lblIdReserva
             // 
             this.lblIdReserva.AutoSize = true;
-            this.lblIdReserva.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblIdReserva.Location = new System.Drawing.Point(33, 71);
+            this.lblIdReserva.Location = new System.Drawing.Point(36, 69);
             this.lblIdReserva.Name = "lblIdReserva";
             this.lblIdReserva.Size = new System.Drawing.Size(80, 17);
             this.lblIdReserva.TabIndex = 10;
             this.lblIdReserva.Text = "Id Reserva:";
+            this.lblIdReserva.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtIdReserva
             // 
-            this.txtIdReserva.Location = new System.Drawing.Point(123, 68);
+            this.txtIdReserva.Location = new System.Drawing.Point(123, 66);
             this.txtIdReserva.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdReserva.Name = "txtIdReserva";
             this.txtIdReserva.Size = new System.Drawing.Size(191, 22);
@@ -689,6 +716,7 @@
             this.lblBebidas2.Size = new System.Drawing.Size(16, 17);
             this.lblBebidas2.TabIndex = 7;
             this.lblBebidas2.Text = "0";
+            this.lblBebidas2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblBebidas1
             // 
@@ -698,6 +726,7 @@
             this.lblBebidas1.Size = new System.Drawing.Size(122, 17);
             this.lblBebidas1.TabIndex = 3;
             this.lblBebidas1.Text = "Bebidas incluídas:";
+            this.lblBebidas1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FCotizacionEvento
             // 

@@ -124,6 +124,7 @@
             this.lblDUCliente.Size = new System.Drawing.Size(79, 17);
             this.lblDUCliente.TabIndex = 5;
             this.lblDUCliente.Text = "DU Cliente:";
+            this.lblDUCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnBuscar
             // 
@@ -145,10 +146,11 @@
             this.lblFechaHasta.Size = new System.Drawing.Size(92, 17);
             this.lblFechaHasta.TabIndex = 3;
             this.lblFechaHasta.Text = "Fecha Hasta:";
+            this.lblFechaHasta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpFechaHasta
             // 
-            this.dtpFechaHasta.Location = new System.Drawing.Point(115, 89);
+            this.dtpFechaHasta.Location = new System.Drawing.Point(115, 91);
             this.dtpFechaHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFechaHasta.Name = "dtpFechaHasta";
             this.dtpFechaHasta.Size = new System.Drawing.Size(200, 22);
@@ -157,11 +159,12 @@
             // lblFechaDesde
             // 
             this.lblFechaDesde.AutoSize = true;
-            this.lblFechaDesde.Location = new System.Drawing.Point(12, 66);
+            this.lblFechaDesde.Location = new System.Drawing.Point(12, 65);
             this.lblFechaDesde.Name = "lblFechaDesde";
             this.lblFechaDesde.Size = new System.Drawing.Size(96, 17);
             this.lblFechaDesde.TabIndex = 1;
             this.lblFechaDesde.Text = "Fecha Desde:";
+            this.lblFechaDesde.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpFechaDesde
             // 
@@ -235,16 +238,17 @@
             // lblMontoTotalNvo2
             // 
             this.lblMontoTotalNvo2.AutoSize = true;
-            this.lblMontoTotalNvo2.Location = new System.Drawing.Point(155, 105);
+            this.lblMontoTotalNvo2.Location = new System.Drawing.Point(155, 104);
             this.lblMontoTotalNvo2.Name = "lblMontoTotalNvo2";
             this.lblMontoTotalNvo2.Size = new System.Drawing.Size(44, 17);
             this.lblMontoTotalNvo2.TabIndex = 19;
             this.lblMontoTotalNvo2.Text = "$0,00";
+            this.lblMontoTotalNvo2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMontoTotalNuevo1
             // 
             this.lblMontoTotalNuevo1.AutoSize = true;
-            this.lblMontoTotalNuevo1.Location = new System.Drawing.Point(16, 105);
+            this.lblMontoTotalNuevo1.Location = new System.Drawing.Point(16, 104);
             this.lblMontoTotalNuevo1.Name = "lblMontoTotalNuevo1";
             this.lblMontoTotalNuevo1.Size = new System.Drawing.Size(132, 17);
             this.lblMontoTotalNuevo1.TabIndex = 18;
@@ -259,6 +263,7 @@
             this.lblMontoTotalAnt2.Size = new System.Drawing.Size(44, 17);
             this.lblMontoTotalAnt2.TabIndex = 17;
             this.lblMontoTotalAnt2.Text = "$0,00";
+            this.lblMontoTotalAnt2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMontoPagado2
             // 
@@ -268,6 +273,7 @@
             this.lblMontoPagado2.Size = new System.Drawing.Size(44, 17);
             this.lblMontoPagado2.TabIndex = 16;
             this.lblMontoPagado2.Text = "$0,00";
+            this.lblMontoPagado2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMontoTotalAnterior1
             // 
@@ -311,20 +317,22 @@
             // 
             // lblEstado2
             // 
+            this.lblEstado2.AutoSize = true;
             this.lblEstado2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado2.Location = new System.Drawing.Point(131, 28);
+            this.lblEstado2.Location = new System.Drawing.Point(121, 28);
             this.lblEstado2.Name = "lblEstado2";
-            this.lblEstado2.Size = new System.Drawing.Size(152, 25);
+            this.lblEstado2.Size = new System.Drawing.Size(114, 20);
             this.lblEstado2.TabIndex = 19;
             this.lblEstado2.Text = "RESERVADO";
             this.lblEstado2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblEstado1
             // 
+            this.lblEstado1.AutoSize = true;
             this.lblEstado1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado1.Location = new System.Drawing.Point(37, 28);
+            this.lblEstado1.Location = new System.Drawing.Point(49, 28);
             this.lblEstado1.Name = "lblEstado1";
-            this.lblEstado1.Size = new System.Drawing.Size(88, 25);
+            this.lblEstado1.Size = new System.Drawing.Size(66, 20);
             this.lblEstado1.TabIndex = 18;
             this.lblEstado1.Text = "Estado:";
             this.lblEstado1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -358,6 +366,7 @@
             this.lblCantidadHoras2.Size = new System.Drawing.Size(13, 17);
             this.lblCantidadHoras2.TabIndex = 17;
             this.lblCantidadHoras2.Text = "-";
+            this.lblCantidadHoras2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCantidadHoras1
             // 
@@ -401,6 +410,7 @@
             this.lblHoraFin2.Size = new System.Drawing.Size(13, 17);
             this.lblHoraFin2.TabIndex = 15;
             this.lblHoraFin2.Text = "-";
+            this.lblHoraFin2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblHoraFin1
             // 
@@ -420,6 +430,7 @@
             this.lblHoraInicio2.Size = new System.Drawing.Size(13, 17);
             this.lblHoraInicio2.TabIndex = 14;
             this.lblHoraInicio2.Text = "-";
+            this.lblHoraInicio2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblFecha1
             // 
@@ -440,6 +451,7 @@
             this.lblFecha2.Size = new System.Drawing.Size(13, 17);
             this.lblFecha2.TabIndex = 13;
             this.lblFecha2.Text = "-";
+            this.lblFecha2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblHoraInicio1
             // 
@@ -560,7 +572,7 @@
             this.cboPersonas.Items.AddRange(new object[] {
             "Adultos",
             "Niños"});
-            this.cboPersonas.Location = new System.Drawing.Point(20, 97);
+            this.cboPersonas.Location = new System.Drawing.Point(20, 96);
             this.cboPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPersonas.Name = "cboPersonas";
             this.cboPersonas.Size = new System.Drawing.Size(159, 24);
@@ -584,15 +596,17 @@
             this.lblNiños2.Size = new System.Drawing.Size(16, 17);
             this.lblNiños2.TabIndex = 8;
             this.lblNiños2.Text = "0";
+            this.lblNiños2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblAdultos2
             // 
             this.lblAdultos2.AutoSize = true;
-            this.lblAdultos2.Location = new System.Drawing.Point(155, 38);
+            this.lblAdultos2.Location = new System.Drawing.Point(155, 36);
             this.lblAdultos2.Name = "lblAdultos2";
             this.lblAdultos2.Size = new System.Drawing.Size(16, 17);
             this.lblAdultos2.TabIndex = 7;
             this.lblAdultos2.Text = "0";
+            this.lblAdultos2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblNiños1
             // 
@@ -606,20 +620,22 @@
             // 
             // lblTipoEvento2
             // 
+            this.lblTipoEvento2.AutoSize = true;
             this.lblTipoEvento2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoEvento2.Location = new System.Drawing.Point(535, 28);
+            this.lblTipoEvento2.Location = new System.Drawing.Point(476, 28);
             this.lblTipoEvento2.Name = "lblTipoEvento2";
-            this.lblTipoEvento2.Size = new System.Drawing.Size(208, 25);
+            this.lblTipoEvento2.Size = new System.Drawing.Size(156, 20);
             this.lblTipoEvento2.TabIndex = 6;
             this.lblTipoEvento2.Text = "Cumpleaños Infantil";
             this.lblTipoEvento2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTipoEvento1
             // 
+            this.lblTipoEvento1.AutoSize = true;
             this.lblTipoEvento1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoEvento1.Location = new System.Drawing.Point(362, 28);
+            this.lblTipoEvento1.Location = new System.Drawing.Point(345, 28);
             this.lblTipoEvento1.Name = "lblTipoEvento1";
-            this.lblTipoEvento1.Size = new System.Drawing.Size(167, 25);
+            this.lblTipoEvento1.Size = new System.Drawing.Size(125, 20);
             this.lblTipoEvento1.TabIndex = 0;
             this.lblTipoEvento1.Text = "Tipo de Evento:";
             this.lblTipoEvento1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -676,6 +692,7 @@
             this.chkCancelar.TabIndex = 5;
             this.chkCancelar.Text = "Cancelar";
             this.chkCancelar.UseVisualStyleBackColor = true;
+            this.chkCancelar.CheckedChanged += new System.EventHandler(this.chkCancelar_CheckedChanged);
             // 
             // FModificacionEvento
             // 
@@ -702,6 +719,7 @@
             this.gbPago.ResumeLayout(false);
             this.gbPago.PerformLayout();
             this.gbDetalleEvento.ResumeLayout(false);
+            this.gbDetalleEvento.PerformLayout();
             this.gbDuracion.ResumeLayout(false);
             this.gbDuracion.PerformLayout();
             this.gbServicios.ResumeLayout(false);

@@ -57,7 +57,7 @@
             // 
             this.cboCulturas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCulturas.FormattingEnabled = true;
-            this.cboCulturas.Location = new System.Drawing.Point(119, 70);
+            this.cboCulturas.Location = new System.Drawing.Point(119, 69);
             this.cboCulturas.Name = "cboCulturas";
             this.cboCulturas.Size = new System.Drawing.Size(314, 24);
             this.cboCulturas.TabIndex = 1;

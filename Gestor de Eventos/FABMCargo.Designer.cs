@@ -153,18 +153,20 @@
             // 
             // lblPrecio
             // 
-            this.lblPrecio.Location = new System.Drawing.Point(6, 78);
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Location = new System.Drawing.Point(16, 78);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(107, 19);
+            this.lblPrecio.Size = new System.Drawing.Size(95, 17);
             this.lblPrecio.TabIndex = 2;
             this.lblPrecio.Text = "Precio / Hora:";
             this.lblPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblDescripcion
             // 
-            this.lblDescripcion.Location = new System.Drawing.Point(20, 42);
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(25, 44);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(93, 21);
+            this.lblDescripcion.Size = new System.Drawing.Size(86, 17);
             this.lblDescripcion.TabIndex = 1;
             this.lblDescripcion.Text = "Descripción:";
             this.lblDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

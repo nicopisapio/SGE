@@ -90,6 +90,7 @@
             this.lblDUCliente.Size = new System.Drawing.Size(79, 17);
             this.lblDUCliente.TabIndex = 5;
             this.lblDUCliente.Text = "DU Cliente:";
+            this.lblDUCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnBuscar
             // 
@@ -111,10 +112,11 @@
             this.lblFechaHasta.Size = new System.Drawing.Size(92, 17);
             this.lblFechaHasta.TabIndex = 3;
             this.lblFechaHasta.Text = "Fecha Hasta:";
+            this.lblFechaHasta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpFechaHasta
             // 
-            this.dtpFechaHasta.Location = new System.Drawing.Point(115, 89);
+            this.dtpFechaHasta.Location = new System.Drawing.Point(115, 91);
             this.dtpFechaHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFechaHasta.Name = "dtpFechaHasta";
             this.dtpFechaHasta.Size = new System.Drawing.Size(200, 22);
@@ -123,11 +125,12 @@
             // lblFechaDesde
             // 
             this.lblFechaDesde.AutoSize = true;
-            this.lblFechaDesde.Location = new System.Drawing.Point(12, 66);
+            this.lblFechaDesde.Location = new System.Drawing.Point(12, 65);
             this.lblFechaDesde.Name = "lblFechaDesde";
             this.lblFechaDesde.Size = new System.Drawing.Size(96, 17);
             this.lblFechaDesde.TabIndex = 1;
             this.lblFechaDesde.Text = "Fecha Desde:";
+            this.lblFechaDesde.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpFechaDesde
             // 
@@ -226,7 +229,7 @@
             // 
             // txtExcedente
             // 
-            this.txtExcedente.Location = new System.Drawing.Point(45, 34);
+            this.txtExcedente.Location = new System.Drawing.Point(45, 31);
             this.txtExcedente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtExcedente.Name = "txtExcedente";
             this.txtExcedente.Size = new System.Drawing.Size(101, 22);
@@ -244,16 +247,17 @@
             // lblMontoTotalNvo2
             // 
             this.lblMontoTotalNvo2.AutoSize = true;
-            this.lblMontoTotalNvo2.Location = new System.Drawing.Point(155, 105);
+            this.lblMontoTotalNvo2.Location = new System.Drawing.Point(155, 104);
             this.lblMontoTotalNvo2.Name = "lblMontoTotalNvo2";
             this.lblMontoTotalNvo2.Size = new System.Drawing.Size(44, 17);
             this.lblMontoTotalNvo2.TabIndex = 19;
             this.lblMontoTotalNvo2.Text = "$0,00";
+            this.lblMontoTotalNvo2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMontoTotalNuevo
             // 
             this.lblMontoTotalNuevo.AutoSize = true;
-            this.lblMontoTotalNuevo.Location = new System.Drawing.Point(16, 105);
+            this.lblMontoTotalNuevo.Location = new System.Drawing.Point(16, 104);
             this.lblMontoTotalNuevo.Name = "lblMontoTotalNuevo";
             this.lblMontoTotalNuevo.Size = new System.Drawing.Size(132, 17);
             this.lblMontoTotalNuevo.TabIndex = 18;
@@ -268,6 +272,7 @@
             this.lblMontoTotalAnt2.Size = new System.Drawing.Size(44, 17);
             this.lblMontoTotalAnt2.TabIndex = 17;
             this.lblMontoTotalAnt2.Text = "$0,00";
+            this.lblMontoTotalAnt2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMontoPagado2
             // 
@@ -277,6 +282,7 @@
             this.lblMontoPagado2.Size = new System.Drawing.Size(44, 17);
             this.lblMontoPagado2.TabIndex = 16;
             this.lblMontoPagado2.Text = "$0,00";
+            this.lblMontoPagado2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMontoTotalAnterior
             // 
@@ -308,6 +314,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.gridReserva);
             this.Controls.Add(this.gbBusqueda);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(490, 567);
             this.Name = "FAgregarExcedente";

@@ -87,8 +87,10 @@ namespace Gestor_de_Eventos
         {
             this.gbCalendario.Enabled = false;
             this.gbNuevaReserva.Enabled = true;
+            this.dtpHoraInicio.Value = this.calFecha.SelectionRange.Start.AddHours(10);
             this.dtpHoraInicio.MinDate = this.calFecha.SelectionRange.Start.AddHours(10);
             this.dtpHoraInicio.MaxDate = this.calFecha.SelectionRange.Start.AddHours(21);
+            this.dtpHoraFin.Value = this.calFecha.SelectionRange.Start.AddHours(12.5);
             this.dtpHoraFin.MinDate = this.calFecha.SelectionRange.Start.AddHours(12.5);
 
             CargarComboClientes();
@@ -169,6 +171,10 @@ namespace Gestor_de_Eventos
         {
             this.gbNuevaReserva.Enabled = false;
             this.gbCalendario.Enabled = true;
+            this.dtpHoraFin.MinDate = new DateTime(1753, 1, 1);
+            this.dtpHoraFin.MaxDate = new DateTime(9998, 12, 31);
+            this.dtpHoraInicio.MinDate = new DateTime(1753, 1, 1);
+            this.dtpHoraInicio.MaxDate = new DateTime(9998, 12, 31);
         }
 
         private void CargarComboClientes()

@@ -163,6 +163,10 @@ namespace Gestor_de_Eventos
         {
             try
             {
+
+                LimpiarControles(false);
+                HabilitarBotones(false);
+
                 Evento evento = (Evento)this.cboTipoEvento.SelectedItem;
 
                 if (evento != null)
@@ -295,7 +299,7 @@ namespace Gestor_de_Eventos
                     if (GestorBD.ObtenerInstancia().ActualizarDVV("RESERVA"))
                     {
                         HabilitarBotones(false);
-                        LimpiarControles();
+                        LimpiarControles(true);
                         MessageBox.Show("La cotización se ha guardado con éxito.", "Cotización", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
 
@@ -314,26 +318,29 @@ namespace Gestor_de_Eventos
             this.listEmpleadosAsignados.DataSource = reserva.Empleados.ToArray();
         }
 
-        private void LimpiarControles()
+        private void LimpiarControles(bool todos)
         {
 
-            reserva = null;
+            if (todos)
+            {
+                reserva = null;
 
-            this.txtIdReserva.Clear();
-            
-            HabilitarControles(false);
+                this.txtIdReserva.Clear();
 
-            this.lblFecha2.Text = "-";
-            this.lblHoraInicio2.Text = "-";
-            this.lblHoraFin2.Text = "-";
-            this.lblNombre.Text = "-";
-            this.lblDuracion2.Text = "-";
+                HabilitarControles(false);
+
+                this.lblFecha2.Text = "-";
+                this.lblHoraInicio2.Text = "-";
+                this.lblHoraFin2.Text = "-";
+                this.lblNombre.Text = "-";
+                this.lblDuracion2.Text = "-";
+
+                this.lblCantidadAdultos2.Text = "0";
+                this.lblCantidadNiños2.Text = "0";
+            }
 
             this.lblAdultosExtra2.Text = "0";
             this.lblNiñosExtra2.Text = "0";
-
-            this.lblCantidadAdultos2.Text = "0";
-            this.lblCantidadNiños2.Text = "0";
 
             this.listServiciosAgregados.DataSource = null;
             this.listEmpleadosAsignados.DataSource = null;
@@ -347,12 +354,13 @@ namespace Gestor_de_Eventos
             this.lblTotal2.Text = 0.ToString("C2");
 
             this.lblBebidas2.Text = "0";
+            
         }
 
         private void btnCancelarCotizacion_Click(object sender, EventArgs e)
         {
             HabilitarBotones(false);
-            LimpiarControles();
+            LimpiarControles(true);
             HabilitarControles(false);
         }
 

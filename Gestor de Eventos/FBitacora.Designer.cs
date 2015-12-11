@@ -57,7 +57,7 @@
             this.gbFiltro.Controls.Add(this.lblTipo);
             this.gbFiltro.Location = new System.Drawing.Point(12, 12);
             this.gbFiltro.Name = "gbFiltro";
-            this.gbFiltro.Size = new System.Drawing.Size(611, 121);
+            this.gbFiltro.Size = new System.Drawing.Size(611, 120);
             this.gbFiltro.TabIndex = 0;
             this.gbFiltro.TabStop = false;
             this.gbFiltro.Text = "Filtros";
@@ -65,7 +65,7 @@
             // chkUsuario
             // 
             this.chkUsuario.AutoSize = true;
-            this.chkUsuario.Location = new System.Drawing.Point(405, 40);
+            this.chkUsuario.Location = new System.Drawing.Point(405, 39);
             this.chkUsuario.Name = "chkUsuario";
             this.chkUsuario.Size = new System.Drawing.Size(152, 21);
             this.chkUsuario.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             this.cboUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboUsuario.FormattingEnabled = true;
-            this.cboUsuario.Location = new System.Drawing.Point(405, 76);
+            this.cboUsuario.Location = new System.Drawing.Point(405, 75);
             this.cboUsuario.Name = "cboUsuario";
             this.cboUsuario.Size = new System.Drawing.Size(200, 24);
             this.cboUsuario.TabIndex = 3;
@@ -96,14 +96,14 @@
             // 
             this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipo.FormattingEnabled = true;
-            this.cboTipo.Location = new System.Drawing.Point(121, 38);
+            this.cboTipo.Location = new System.Drawing.Point(121, 37);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(200, 24);
             this.cboTipo.TabIndex = 0;
             // 
             // dtpFechaDesde
             // 
-            this.dtpFechaDesde.Location = new System.Drawing.Point(121, 78);
+            this.dtpFechaDesde.Location = new System.Drawing.Point(121, 76);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
             this.dtpFechaDesde.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaDesde.TabIndex = 1;

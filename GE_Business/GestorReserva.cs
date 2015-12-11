@@ -485,12 +485,20 @@ namespace GE_Business
                 int cantCocineros = (int)Math.Ceiling(cantidadPersonas / 30);
                 int cantMozos = (int)Math.Ceiling(cantidadPersonas / 15);
 
-                List<Empleado> empleadosDisponibles = new List<Empleado>(reserva.Empleados);
-                empleadosDisponibles.AddRange(reservaDAO.ConsultarEmpleadosDisponibles(reserva.FechaHoraInicio, reserva.FechaHoraFin));
+                List<Empleado> empleadosAsignados = new List<Empleado>(reserva.Empleados);
+                List<Empleado> empleadosDisponibles = reservaDAO.ConsultarEmpleadosDisponibles(reserva.FechaHoraInicio, reserva.FechaHoraFin);
+
+                foreach (Empleado empleado in empleadosDisponibles)
+                {
+                    if (!empleadosAsignados.Contains(empleado))
+                    {
+                        empleadosAsignados.Add(empleado);
+                    }
+                }
 
                 reserva.Empleados.Clear();
-                reserva.Empleados.AddRange(empleadosDisponibles.Where(e => e.Cargo.ID == 1).Take(cantCocineros));
-                reserva.Empleados.AddRange(empleadosDisponibles.Where(e => e.Cargo.ID == 2).Take(cantMozos));
+                reserva.Empleados.AddRange(empleadosAsignados.Where(e => e.Cargo.ID == 1).Take(cantCocineros));
+                reserva.Empleados.AddRange(empleadosAsignados.Where(e => e.Cargo.ID == 2).Take(cantMozos));
 
             }
             catch (Exception)

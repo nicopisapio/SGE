@@ -88,7 +88,7 @@
             // 
             // txtEmpleadoDU
             // 
-            this.txtEmpleadoDU.Location = new System.Drawing.Point(115, 33);
+            this.txtEmpleadoDU.Location = new System.Drawing.Point(115, 34);
             this.txtEmpleadoDU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmpleadoDU.Name = "txtEmpleadoDU";
             this.txtEmpleadoDU.Size = new System.Drawing.Size(200, 22);
@@ -102,6 +102,7 @@
             this.lblDUEmpleado.Size = new System.Drawing.Size(99, 17);
             this.lblDUEmpleado.TabIndex = 5;
             this.lblDUEmpleado.Text = "DU Empleado:";
+            this.lblDUEmpleado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnBuscar
             // 
@@ -118,15 +119,16 @@
             // lblFechaHasta
             // 
             this.lblFechaHasta.AutoSize = true;
-            this.lblFechaHasta.Location = new System.Drawing.Point(16, 94);
+            this.lblFechaHasta.Location = new System.Drawing.Point(16, 93);
             this.lblFechaHasta.Name = "lblFechaHasta";
             this.lblFechaHasta.Size = new System.Drawing.Size(92, 17);
             this.lblFechaHasta.TabIndex = 3;
             this.lblFechaHasta.Text = "Fecha Hasta:";
+            this.lblFechaHasta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpFechaHasta
             // 
-            this.dtpFechaHasta.Location = new System.Drawing.Point(115, 89);
+            this.dtpFechaHasta.Location = new System.Drawing.Point(115, 90);
             this.dtpFechaHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFechaHasta.Name = "dtpFechaHasta";
             this.dtpFechaHasta.Size = new System.Drawing.Size(200, 22);
@@ -135,11 +137,12 @@
             // lblFechaDesde
             // 
             this.lblFechaDesde.AutoSize = true;
-            this.lblFechaDesde.Location = new System.Drawing.Point(12, 66);
+            this.lblFechaDesde.Location = new System.Drawing.Point(12, 65);
             this.lblFechaDesde.Name = "lblFechaDesde";
             this.lblFechaDesde.Size = new System.Drawing.Size(96, 17);
             this.lblFechaDesde.TabIndex = 1;
             this.lblFechaDesde.Text = "Fecha Desde:";
+            this.lblFechaDesde.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dtpFechaDesde
             // 

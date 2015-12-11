@@ -94,7 +94,7 @@
             // menuIniciarSesion
             // 
             this.menuIniciarSesion.Name = "menuIniciarSesion";
-            this.menuIniciarSesion.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.menuIniciarSesion.ShortcutKeys = System.Windows.Forms.Keys.F2;
             this.menuIniciarSesion.Size = new System.Drawing.Size(195, 26);
             this.menuIniciarSesion.Text = "Iniciar Sesion";
             this.menuIniciarSesion.Click += new System.EventHandler(this.menuIniciarSesion_Click);
@@ -300,7 +300,7 @@
             this.menuRealizarBackup,
             this.menuRealizarRestore});
             this.menuBD.Name = "menuBD";
-            this.menuBD.Size = new System.Drawing.Size(179, 26);
+            this.menuBD.Size = new System.Drawing.Size(181, 26);
             this.menuBD.Text = "Base de Datos";
             // 
             // menuRealizarBackup
@@ -320,7 +320,7 @@
             // menuBitacora
             // 
             this.menuBitacora.Name = "menuBitacora";
-            this.menuBitacora.Size = new System.Drawing.Size(179, 26);
+            this.menuBitacora.Size = new System.Drawing.Size(181, 26);
             this.menuBitacora.Text = "Bitácora";
             this.menuBitacora.Click += new System.EventHandler(this.menuBitacora_Click);
             // 

@@ -257,7 +257,7 @@ namespace Gestor_de_Eventos
 
             this.gridReserva.DataSource = null;
 
-            this.listServicios.Items.Clear();
+            this.listServicios.DataSource = null;
 
             this.gbDetalleEvento.Enabled = false;
 
@@ -441,6 +441,11 @@ namespace Gestor_de_Eventos
         {
             this.btnAceptar.Enabled = habilita;
             this.btnCancelar.Enabled = habilita;
+        }
+
+        private void chkCancelar_CheckedChanged(object sender, EventArgs e)
+        {
+            HabilitarControles(true);
         }
     }
 }

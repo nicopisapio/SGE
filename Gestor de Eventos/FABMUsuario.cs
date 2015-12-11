@@ -119,7 +119,7 @@ namespace Gestor_de_Eventos
         {
             this.Operacion = FABMUsuario.Accion.Alta;
             this.gbDatosUsuario.Enabled = true;
-            HabilitarControles(true);
+            HabilitarControles(false);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -205,7 +205,7 @@ namespace Gestor_de_Eventos
                 {
                     this.Operacion = FABMUsuario.Accion.Modificacion;
                     this.gbDatosUsuario.Enabled = true;
-                    HabilitarControles(true);
+                    HabilitarControles(false);
                     this.txtUsuario.Enabled = false;
 
                     DataGridViewRow row = this.gridUsuarios.SelectedRows[0];
