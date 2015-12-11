@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoBD", "AccesoBD\Acceso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_DAL", "GE_DAL\GE_DAL.csproj", "{B80B444E-A770-426C-AE69-5E79ECC13035}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{E424D516-249E-4898-BDBB-C741ADCB7848}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,8 @@ Global
 		{B80B444E-A770-426C-AE69-5E79ECC13035}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B80B444E-A770-426C-AE69-5E79ECC13035}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B80B444E-A770-426C-AE69-5E79ECC13035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E424D516-249E-4898-BDBB-C741ADCB7848}.Debug|Any CPU.ActiveCfg = Debug
+		{E424D516-249E-4898-BDBB-C741ADCB7848}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
