@@ -137,13 +137,13 @@ namespace Gestor_de_Eventos
 
                     Empleado empleado = (Empleado)this.gridEmpleados.CurrentRow.DataBoundItem;
 
-                    DialogResult dialogo = MessageBox.Show("¿Desea eliminar definitivamente al Empleado " + empleado.ToString() + "?", "Baja de Empleado", MessageBoxButtons.YesNo);
+                    DialogResult dialogo = MessageBox.Show("¿Desea eliminar definitivamente al Empleado " + empleado.ToString() + "?", "Gestión de Empleados", MessageBoxButtons.YesNo);
 
                     if (dialogo == DialogResult.Yes)
                     {
                         if (GestorReserva.ObtenerInstancia().EliminarEmpleado(empleado))
                         {
-                            MessageBox.Show("El empleado se ha eliminado correctamente", "Baja de Empleado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("El empleado se ha eliminado correctamente", "Gestión de Empleados", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             CargarEmpleados();
                         }
                     }

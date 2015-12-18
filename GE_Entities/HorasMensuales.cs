@@ -16,10 +16,12 @@ namespace GE_Entities
         public double Periodo4 { get; set; }
         public double Periodo5 { get; set; }
         public double Total { get; set; }
+        public double TotalPagar { get; set; }
 
         public void CalcularTotal()
         {
             Total = Periodo1 + Periodo2 + Periodo3 + Periodo4 + Periodo5;
+            TotalPagar = Total * Empleado.Cargo.ValorPorHora;
         }
 
     }

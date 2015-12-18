@@ -158,7 +158,7 @@ namespace Gestor_de_Eventos
 
                 if (resultado)
                 {
-                    MessageBox.Show("Se ha creado/modificado el Servicio correctamente.", "Gestión de Servicios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Se ha creado/modificado el Cargo correctamente.", "Gestión de Cargos", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     HabilitarControles(true);
                     this.gbDatosCargo.Enabled = false;
                     LimpiarControles();

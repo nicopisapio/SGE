@@ -129,8 +129,6 @@ namespace Gestor_de_Eventos
         {
             try
             {
-                HabilitarControles(true);
-
                 double precioExcedente = 0;
                 if (!double.TryParse(this.txtExcedente.Text, out precioExcedente))
                 {
@@ -145,10 +143,12 @@ namespace Gestor_de_Eventos
                     excedente.Monto = precioExcedente;
                     reserva.AgregarExcedente(excedente);
                     this.lblMontoTotalNvo2.Text = GestorReserva.ObtenerInstancia().CalcularCostoTotalReserva(reserva).ToString("C2");
+                    MessageBox.Show("Se ha agregado el excedente correctamente.", "Gestión de Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    HabilitarControles(true);
                 }
                 else
                 {
-                    MessageBox.Show("Se ha agregado el excedente correctamente.", "Gestión de Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El valor ingresado debe ser mayor a 0.", "Gestión de Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }
@@ -163,37 +163,15 @@ namespace Gestor_de_Eventos
         {
             try
             {
-                double montoExcedente = 0;
-
-                if (Double.TryParse(this.txtExcedente.Text, out montoExcedente))
+                if (GestorReserva.ObtenerInstancia().ActualizarReserva(reserva))
                 {
-
-                    if (montoExcedente > 0)
+                    if (GestorBD.ObtenerInstancia().ActualizarDVV("RESERVA"))
                     {
-                        Excedente excedente = new Excedente();
-                        excedente.Monto = montoExcedente;
-
-                        reserva.AgregarExcedente(excedente);
-
-                        if (GestorReserva.ObtenerInstancia().ActualizarReserva(reserva))
-                        {
-                            if (GestorBD.ObtenerInstancia().ActualizarDVV("RESERVA"))
-                            {
-                                MessageBox.Show("El excedente se ha guardado con éxito.", "Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                HabilitarControles(false);
-                                LimpiarControles();
-                                this.gbCotizacion.Enabled = false;
-                            }
-                        }
+                        MessageBox.Show("El excedente se ha guardado con éxito.", "Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        HabilitarControles(false);
+                        LimpiarControles();
+                        this.gbCotizacion.Enabled = false;
                     }
-                    else
-                    {
-                        MessageBox.Show("El monto del excedente debe ser mayor a 0.", "Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("El monto del excedente es inválido.", "Excedentes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)

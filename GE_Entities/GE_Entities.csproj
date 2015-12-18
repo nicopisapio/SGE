@@ -52,6 +52,7 @@
     <Compile Include="Excedente.cs" />
     <Compile Include="HorasMensuales.cs" />
     <Compile Include="HorasSemanales.cs" />
+    <Compile Include="Mensaje.cs" />
     <Compile Include="MensajeError.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reserva.cs" />

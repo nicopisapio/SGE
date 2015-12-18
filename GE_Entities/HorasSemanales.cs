@@ -18,10 +18,12 @@ namespace GE_Entities
         public double Sabado { get; set; }
         public double Domingo { get; set; }
         public double Total { get; set; }
+        public double TotalPagar { get; set; }
 
         public void CalcularTotal()
         {
             Total = Lunes + Martes + Miercoles + Jueves + Viernes + Sabado + Domingo;
+            TotalPagar = Total * Empleado.Cargo.ValorPorHora;
         }
     }
 }
